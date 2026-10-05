@@ -556,11 +556,18 @@ export const cvData = {
     ],
     education: [
       {
+        degree: 'AI & Digital Business Development',
+        institution: 'Pau Martí | Skool',
+        location: 'Online / Especialización Ejecutiva',
+        year: '2026 – En curso (Jul 2027)',
+        honors: 'Especialización Avanzada en Inteligencia Artificial y Negocios Digitales',
+      },
+      {
         degree: 'International Business - BA (Hons.)',
         institution: 'Nottingham Trent University',
         location: 'Nottingham, United Kingdom',
         year: 'Jul 2007',
-        honors: 'Honours Degree (Grado con Honores Internacionales)',
+        honors: 'Honours Degree (Grado Universitario con Honores Internacionales)',
       },
     ],
     languages: [
@@ -1151,6 +1158,13 @@ export const cvData = {
       },
     ],
     education: [
+      {
+        degree: 'AI & Digital Business Development',
+        institution: 'Pau Martí | Skool',
+        location: 'Executive Specialization',
+        year: '2026 – Ongoing (Jul 2027)',
+        honors: 'Advanced Specialization in Artificial Intelligence & Digital Business',
+      },
       {
         degree: 'International Business - BA (Hons.)',
         institution: 'Nottingham Trent University',
