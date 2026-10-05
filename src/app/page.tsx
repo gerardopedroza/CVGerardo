@@ -1,69 +1,164 @@
-import Image from "next/image";
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import { Language, cvData } from '@/data/cvData';
+import { Navbar } from '@/components/Navigation/Navbar';
+import { Hero } from '@/components/Hero/Hero';
+import { ProfessionalSnapshot } from '@/components/Snapshot/ProfessionalSnapshot';
+import { WhyMe } from '@/components/WhyMe/WhyMe';
+import { ExperienceTimeline } from '@/components/Experience/ExperienceTimeline';
+import { FeaturedProjects } from '@/components/Projects/FeaturedProjects';
+import { SkillsMatrix } from '@/components/Skills/SkillsMatrix';
+import { IndustryExpertise } from '@/components/Industries/IndustryExpertise';
+import { EducationAndLanguages } from '@/components/Education/EducationAndLanguages';
+import { ContactSection } from '@/components/Contact/ContactSection';
+import { RecruiterModeModal } from '@/components/RecruiterMode/RecruiterModeModal';
+import { Footer } from '@/components/Footer/Footer';
 
 export default function Home() {
+  const [lang, setLang] = useState<Language>('es');
+  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [recruiterModeOpen, setRecruiterModeOpen] = useState<boolean>(false);
+  const [isMounted, setIsMounted] = useState<boolean>(false);
+
+  // Initialize theme and language from system preferences and localStorage
+  useEffect(() => {
+    setIsMounted(true);
+    // Language
+    const savedLang = localStorage.getItem('cv_language') as Language;
+    if (savedLang === 'es' || savedLang === 'en') {
+      setLang(savedLang);
+    }
+
+    // Theme
+    const savedTheme = localStorage.getItem('cv_theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      setDarkMode(true);
+      document.documentElement.classList.add('dark');
+    } else {
+      setDarkMode(false);
+      document.documentElement.classList.remove('dark');
+    }
+  }, []);
+
+  const handleLanguageChange = (newLang: Language) => {
+    setLang(newLang);
+    localStorage.setItem('cv_language', newLang);
+  };
+
+  const handleToggleDarkMode = () => {
+    setDarkMode((prev) => {
+      const next = !prev;
+      if (next) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('cv_theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('cv_theme', 'light');
+      }
+      return next;
+    });
+  };
+
+  const content = cvData[lang];
+
+  // Structured Data (JSON-LD) for ATS and Search Engines
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: content.name,
+    jobTitle: content.headline,
+    description: content.executiveSummary,
+    email: content.email,
+    telephone: content.phone,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Mexico City',
+      addressCountry: 'MX',
+    },
+    alumniOf: {
+      '@type': 'EducationalOrganization',
+      name: 'Nottingham Trent University',
+    },
+    knowsAbout: [
+      'Financial Services',
+      'Product Management',
+      'Banking',
+      'Payments',
+      'Financial Inclusion',
+      'Digital Transformation',
+      'Artificial Intelligence',
+      'Agile Methodology',
+      'Design Sprints',
+    ],
+    sameAs: [content.linkedinUrl],
+  };
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="min-h-screen flex flex-col bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+      {/* ATS & Machine Readability Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+
+      {/* Sticky Navigation Bar */}
+      <Navbar
+        lang={lang}
+        onLanguageChange={handleLanguageChange}
+        darkMode={darkMode}
+        onToggleDarkMode={handleToggleDarkMode}
+        onOpenRecruiterMode={() => setRecruiterModeOpen(true)}
+      />
+
+      {/* Main Single Page Portfolio Content */}
+      <main className="flex-grow">
+        {/* 1. Hero Section */}
+        <Hero
+          lang={lang}
+          onOpenRecruiterMode={() => setRecruiterModeOpen(true)}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        {/* 2. Professional Snapshot (Quick scan metrics) */}
+        <ProfessionalSnapshot lang={lang} />
+
+        {/* 3. Why Me? (Executive value proposition) */}
+        <WhyMe lang={lang} />
+
+        {/* 4. Experience (Interactive Timeline with Progressive Disclosure) */}
+        <ExperienceTimeline lang={lang} />
+
+        {/* 5. Featured Projects & Case Studies (Detail Modals) */}
+        <FeaturedProjects lang={lang} />
+
+        {/* 6. Skills & Competency Matrix */}
+        <SkillsMatrix lang={lang} />
+
+        {/* 7. Multi-Sector Industry Footprint */}
+        <IndustryExpertise lang={lang} />
+
+        {/* 8. Education & Languages */}
+        <EducationAndLanguages lang={lang} />
+
+        {/* 9. Contact & Connect (Direct mailto, phone, LinkedIn, Download) */}
+        <ContactSection lang={lang} />
       </main>
+
+      {/* 10. Footer */}
+      <Footer lang={lang} />
+
+      {/* Recruiter Mode Modal (30s Screening View) */}
+      <RecruiterModeModal
+        isOpen={recruiterModeOpen}
+        onClose={() => setRecruiterModeOpen(false)}
+        lang={lang}
+      />
     </div>
   );
 }
