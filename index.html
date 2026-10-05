@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerardo Pedroza | Líder en Desarrollo de Productos Financieros, Pagos & FinTech</title>
+  <meta name="description" content="CV Digital y Portafolio Ejecutivo de Gerardo Pedroza. 17+ años de experiencia en banca, medios de pago, inclusión financiera y transformación digital (Citi, Visa, Compartamos, Azteca, Bansefi)." />
+  <meta name="author" content="Gerardo Pedroza" />
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN for instant, zero-build rendering -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Inter"', 'sans-serif'],
+          },
+          colors: {
+            sky: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              950: '#082f49',
+            },
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+    
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .dark .glass-nav {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* Subtle pulse dot */
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.15); }
+    }
+    .animate-pulse-dot {
+      animation: pulse-dot 2.5s infinite ease-in-out;
+    }
+
+    /* Smooth Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #090d16;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: #334155;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen selection:bg-sky-500 selection:text-white antialiased">
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 glass-nav border-b border-slate-200/80 dark:border-slate-800/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Brand Logo -->
+        <a href="#hero" class="flex items-center gap-2.5 group">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-sky-600 to-blue-700 text-white flex items-center justify-center font-extrabold text-sm shadow-sm group-hover:scale-105 transition-transform">
+            GP
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold text-sm sm:text-base tracking-tight text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+              Gerardo Pedroza
+            </span>
+            <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 -mt-0.5">
+              Financial Products & FinTech
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-xs xl:text-sm font-semibold">
+          <a href="#snapshot" class="px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors" data-i18n="nav_snapshot">Resumen</a>
+          <a href="#why-me" class="px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors" data-i18n="nav_why_me">Propuesta de Valor</a>
+          <a href="#experience" class="px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors" data-i18n="nav_experience">Experiencia</a>
+          <a href="#projects" class="px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors" data-i18n="nav_projects">Proyectos</a>
+          <a href="#skills" class="px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors" data-i18n="nav_skills">Habilidades</a>
+          <a href="#industries" class="px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors" data-i18n="nav_industries">Industrias</a>
+          <a href="#education" class="px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors" data-i18n="nav_education">Educación</a>
+          <a href="#contact" class="px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors" data-i18n="nav_contact">Contacto</a>
+        </nav>
+
+        <!-- Right Controls (Recruiter, Language, Theme, Download) -->
+        <div class="flex items-center gap-1.5 sm:gap-2">
+          
+          <!-- Recruiter Mode Button -->
+          <button onclick="openRecruiterModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20 hover:bg-amber-500/20 transition-all cursor-pointer shadow-xs" title="Screening en 30 segundos">
+            <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-500"></i>
+            <span class="hidden sm:inline" data-i18n="nav_recruiter">Modo Recruiter</span>
+            <span class="sm:hidden">30s</span>
+          </button>
+
+          <!-- Language Selector -->
+          <button id="lang-btn" onclick="toggleLanguage()" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 transition-colors cursor-pointer">
+            <i data-lucide="globe" class="w-3.5 h-3.5 text-slate-500"></i>
+            <span id="lang-label">ES</span>
+          </button>
+
+          <!-- Dark / Light Mode Toggle -->
+          <button onclick="toggleDarkMode()" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 transition-colors cursor-pointer" aria-label="Toggle theme">
+            <i id="theme-icon-sun" data-lucide="sun" class="w-4 h-4 text-amber-400 hidden"></i>
+            <i id="theme-icon-moon" data-lucide="moon" class="w-4 h-4 text-slate-700"></i>
+          </button>
+
+          <!-- Download CV CTA -->
+          <a href="2026%20ENG%20CV%20Gerardo%20Pedroza.pdf" download="Gerardo_Pedroza_CV_2026.pdf" onclick="celebrate()" class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-700 hover:to-blue-700 shadow-sm shadow-sky-600/20 hover:shadow-sky-600/40 transition-all cursor-pointer">
+            <i data-lucide="file-down" class="w-3.5 h-3.5"></i>
+            <span data-i18n="nav_download">Descargar CV</span>
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle mobile menu">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden px-4 pt-3 pb-6 glass-nav border-b border-slate-200 dark:border-slate-800 mt-2 space-y-2">
+      <a href="#snapshot" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_snapshot">Resumen</a>
+      <a href="#why-me" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_why_me">Propuesta de Valor</a>
+      <a href="#experience" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_experience">Experiencia</a>
+      <a href="#projects" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_projects">Proyectos</a>
+      <a href="#skills" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_skills">Habilidades</a>
+      <a href="#industries" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_industries">Industrias</a>
+      <a href="#education" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_education">Educación</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_contact">Contacto</a>
+      
+      <div class="pt-3 border-t border-slate-200 dark:border-slate-800">
+        <a href="2026%20ENG%20CV%20Gerardo%20Pedroza.pdf" download="Gerardo_Pedroza_CV_2026.pdf" onclick="celebrate(); toggleMobileMenu();" class="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg font-bold text-xs text-white bg-sky-600 hover:bg-sky-700 shadow-sm">
+          <i data-lucide="file-down" class="w-4 h-4"></i>
+          <span data-i18n="nav_download">Descargar CV (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-sky-500/10 dark:bg-sky-500/15 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Content -->
+          <div class="lg:col-span-7 flex flex-col items-start text-left">
+            
+            <!-- Status Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 text-white dark:bg-sky-950 dark:text-sky-300 dark:border dark:border-sky-800/80 text-xs font-medium shadow-xs mb-6">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse-dot"></span>
+              <span data-i18n="hero_status_badge">Disponible para Liderazgo en Producto & FinTech</span>
+              <span class="text-slate-400">|</span>
+              <span>17+ <span data-i18n="hero_exp_badge">Años de Trayectoria</span></span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
+              Gerardo Pedroza
+            </h1>
+
+            <p class="mt-3 text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 dark:from-sky-400 dark:via-blue-300 dark:to-indigo-300 leading-snug" data-i18n="hero_headline">
+              Líder en Desarrollo de Productos Financieros, Pagos y Transformación Digital
+            </p>
+
+            <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl font-normal" data-i18n="hero_subheadline">
+              17+ años transformando problemas de negocio y cliente en productos bancarios escalables, estrategias comerciales y soluciones digitales de alto impacto.
+            </p>
+
+            <!-- Quick Institutional Footprint -->
+            <div class="mt-4 flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-500 dark:text-slate-400">
+              <span class="inline-flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-sky-500"></i>
+                <span data-i18n="hero_location">Ciudad de México, México</span>
+              </span>
+              <span class="inline-flex items-center gap-1">
+                <i data-lucide="building-2" class="w-3.5 h-3.5 text-sky-500"></i>
+                Citi • Visa • Compartamos • Azteca • Bansefi
+              </span>
+              <span class="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-500"></i>
+                Santander • Mercado Pago • Banorte (Consulting)
+              </span>
+            </div>
+
+            <!-- CTAs -->
+            <div class="mt-8 flex flex-wrap items-center gap-3 w-full sm:w-auto">
+              <a href="2026%20ENG%20CV%20Gerardo%20Pedroza.pdf" download="Gerardo_Pedroza_CV_2026.pdf" onclick="celebrate()" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-700 hover:to-blue-700 shadow-md shadow-sky-600/25 hover:shadow-sky-600/40 hover:-translate-y-0.5 transition-all cursor-pointer w-full sm:w-auto">
+                <i data-lucide="file-down" class="w-4 h-4"></i>
+                <span data-i18n="hero_cta_download">Descargar CV Oficial (PDF)</span>
+              </a>
+
+              <a href="#contact" class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 shadow-xs hover:-translate-y-0.5 transition-all w-full sm:w-auto">
+                <i data-lucide="mail" class="w-4 h-4 text-sky-600 dark:text-sky-400"></i>
+                <span data-i18n="hero_cta_contact">Iniciar Contacto</span>
+              </a>
+
+              <button onclick="openRecruiterModal()" class="inline-flex items-center justify-center gap-1.5 px-4 py-3.5 rounded-xl font-bold text-xs text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-800 hover:bg-amber-100 dark:hover:bg-amber-900/40 transition-all cursor-pointer w-full sm:w-auto">
+                <i data-lucide="zap" class="w-4 h-4 text-amber-500 animate-pulse"></i>
+                <span>Modo Recruiter (30s)</span>
+              </button>
+            </div>
+
+            <!-- Social Links -->
+            <div class="mt-6 flex flex-wrap items-center gap-4 text-xs font-semibold">
+              <a href="https://www.linkedin.com/in/gerardo-pedroza-06a1a07/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-slate-600 hover:text-sky-600 dark:text-slate-400 dark:hover:text-sky-400 transition-colors">
+                <svg class="w-4 h-4 text-[#0077b5]" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Z"/></svg>
+                <span>LinkedIn: /in/gerardo-pedroza</span>
+              </a>
+              <span class="text-slate-300 dark:text-slate-700">•</span>
+              <button onclick="copyToClipboard('gerardo.p.corral@gmail.com', this)" class="inline-flex items-center gap-1.5 text-slate-600 hover:text-sky-600 dark:text-slate-400 dark:hover:text-sky-400 transition-colors cursor-pointer">
+                <i data-lucide="copy" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>gerardo.p.corral@gmail.com</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Card: Executive Highlights -->
+          <div class="lg:col-span-5">
+            <div class="relative rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl p-6 sm:p-7">
+              <div class="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800">
+                <div class="flex items-center gap-2">
+                  <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                  <span class="text-xs font-extrabold uppercase tracking-wider text-slate-700 dark:text-slate-300" data-i18n="hero_card_title">
+                    Executive Highlights
+                  </span>
+                </div>
+                <span class="text-[11px] font-bold text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-sky-950/70 px-2.5 py-0.5 rounded-full border border-sky-200 dark:border-sky-800">
+                  Verified Track Record
+                </span>
+              </div>
+
+              <div class="mt-5 space-y-4">
+                <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800">
+                  <div class="p-2 rounded-lg bg-sky-100 dark:bg-sky-900/50 text-sky-600 dark:text-sky-400 mt-0.5">
+                    <i data-lucide="trending-up" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider" data-i18n="hero_h1_title">Impacto Cuantitativo en Retención</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed">
+                      <strong class="text-slate-900 dark:text-white font-semibold" data-i18n="hero_h1_bold">60% de reducción en fuga semanal</strong> <span data-i18n="hero_h1_text">(~MXN $30M salvados/sem) en Banco Azteca con estrategia de débito para inversión.</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800">
+                  <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 mt-0.5">
+                    <i data-lucide="building-2" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider" data-i18n="hero_h2_title">Product Ownership Bancario</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed">
+                      <strong class="text-slate-900 dark:text-white font-semibold" data-i18n="hero_h2_bold">4 productos bancarios lanzados</strong> <span data-i18n="hero_h2_text">end-to-end (ahorro, inversión y transaccionales) en Compartamos Banco con comités ejecutivos.</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800">
+                  <div class="p-2 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 mt-0.5">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider" data-i18n="hero_h3_title">Especialización en IA & Negocios</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed" data-i18n="hero_h3_text">
+                      Especialización activa en IA & Digital Business Development para conectar estrategia, tecnología, datos y soluciones FinTech.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+                <span>Nottingham Trent Univ. (UK)</span>
+                <span class="font-bold text-slate-700 dark:text-slate-300">Español (Nat) • English (B2)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROFESSIONAL SNAPSHOT ==================== -->
+    <section id="snapshot" class="py-16 bg-slate-100/70 dark:bg-slate-900/60 border-y border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse-dot"></span>
+            Career Metrics
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white" data-i18n="snapshot_title">
+            Instantánea Profesional
+          </h2>
+          <p class="mt-3 text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal" data-i18n="snapshot_subtitle">
+            Métricas e indicadores clave respaldados por 17+ años de carrera demostrable
+          </p>
+          <div class="mt-4 h-1 w-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
+          
+          <div class="rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/60 border border-slate-100 dark:border-slate-700 text-sky-500">
+                  <i data-lucide="briefcase" class="w-5 h-5"></i>
+                </div>
+                <span class="text-[11px] font-bold text-slate-400">#1</span>
+              </div>
+              <div class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">17+</div>
+              <h3 class="mt-1 text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wide" data-i18n="stat_1_label">Años de Experiencia</h3>
+            </div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-300 pt-3 border-t border-slate-100 dark:border-slate-700/60 leading-relaxed" data-i18n="stat_1_desc">
+              En banca, medios de pago, inclusión financiera y desarrollo de productos.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/60 border border-slate-100 dark:border-slate-700 text-emerald-500">
+                  <i data-lucide="zap" class="w-5 h-5"></i>
+                </div>
+                <span class="text-[11px] font-bold text-slate-400">#2</span>
+              </div>
+              <div class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">60%</div>
+              <h3 class="mt-1 text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wide" data-i18n="stat_2_label">Reducción de Fuga Semanal</h3>
+            </div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-300 pt-3 border-t border-slate-100 dark:border-slate-700/60 leading-relaxed" data-i18n="stat_2_desc">
+              De MXN $50M a $20M en Banco Azteca con estrategia de débito para inversión.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/60 border border-slate-100 dark:border-slate-700 text-blue-500">
+                  <i data-lucide="award" class="w-5 h-5"></i>
+                </div>
+                <span class="text-[11px] font-bold text-slate-400">#3</span>
+              </div>
+              <div class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">4</div>
+              <h3 class="mt-1 text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wide" data-i18n="stat_3_label">Productos Bancarios</h3>
+            </div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-300 pt-3 border-t border-slate-100 dark:border-slate-700/60 leading-relaxed" data-i18n="stat_3_desc">
+              Como Product Owner end-to-end (ahorro, inversión y transaccionales) en Compartamos.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/60 border border-slate-100 dark:border-slate-700 text-indigo-500">
+                  <i data-lucide="users" class="w-5 h-5"></i>
+                </div>
+                <span class="text-[11px] font-bold text-slate-400">#4</span>
+              </div>
+              <div class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">20</div>
+              <h3 class="mt-1 text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wide" data-i18n="stat_4_label">Testers Coordinados</h3>
+            </div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-300 pt-3 border-t border-slate-100 dark:border-slate-700/60 leading-relaxed" data-i18n="stat_4_desc">
+              En la migración a la plataforma Core Banking HTML en Citibank España.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:-translate-y-1 transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/60 border border-slate-100 dark:border-slate-700 text-amber-500">
+                  <i data-lucide="landmark" class="w-5 h-5"></i>
+                </div>
+                <span class="text-[11px] font-bold text-slate-400">#5</span>
+              </div>
+              <div class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">8+</div>
+              <h3 class="mt-1 text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wide" data-i18n="stat_5_label">Grandes Instituciones</h3>
+            </div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-300 pt-3 border-t border-slate-100 dark:border-slate-700/60 leading-relaxed" data-i18n="stat_5_desc">
+              Citi, Visa, Compartamos, Azteca, Bansefi + Consultorías Santander, Mercado Pago, Banorte.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Executive Summary Banner -->
+        <div class="mt-10 rounded-2xl bg-gradient-to-r from-sky-950 via-slate-900 to-blue-950 text-white p-6 sm:p-8 shadow-lg border border-slate-800">
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div class="max-w-3xl">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 border border-sky-400/30 text-xs font-bold mb-3">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-sky-400"></i>
+                <span data-i18n="snapshot_banner_tag">Perfil Estratégico & Operativo</span>
+              </div>
+              <p class="text-sm sm:text-base text-slate-200 leading-relaxed font-normal" data-i18n="snapshot_summary_text">
+                Profesional de Desarrollo de Negocios y Servicios Financieros con más de 17 años de experiencia liderando el diseño, desarrollo e implementación de productos financieros e iniciativas digitales en banca, pagos y organizaciones de inclusión financiera. Experto en identificar problemas de clientes y de negocio, coordinar equipos multidisciplinarios (Negocio, Tecnología, Operaciones, Legal, Riesgo, Compliance y Finanzas), definir estrategias de producto y liderar lanzamientos end-to-end con metodologías ágiles.
+              </p>
+            </div>
+            <div class="p-4 rounded-xl bg-white/10 backdrop-blur-xs border border-white/10 text-xs text-slate-200 shrink-0 max-w-sm">
+              <span class="block font-bold text-white text-xs uppercase tracking-wider mb-1" data-i18n="snapshot_ai_focus_tag">
+                Especialización en IA Aplicada
+              </span>
+              <span data-i18n="snapshot_ai_focus_text">
+                Especializándose activamente en Inteligencia Artificial y Negocios Digitales para fortalecer la intersección de negocio, tecnología, datos e IA en FinTech.
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== WHY ME SECTION ==================== -->
+    <section id="why-me" class="py-20 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse-dot"></span>
+            Value Proposition
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white" data-i18n="whyme_title">
+            ¿Por qué Gerardo Pedroza?
+          </h2>
+          <p class="mt-3 text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal" data-i18n="whyme_subtitle">
+            Propuesta de valor ejecutiva fundamentada en trayectoria comprobada y resultados reales
+          </p>
+          <div class="mt-4 h-1 w-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full mx-auto"></div>
+        </div>
+
+        <div id="whyme-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <!-- Rendered dynamically by JS for bilingual support -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE TIMELINE ==================== -->
+    <section id="experience" class="py-20 bg-slate-50 dark:bg-slate-900/60 border-t border-slate-200/80 dark:border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse-dot"></span>
+            Interactive Timeline
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white" data-i18n="exp_title">
+            Trayectoria Profesional
+          </h2>
+          <p class="mt-3 text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal" data-i18n="exp_subtitle">
+            Liderazgo en instituciones financieras globales, banca múltiple y consultoría de innovación
+          </p>
+          <div class="mt-4 h-1 w-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full mx-auto"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="mb-10 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex flex-wrap items-center justify-center gap-2">
+            <button onclick="filterExperience('all')" class="exp-filter-btn active px-3.5 py-1.5 rounded-full text-xs font-bold bg-sky-600 text-white shadow-xs cursor-pointer" data-sector="all" data-i18n="exp_filter_all">Todas las Experiencias</button>
+            <button onclick="filterExperience('Banking')" class="exp-filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 cursor-pointer" data-sector="Banking" data-i18n="exp_filter_banking">Banca Múltiple</button>
+            <button onclick="filterExperience('Payments')" class="exp-filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 cursor-pointer" data-sector="Payments" data-i18n="exp_filter_payments">Medios de Pago</button>
+            <button onclick="filterExperience('Financial Inclusion & Consulting')" class="exp-filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 cursor-pointer" data-sector="Financial Inclusion & Consulting" data-i18n="exp_filter_consulting">Consultoría & Inclusión</button>
+            <button onclick="filterExperience('Public Sector')" class="exp-filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 cursor-pointer" data-sector="Public Sector" data-i18n="exp_filter_public">Sector Público</button>
+          </div>
+
+          <div class="flex items-center gap-2 text-xs font-bold">
+            <button onclick="toggleAllExperiences(true)" class="text-sky-600 dark:text-sky-400 hover:underline px-2 py-1 cursor-pointer" data-i18n="exp_expand_all">Expandir todo</button>
+            <span class="text-slate-300 dark:text-slate-700">|</span>
+            <button onclick="toggleAllExperiences(false)" class="text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 hover:underline px-2 py-1 cursor-pointer" data-i18n="exp_collapse_all">Colapsar todo</button>
+          </div>
+        </div>
+
+        <!-- Timeline Container -->
+        <div id="experience-timeline" class="relative border-l-2 border-sky-200 dark:border-sky-900/60 ml-4 sm:ml-8 pl-6 sm:pl-10 space-y-8">
+          <!-- Rendered dynamically by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS ==================== -->
+    <section id="projects" class="py-20 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse-dot"></span>
+            Case Studies
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white" data-i18n="proj_title">
+            Proyectos Destacados
+          </h2>
+          <p class="mt-3 text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal" data-i18n="proj_subtitle">
+            Iniciativas reales con impacto en negocio, retención y transformación tecnológica
+          </p>
+          <div class="mt-4 h-1 w-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full mx-auto"></div>
+        </div>
+
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <!-- Rendered dynamically by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS MATRIX ==================== -->
+    <section id="skills" class="py-20 bg-slate-50 dark:bg-slate-900/60 border-t border-slate-200/80 dark:border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse-dot"></span>
+            Competencies
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white" data-i18n="skills_title">
+            Habilidades & Competencias
+          </h2>
+          <p class="mt-3 text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal" data-i18n="skills_subtitle">
+            Clasificadas por dominio profesional sin métricas subjetivas
+          </p>
+          <div class="mt-4 h-1 w-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full mx-auto"></div>
+        </div>
+
+        <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <!-- Rendered dynamically by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== INDUSTRIES FOOTPRINT ==================== -->
+    <section id="industries" class="py-20 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse-dot"></span>
+            Multi-Sector Footprint
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white" data-i18n="ind_title">
+            Experiencia Multisectorial
+          </h2>
+          <p class="mt-3 text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal" data-i18n="ind_subtitle">
+            Trayectoria en banca múltiple, medios de pago, consultoría y sector público
+          </p>
+          <div class="mt-4 h-1 w-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full mx-auto"></div>
+        </div>
+
+        <div id="industries-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Rendered dynamically by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION & LANGUAGES ==================== -->
+    <section id="education" class="py-20 bg-slate-50 dark:bg-slate-900/60 border-t border-slate-200/80 dark:border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse-dot"></span>
+            Credentials
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white" data-i18n="edu_title">
+            Educación & Idiomas
+          </h2>
+          <p class="mt-3 text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal" data-i18n="edu_subtitle">
+            Formación académica internacional, especialización continua y competencias lingüísticas
+          </p>
+          <div class="mt-4 h-1 w-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Education Column (7 cols) -->
+          <div class="lg:col-span-7 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700/80 p-6 sm:p-8 shadow-xs">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-3 rounded-xl bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-400">
+                <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white" data-i18n="edu_heading">
+                  Formación Universitaria & Especialización
+                </h3>
+                <span class="text-xs text-slate-500 dark:text-slate-400" data-i18n="edu_subheading">
+                  Grado universitario internacional en UK y formación continua
+                </span>
+              </div>
+            </div>
+
+            <div id="education-list" class="space-y-4">
+              <!-- Rendered dynamically by JS -->
+            </div>
+          </div>
+
+          <!-- Languages Column (5 cols) -->
+          <div class="lg:col-span-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700/80 p-6 sm:p-8 shadow-xs">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-3 rounded-xl bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400">
+                <i data-lucide="languages" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white" data-i18n="lang_heading">
+                  Idiomas
+                </h3>
+                <span class="text-xs text-slate-500 dark:text-slate-400" data-i18n="lang_subheading">
+                  Competencias lingüísticas comprobadas
+                </span>
+              </div>
+            </div>
+
+            <div id="languages-list" class="space-y-3">
+              <!-- Rendered dynamically by JS -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-24 bg-white dark:bg-slate-950 relative overflow-hidden">
+      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-sky-500/10 dark:bg-sky-500/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse-dot"></span>
+            Direct Contact
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white" data-i18n="contact_title">
+            Conectemos
+          </h2>
+          <p class="mt-3 text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal" data-i18n="contact_subtitle">
+            Disponible para oportunidades de liderazgo en Producto, FinTech, Pagos y Transformación Digital
+          </p>
+          <div class="mt-4 h-1 w-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch max-w-5xl mx-auto">
+          
+          <!-- Contact Cards (Left 7 cols) -->
+          <div class="lg:col-span-7 space-y-4 flex flex-col justify-between">
+            
+            <!-- Email -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-sky-400 dark:hover:border-sky-600 transition-all">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="p-3 rounded-xl bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-400">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500" data-i18n="contact_email_label">Correo Electrónico</span>
+                    <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white break-all">gerardo.p.corral@gmail.com</h4>
+                  </div>
+                </div>
+                <button onclick="copyToClipboard('gerardo.p.corral@gmail.com', this)" class="p-2 rounded-lg text-slate-500 hover:text-sky-600 hover:bg-slate-200/60 dark:hover:bg-slate-800 transition-colors cursor-pointer" title="Copiar email">
+                  <i data-lucide="copy" class="w-4 h-4"></i>
+                </button>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-200/80 dark:border-slate-800 flex items-center justify-between">
+                <a href="mailto:gerardo.p.corral@gmail.com" class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-600 dark:text-sky-400 hover:underline">
+                  <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                  <span data-i18n="contact_send_email">Escribir un Correo</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-sky-400 dark:hover:border-sky-600 transition-all">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="p-3 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500" data-i18n="contact_phone_label">Teléfono Directo</span>
+                    <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">+52 (55) 5951-8935</h4>
+                  </div>
+                </div>
+                <button onclick="copyToClipboard('+525559518935', this)" class="p-2 rounded-lg text-slate-500 hover:text-emerald-600 hover:bg-slate-200/60 dark:hover:bg-slate-800 transition-colors cursor-pointer" title="Copiar teléfono">
+                  <i data-lucide="copy" class="w-4 h-4"></i>
+                </button>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-200/80 dark:border-slate-800 flex items-center justify-between">
+                <a href="tel:+525559518935" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline">
+                  <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                  <span data-i18n="contact_call_phone">Llamar por Teléfono</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- LinkedIn & Location -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a href="https://www.linkedin.com/in/gerardo-pedroza-06a1a07/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-500 transition-all flex items-center gap-3 group">
+                <div class="p-2.5 rounded-lg bg-[#0077b5]/10 text-[#0077b5] group-hover:bg-[#0077b5] group-hover:text-white transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Z"/></svg>
+                </div>
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400" data-i18n="contact_linkedin_label">Perfil de LinkedIn</span>
+                  <div class="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1">
+                    <span>/in/gerardo-pedroza</span>
+                    <i data-lucide="external-link" class="w-3 h-3 text-slate-400"></i>
+                  </div>
+                </div>
+              </a>
+
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center gap-3">
+                <div class="p-2.5 rounded-lg bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-400">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400" data-i18n="contact_loc_label">Ubicación</span>
+                  <div class="text-xs font-bold text-slate-900 dark:text-white" data-i18n="hero_location">Ciudad de México, México</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Download CV Box (Right 5 cols) -->
+          <div class="lg:col-span-5 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-950 to-blue-950 text-white p-7 sm:p-8 flex flex-col justify-between shadow-xl border border-slate-800">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-500/20 text-sky-400 border border-sky-400/30 flex items-center justify-center mb-6">
+                <i data-lucide="file-down" class="w-6 h-6"></i>
+              </div>
+
+              <h4 class="text-xl font-bold tracking-tight text-white" data-i18n="contact_cv_prompt">
+                ¿Prefieres el formato tradicional?
+              </h4>
+
+              <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed font-normal" data-i18n="contact_cv_desc">
+                Descarga el archivo PDF oficial y completo de Gerardo Pedroza con toda la trayectoria detallada, certificaciones, roles y referencias laborales comprobadas.
+              </p>
+
+              <div class="mt-6 p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-slate-300 space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400" data-i18n="contact_meta_format">Formato:</span>
+                  <span class="font-semibold text-white">PDF Oficial (2026 Updated)</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400" data-i18n="contact_meta_date">Última actualización:</span>
+                  <span class="font-semibold text-emerald-400">Octubre 2026</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400" data-i18n="contact_meta_avail">Disponibilidad:</span>
+                  <span class="font-semibold text-sky-400" data-i18n="contact_meta_avail_val">Inmediata / Liderazgo</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="2026%20ENG%20CV%20Gerardo%20Pedroza.pdf" download="Gerardo_Pedroza_CV_2026.pdf" onclick="celebrate()" class="mt-8 inline-flex items-center justify-center gap-2.5 w-full py-3.5 px-6 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 shadow-lg shadow-sky-500/30 hover:shadow-sky-500/50 hover:-translate-y-0.5 transition-all cursor-pointer">
+              <i data-lucide="file-down" class="w-4 h-4"></i>
+              <span data-i18n="contact_download_btn">Descargar CV Oficial en PDF</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="py-12 bg-slate-900 text-slate-400 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-sky-600 text-white font-bold flex items-center justify-center text-sm">GP</div>
+          <div>
+            <span class="font-bold text-white text-sm block">Gerardo Pedroza</span>
+            <span class="text-[11px] text-slate-400" data-i18n="hero_headline">Líder en Desarrollo de Productos Financieros & FinTech</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <a href="https://www.linkedin.com/in/gerardo-pedroza-06a1a07/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5 font-semibold">
+            <svg class="w-4 h-4 text-[#0077b5]" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:gerardo.p.corral@gmail.com" class="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5 font-semibold">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            <span>Email</span>
+          </a>
+          <a href="2026%20ENG%20CV%20Gerardo%20Pedroza.pdf" download="Gerardo_Pedroza_CV_2026.pdf" onclick="celebrate()" class="text-sky-400 hover:text-sky-300 font-bold transition-colors flex items-center gap-1.5">
+            <i data-lucide="file-down" class="w-4 h-4"></i>
+            <span data-i18n="nav_download">Descargar CV</span>
+          </a>
+        </div>
+
+        <a href="#hero" class="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1.5" title="Volver arriba">
+          <span data-i18n="footer_top">Volver arriba</span>
+          <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-[11px] text-slate-500">
+        <p>© <span id="year-span">2026</span> Gerardo Pedroza. <span data-i18n="footer_rights">Todos los derechos reservados. Información basada estrictamente en el CV oficial.</span></p>
+        <p>Pure Modern HTML5 • Responsive • Executive UI</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== RECRUITER MODE MODAL (30S SCREENING) ==================== -->
+  <div id="recruiter-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6 overflow-y-auto bg-slate-950/80 backdrop-blur-md">
+    <div class="relative w-full max-w-4xl rounded-2xl bg-white dark:bg-slate-900 border-2 border-amber-400/40 dark:border-amber-500/30 shadow-2xl overflow-hidden my-4 max-h-[92vh] flex flex-col" onclick="event.stopPropagation()">
+      
+      <!-- Modal Header -->
+      <div class="p-4 sm:p-5 bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 text-slate-950 flex items-center justify-between shrink-0 shadow-sm">
+        <div class="flex items-center gap-2">
+          <i data-lucide="zap" class="w-5 h-5 text-slate-950 animate-bounce"></i>
+          <div>
+            <span class="text-xs font-black uppercase tracking-wider block" data-i18n="rm_badge">Modo Screening Rápido (30 Segundos)</span>
+            <h2 class="text-sm sm:text-base font-extrabold text-slate-950" data-i18n="rm_heading">Resumen Ejecutivo para Hiring Managers & Recruiters</h2>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="2026%20ENG%20CV%20Gerardo%20Pedroza.pdf" download="Gerardo_Pedroza_CV_2026.pdf" onclick="celebrate()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-slate-950 hover:bg-slate-800 transition-colors shadow-xs">
+            <i data-lucide="file-down" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span data-i18n="nav_download">Descargar CV</span>
+          </a>
+          <button onclick="closeRecruiterModal()" class="p-1.5 rounded-lg text-slate-950 hover:bg-slate-950/20 transition-colors cursor-pointer" aria-label="Cerrar modal">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-5 sm:p-7 overflow-y-auto space-y-6 text-slate-900 dark:text-slate-100">
+        
+        <!-- Snapshot Bar -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700">
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="text-2xl font-black text-slate-900 dark:text-white">Gerardo Pedroza</h3>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-900 dark:bg-amber-950 dark:text-amber-300 border border-amber-300 dark:border-amber-800">
+                17+ <span data-i18n="rm_years_badge">Años Exp.</span>
+              </span>
+            </div>
+            <p class="text-sm font-bold text-sky-600 dark:text-sky-400 mt-0.5" data-i18n="hero_headline">
+              Líder en Desarrollo de Productos Financieros, Pagos y Transformación Digital
+            </p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1">
+              <i data-lucide="map-pin" class="w-3 h-3"></i>
+              <span data-i18n="hero_location">Ciudad de México, México</span>
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2 shrink-0">
+            <button onclick="copyToClipboard('gerardo.p.corral@gmail.com', this)" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-white dark:bg-slate-700 text-slate-800 dark:text-white border border-slate-300 dark:border-slate-600 hover:bg-slate-50 cursor-pointer shadow-xs">
+              <i data-lucide="copy" class="w-3.5 h-3.5 text-slate-400"></i>
+              <span data-i18n="rm_copy_email">Copiar Correo</span>
+            </button>
+            <a href="https://www.linkedin.com/in/gerardo-pedroza-06a1a07/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-[#0077b5] text-white hover:bg-[#005f93] transition-colors shadow-xs">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:gerardo.p.corral@gmail.com" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-600 text-white hover:bg-sky-700 transition-colors shadow-xs">
+              <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Wins -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5 flex items-center gap-1.5">
+            <i data-lucide="trending-up" class="w-3.5 h-3.5 text-sky-500"></i>
+            <span data-i18n="rm_key_wins_title">Logros y Diferenciales Clave (Top Wins)</span>
+          </h4>
+          <div id="rm-highlights-grid" class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- Timeline summary -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5 flex items-center gap-1.5">
+            <i data-lucide="briefcase" class="w-3.5 h-3.5 text-sky-500"></i>
+            <span data-i18n="rm_roles_title">Historial de Cargos & Organizaciones</span>
+          </h4>
+          <div id="rm-roles-list" class="space-y-2">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- Skills Summary -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2 flex items-center gap-1.5">
+            <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-500"></i>
+            <span data-i18n="rm_skills_title">Top Skills & Especialización</span>
+          </h4>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-50 text-sky-900 dark:bg-sky-950 dark:text-sky-200 border border-sky-200 dark:border-sky-800">Product Strategy & Lifecycle</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-50 text-sky-900 dark:bg-sky-950 dark:text-sky-200 border border-sky-200 dark:border-sky-800">Banking & Payments</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-50 text-sky-900 dark:bg-sky-950 dark:text-sky-200 border border-sky-200 dark:border-sky-800">Design Sprints & Customer Research</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-50 text-sky-900 dark:bg-sky-950 dark:text-sky-200 border border-sky-200 dark:border-sky-800">Executive Stakeholder Management</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-50 text-sky-900 dark:bg-sky-950 dark:text-sky-200 border border-sky-200 dark:border-sky-800">AI & Digital Business Development</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-50 text-sky-900 dark:bg-sky-950 dark:text-sky-200 border border-sky-200 dark:border-sky-800">Agile / Scrum (Product Owner)</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-50 text-sky-900 dark:bg-sky-950 dark:text-sky-200 border border-sky-200 dark:border-sky-800">Capital Loss Prevention (-60%)</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-50 text-sky-900 dark:bg-sky-950 dark:text-sky-200 border border-sky-200 dark:border-sky-800">Core Banking Migration & UAT</span>
+          </div>
+        </div>
+
+        <!-- Academic Footer -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-slate-200 dark:border-slate-800 text-xs">
+          <div class="flex items-center gap-2">
+            <i data-lucide="graduation-cap" class="w-4 h-4 text-sky-500"></i>
+            <span><strong>BA (Hons.) International Business</strong> - Nottingham Trent Univ. (UK)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="languages" class="w-4 h-4 text-sky-500"></i>
+            <span><strong>Idiomas:</strong> Español (Nativo) • English (B2) • Deutsch (A2)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 bg-slate-50 dark:bg-slate-950/80 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between shrink-0">
+        <span class="text-xs text-slate-500 dark:text-slate-400" data-i18n="rm_subheading">Vista condensada de screening rápido</span>
+        <div class="flex items-center gap-2">
+          <button onclick="closeRecruiterModal()" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition-colors cursor-pointer" data-i18n="rm_close_btn">
+            Volver a la vista completa
+          </button>
+          <a href="2026%20ENG%20CV%20Gerardo%20Pedroza.pdf" download="Gerardo_Pedroza_CV_2026.pdf" onclick="celebrate()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-white bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer shadow-sm">
+            <i data-lucide="file-down" class="w-3.5 h-3.5"></i>
+            <span data-i18n="nav_download">Descargar CV</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 overflow-y-auto bg-slate-900/75 backdrop-blur-xs">
+    <div class="relative w-full max-w-3xl rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden my-8 max-h-[90vh] flex flex-col" onclick="event.stopPropagation()">
+      
+      <div class="p-6 border-b border-slate-200 dark:border-slate-800 flex items-start justify-between bg-slate-50 dark:bg-slate-950/60 shrink-0">
+        <div>
+          <div class="flex items-center gap-2">
+            <span id="pm-sector" class="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300 border border-sky-200 dark:border-sky-800"></span>
+            <span id="pm-company" class="text-xs font-bold text-slate-500 dark:text-slate-400 flex items-center gap-1"></span>
+          </div>
+          <h3 id="pm-title" class="mt-2 text-xl sm:text-2xl font-bold text-slate-900 dark:text-white"></h3>
+          <p id="pm-tagline" class="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300"></p>
+        </div>
+        <button onclick="closeProjectModal()" class="p-2 rounded-xl text-slate-500 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition-colors cursor-pointer">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-5 overflow-y-auto">
+        <!-- Metric Banner -->
+        <div id="pm-metrics-box" class="flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 text-white shadow-md">
+          <div>
+            <span id="pm-metric-label" class="text-xs font-semibold uppercase tracking-wider text-emerald-100"></span>
+            <div id="pm-metric-val" class="text-2xl sm:text-3xl font-extrabold tracking-tight"></div>
+          </div>
+          <i data-lucide="trending-up" class="w-8 h-8 text-emerald-200"></i>
+        </div>
+
+        <!-- Problem -->
+        <div class="p-4 rounded-xl bg-rose-50/50 dark:bg-rose-950/20 border border-rose-100 dark:border-rose-900/40">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-rose-900 dark:text-rose-300 flex items-center gap-1.5 mb-1.5">
+            <i data-lucide="alert-circle" class="w-4 h-4 text-rose-600 dark:text-rose-400"></i>
+            <span data-i18n="pm_problem_title">El Desafío / Problema</span>
+          </h4>
+          <p id="pm-problem" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
+        </div>
+
+        <!-- Solution -->
+        <div class="p-4 rounded-xl bg-sky-50/50 dark:bg-sky-950/20 border border-sky-100 dark:border-sky-900/40">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-sky-900 dark:text-sky-300 flex items-center gap-1.5 mb-1.5">
+            <i data-lucide="lightbulb" class="w-4 h-4 text-sky-600 dark:text-sky-400"></i>
+            <span data-i18n="pm_solution_title">La Solución Estratégica</span>
+          </h4>
+          <p id="pm-solution" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
+        </div>
+
+        <!-- Role -->
+        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5 mb-1.5">
+            <i data-lucide="user-check" class="w-4 h-4 text-blue-600 dark:text-blue-400"></i>
+            <span data-i18n="pm_role_title">Mi Participación y Liderazgo</span>
+          </h4>
+          <p id="pm-role" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
+        </div>
+
+        <!-- Results -->
+        <div class="p-4 rounded-xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-900 dark:text-emerald-300 flex items-center gap-1.5 mb-1.5">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
+            <span data-i18n="pm_results_title">Resultados y Métricas Clave</span>
+          </h4>
+          <p id="pm-results" class="text-xs sm:text-sm text-slate-800 dark:text-emerald-200 font-semibold leading-relaxed"></p>
+        </div>
+      </div>
+
+      <div class="p-4 border-t border-slate-200 dark:border-slate-800 flex justify-end bg-slate-50 dark:bg-slate-950/60 shrink-0">
+        <button onclick="closeProjectModal()" class="px-5 py-2 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition-colors cursor-pointer" data-i18n="pm_close">
+          Cerrar Detalle
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== BILINGUAL DATA & ENGINE SCRIPT ==================== -->
+  <script>
+    const CV_DATA = {
+      es: {
+        whyme: [
+          {
+            title: "Liderazgo de Producto End-to-End Comprobado",
+            description: "Supervisión completa del ciclo de vida del producto: desde customer research, business cases y comités de gobierno hasta UAT, go-to-market y optimización post-lanzamiento.",
+            evidence: "Product Owner de 4 productos bancarios en Compartamos y coordinación de iniciativas clave en Visa y Banco Azteca.",
+            badge: "Product Lifecycle",
+            icon: "layers"
+          },
+          {
+            title: "Impacto Cuantitativo en Retención y Rentabilidad",
+            description: "Capacidad analítica para diagnosticar anomalías de negocio y diseñar soluciones tácticas de rápida implementación sin requerir presupuestos adicionales.",
+            evidence: "Reducción de fuga de capital en un 60% (salvando ~MXN $30M semanales) para la cuenta Azteca Creciente.",
+            badge: "ROI & Resultados",
+            icon: "trending-up"
+          },
+          {
+            title: "Visión Multi-Institucional y Consultoría de Alto Nivel",
+            description: "Experiencia directa en gigantes globales y bancos líderes, sumada a consultorías estratégicas con líderes fintech y banca tradicional.",
+            evidence: "Colaboración con Visa, Citi, Santander, Mercado Pago, Banorte, Compartamos Banco y Bansefi.",
+            badge: "Ecosistema Financiero",
+            icon: "shield-check"
+          },
+          {
+            title: "Innovación Centrada en el Usuario & Design Sprints",
+            description: "Facilitación de workshops de co-creación, prototipado rápido y validación con usuarios utilizando metodologías Women-Centered Design y Agile.",
+            evidence: "5 años liderando proyectos de innovación e investigación en Women’s World Banking en toda América Latina.",
+            badge: "User Research & Innovation",
+            icon: "users"
+          },
+          {
+            title: "Alineación Ejecutiva y Gobernanza Transversal",
+            description: "Liderazgo natural de mesas multidisciplinarias y comités ejecutivos, alineando prioridades técnicas, comerciales, legales y regulatorias.",
+            evidence: "Presentaciones periódicas a comités directivos y equipos directivos en México y LATAM.",
+            badge: "Executive Governance",
+            icon: "award"
+          },
+          {
+            title: "Visión Tecnológica Futura: Estrategia + Datos + IA",
+            description: "Enfoque continuo en modernización tecnológica, desde migraciones de Core Banking hasta la integración de Inteligencia Artificial en productos financieros.",
+            evidence: "Especialización en AI & Digital Business Development y grado con honores en Nottingham Trent University (UK).",
+            badge: "AI & Modern Tech",
+            icon: "sparkles"
+          }
+        ],
+        experiences: [
+          {
+            id: "wwb",
+            company: "Women’s World Banking Inc.",
+            role: "Specialist, Business Development",
+            location: "Nueva York / Ciudad de México",
+            period: "Ene 2020 – Dic 2024",
+            sector: "Financial Inclusion & Consulting",
+            summary: "Lideró proyectos de investigación de clientes, product discovery e innovación para instituciones financieras en América Latina aplicando la metodología Women-Centered Design.",
+            responsibilities: [
+              "Facilitó Design Sprints, talleres de co-creación y sesiones de validación de prototipos con equipos multidisciplinarios.",
+              "Coordinó iniciativas de desarrollo de producto end-to-end desde el customer research hasta la implementación piloto y despliegue masivo (rollout).",
+              "Condujo investigación cualitativa y cuantitativa para identificar oportunidades de mercado y necesidades insatisfechas de los usuarios.",
+              "Desarrolló recomendaciones estratégicas fundamentadas en insights de clientes, análisis competitivo y prioridades de negocio.",
+              "Presentó hallazgos, roadmaps y recomendaciones de producto al liderazgo ejecutivo de bancos y organizaciones cliente."
+            ],
+            achievements: [
+              "Ejecutó proyectos de consultoría estratégica para clientes de primer nivel: Santander, Mercado Pago, Banorte y Banco Azteca enfocados en CX y productos digitales.",
+              "Diseñó e implementó soluciones financieras centradas en el usuario que impulsaron la inclusión y adopción digital en la región."
+            ],
+            technologies: ["Design Sprints", "Women-Centered Design", "Customer Discovery Frameworks", "Analytics"],
+            methodologies: ["Agile / Scrum", "Design Thinking", "Co-creation Workshops", "Prototype Validation"],
+            consultingClients: ["Santander", "Mercado Pago", "Banorte", "Banco Azteca"],
+            reference: { name: "Megan D. Baumann", role: "Social-environmental Research", phone: "+1 (312) 771-7512" }
+          },
+          {
+            id: "visa",
+            company: "Visa",
+            role: "Manager, Consumer Products",
+            location: "Ciudad de México, México",
+            period: "Jul 2019 – Dic 2019",
+            sector: "Payments",
+            summary: "Gestionó iniciativas estratégicas para productos de pago de consumo de Visa en estrecha colaboración con instituciones financieras emisoras y unidades de negocio internas.",
+            responsibilities: [
+              "Coordinó equipos multifuncionales en Producto, Desarrollo de Negocios, Operaciones, Tecnología y áreas Comerciales.",
+              "Colaboró directamente con instituciones financieras para identificar oportunidades de negocio y acelerar la adopción de soluciones de pago.",
+              "Participó en iniciativas de mejora de producto enfocadas en elevar la propuesta de valor y competitividad.",
+              "Respaldó la planificación de producto: priorización de iniciativas y alineación ejecutiva."
+            ],
+            achievements: [
+              "Alineación y habilitación de nuevos casos de uso y valor añadido en el portafolio de medios de pago para emisores bancarios clave en México."
+            ],
+            technologies: ["Payment Schemes", "Consumer Cards", "Issuing Platforms"],
+            methodologies: ["Stakeholder Alignment", "Cross-functional Coordination", "Business Case Validation"],
+            reference: { name: "Erika Granados", role: "Business Development - Payments", phone: "+52 (55) 2962-5761" }
+          },
+          {
+            id: "compartamos",
+            company: "Compartamos Banco S.A. Institución de Banca Múltiple",
+            role: "Product Development Manager",
+            location: "Ciudad de México, México",
+            period: "Feb 2015 – Jun 2019",
+            sector: "Banking",
+            summary: "Actuó como Product Owner para cuatro productos bancarios, dirigiendo el desarrollo end-to-end de productos financieros de ahorro, inversión y transaccionales desde el concepto hasta el mercado.",
+            responsibilities: [
+              "Definió la estrategia de producto, propuesta de valor, requerimientos de negocio, business cases, evaluaciones de viabilidad y planes de implementación.",
+              "Lideró equipos multidisciplinarios a través de Negocio, Tecnología, Operaciones, Legal, Compliance, Riesgo, Finanzas y Marketing.",
+              "Gestionó directamente un equipo de 2–3 personas mientras coordinaba grupos transversales extensos en toda la institución.",
+              "Coordinó diseño de soluciones, desarrollo de IT, Pruebas de Aceptación de Usuario (UAT), preparación de producción y go-to-market.",
+              "Lideró comités ejecutivos y reuniones de gobierno para gestionar prioridades, mitigar riesgos y asegurar cumplimiento normativo."
+            ],
+            achievements: [
+              "Lanzamiento exitoso al mercado de 4 productos bancarios (ahorro, inversión y transaccionales) cumpliendo al 100% las normativas financieras.",
+              "Establecimiento de un marco de gobernanza y UAT robusto para acelerar el ciclo de desarrollo sin comprometer la seguridad."
+            ],
+            technologies: ["Core Banking Systems", "Transactional Platforms", "Savings & Investment Engines", "UAT Tools"],
+            methodologies: ["Agile / Scrum", "Product Ownership", "Executive Governance", "Regulatory Compliance"],
+            scopeAndTeam: "Gestión directa de 2-3 colaboradores y liderazgo de equipos transversales multifuncionales.",
+            reference: { name: "Ana Gabriela García Zepeda", role: "Directora de Productos Financieros", phone: "+52 (55) 5402-4518" }
+          },
+          {
+            id: "azteca",
+            company: "Banco Azteca S.A. Institución de Banca Múltiple",
+            role: "Product Manager",
+            location: "Ciudad de México, México",
+            period: "Jun 2013 – Feb 2015",
+            sector: "Banking",
+            summary: "Lideró la gestión y optimización de productos financieros, destacando el rescate de flujos de capital masivos ante fluctuaciones en tasas de interés.",
+            responsibilities: [
+              "Gestionó el rendimiento de productos financieros y definió estrategias de atracción y retención de clientes.",
+              "Lideró investigación de clientes, análisis competitivo y validación de producto para identificar oportunidades de mercado.",
+              "Definió estrategia de producto, propuesta de valor, especificaciones funcionales y planes de implementación.",
+              "Coordinó comités multidisciplinarios y pruebas UAT a lo largo de todo el ciclo de vida del producto."
+            ],
+            achievements: [
+              "Ante un cambio de tasas de interés que generó una fuga semanal de ~MXN $50M en inversión, ejecutó investigación en sucursales sin presupuesto y diseñó una estrategia de upgrade a débito para la cuenta 'Azteca Creciente'.",
+              "La estrategia redujo las salidas semanales de ~MXN $50M a MXN $20M, logrando una reducción del 60% en la pérdida semanal (~MXN $30M/sem salvados).",
+              "Presentó los resultados a comités directivos y coordinó la ejecución transversal inmediata."
+            ],
+            technologies: ["Branch POS & Systems", "Debit Card Issuing", "Investment Accounts Platform", "Retention Analytics"],
+            methodologies: ["Customer Research", "Root-Cause Analysis", "Cross-functional Execution", "Product Enhancement"],
+            reference: { name: "Rosa Ramírez Galindo", role: "Directora de Productos Financieros", phone: "+52 (55) 2128-5522" }
+          },
+          {
+            id: "bansefi",
+            company: "Banco del Ahorro Nacional y Servicios Financieros (Bansefi)",
+            role: "Commercial Strategy Manager",
+            location: "Ciudad de México, México",
+            period: "Nov 2009 – Jun 2013",
+            sector: "Banking",
+            summary: "Desarrolló estrategias comerciales y programas de incentivos a nivel nacional para maximizar la adopción de productos, captación de clientes y eficiencia en sucursales.",
+            responsibilities: [
+              "Diseñó y ejecutó campañas de ventas y esquemas de incentivos para potenciar el desempeño comercial en toda la red de sucursales a nivel nacional.",
+              "Lideró iniciativas estratégicas y proyectos interfuncionales para el lanzamiento y expansión de productos financieros.",
+              "Monitoreó KPIs de producto, rendimiento comercial y tendencias de ventas para detectar oportunidades de optimización.",
+              "Elaboró reportes ejecutivos y dashboards de desempeño para la toma de decisiones estratégicas de la alta dirección."
+            ],
+            achievements: [
+              "Impulso significativo en la adopción de productos de ahorro y servicios financieros en sectores populares y red nacional.",
+              "Diseño de dashboards ejecutivos que unificaron la visibilidad comercial y aceleraron la toma de decisiones directivas."
+            ],
+            technologies: ["Commercial Dashboards", "Branch Network Systems", "KPI Reporting Systems"],
+            methodologies: ["Commercial Strategy", "Incentive Programs", "Sales Analytics", "Stakeholder Management"],
+            reference: { name: "Esteban Adrián González Herrera", role: "Subdirector", phone: "+52 (55) 2271-6090" }
+          },
+          {
+            id: "sct",
+            company: "Secretaría de Comunicaciones y Transportes (SCT)",
+            role: "Deputy Director Legal and Financial",
+            location: "Ciudad de México, México",
+            period: "Abr 2008 – Nov 2009",
+            sector: "Public Sector",
+            summary: "Coordinó proyectos estratégicos de alto impacto, garantizando la alineación entre múltiples entidades gubernamentales y partes interesadas.",
+            responsibilities: [
+              "Monitoreó hitos de proyectos, entregables clave, riesgos e indicadores de desempeño para asegurar su ejecución oportuna.",
+              "Elaboró análisis, reportes ejecutivos y presentaciones para respaldar la toma de decisiones de la alta dirección.",
+              "Colaboró con equipos transversales para optimizar procesos operativos y elevar la calidad de ejecución."
+            ],
+            achievements: [
+              "Alineación y cumplimiento en tiempo de hitos e iniciativas estratégicas del sector infraestructura y comunicaciones."
+            ],
+            technologies: ["Strategic Management Tools", "Executive Reporting Frameworks"],
+            methodologies: ["Project Governance", "Risk Management", "Public Sector Alignment"],
+            reference: { name: "Ricardo Martínez Ferrer", role: "Subdirector de Infraestructura", phone: "+52 (55) 3749-1854" }
+          },
+          {
+            id: "citi",
+            company: "Citibank",
+            role: "Business Support Coordinator",
+            location: "Barcelona, España",
+            period: "Oct 2004 – Feb 2006",
+            sector: "Banking",
+            summary: "Contacto operativo clave para servicios de tarjetas de débito en España y coordinador del equipo de testing durante la migración central de Core Banking.",
+            responsibilities: [
+              "Actuó como contacto operativo principal para servicios de tarjetas de débito, brindando soporte a sucursales en toda España.",
+              "Participó en la planeación y ejecución de campañas de marketing de tarjetas de crédito para fomentar la captación de clientes.",
+              "Coordinó un equipo de 20 testers durante la migración a la nueva plataforma de Core Banking basada en HTML del banco, asegurando estándares de calidad.",
+              "Resolvió bloqueos operativos del equipo de pruebas, minimizando demoras en el cronograma del proyecto."
+            ],
+            achievements: [
+              "Migración exitosa a la nueva plataforma central de Core Banking coordinando activamente a 20 evaluadores sin interrupciones críticas."
+            ],
+            technologies: ["HTML Core Banking Platform", "Debit Card Systems", "Defect Tracking Tools"],
+            methodologies: ["UAT Testing Coordination", "Operational Support", "Defect Management"],
+            scopeAndTeam: "Coordinación directa de 20 testers durante el proyecto de migración."
+          }
+        ],
+        projects: [
+          {
+            id: "p1",
+            title: "Estrategia de Retención \"Azteca Creciente\"",
+            company: "Banco Azteca",
+            sector: "Banca & Retención",
+            tagline: "Mitigación de fuga masiva de capital tras cambio de tasas de interés mediante innovación táctica de producto.",
+            problem: "Tras un ajuste en las tasas de interés de los productos de inversión, el banco comenzó a registrar salidas semanales de capital por aproximadamente MXN $50 Millones, amenazando la base de depósitos.",
+            solution: "Sin presupuesto asignado para una campaña tradicional, se condujo investigación de clientes directamente en sucursales para entender el comportamiento del usuario. Con base en los hallazgos, se diseñó una estrategia de upgrade a tarjeta de débito para la cuenta de inversión 'Azteca Creciente', brindando liquidez y valor transaccional inmediato.",
+            roleContribution: "Lideró el diagnóstico del problema, el research con clientes en sucursal, la conceptualización de la solución de producto, la presentación ejecutiva a comités directivos y la coordinación de implementación.",
+            results: "Reducción de las fugas semanales de MXN $50M a MXN $20M, logrando un 60% de reducción en la pérdida semanal de capital (~MXN $30M semanales salvados para el banco).",
+            metrics: { label: "Reducción de Fuga Semanal", value: "-60%" }
+          },
+          {
+            id: "p2",
+            title: "Lanzamiento End-to-End de 4 Productos Bancarios",
+            company: "Compartamos Banco",
+            sector: "Banca Múltiple & Inclusión",
+            tagline: "Definición, desarrollo y puesta en producción de un portafolio de ahorro, inversión y transaccionales.",
+            problem: "Necesidad de diversificar la oferta financiera de la institución mediante productos estructurados de ahorro, inversión y transaccionales para segmentos masivos y de inclusión.",
+            solution: "Como Product Owner, dirigió todo el ciclo de vida de los 4 productos: desde la formulación de business cases, propuesta de valor y requerimientos funcionales, hasta comités de gobernanza, pruebas UAT y preparación operativa.",
+            roleContribution: "Product Owner integral: gestión directa de 2-3 colaboradores, liderazgo de mesas con Negocio, IT, Operaciones, Legal, Cumplimiento, Riesgos y Finanzas, asegurando aprobación regulatoria.",
+            results: "4 productos bancarios operativos y lanzados exitosamente con cumplimiento normativo total y altos estándares de adopción.",
+            metrics: { label: "Productos Lanzados", value: "4 Productos" }
+          },
+          {
+            id: "p3",
+            title: "Innovación y Discovery de Productos en LATAM",
+            company: "Women’s World Banking",
+            sector: "Consultoría Estratégica & FinTech",
+            tagline: "Proyectos de investigación centrada en el usuario y Design Sprints para Santander, Mercado Pago, Banorte y Azteca.",
+            problem: "Bancos y fintechs líderes en América Latina requerían diseñar o mejorar productos digitales para incrementar la inclusión, adquisición y retención de segmentos clave.",
+            solution: "Facilitación de Design Sprints, talleres de co-creación y sesiones de validación de prototipos con equipos multidisciplinarios basados en la metodología Women-Centered Design.",
+            roleContribution: "Especialista en Business Development: conducción de investigación cualitativa y cuantitativa, articulación de recomendaciones estratégicas y presentación de soluciones a directivos.",
+            results: "Recomendaciones estratégicas y hojas de ruta adoptadas por entidades como Santander, Mercado Pago, Banorte y Banco Azteca.",
+            metrics: { label: "Clientes Clave en LATAM", value: "4 Gigantes" }
+          },
+          {
+            id: "p4",
+            title: "Migración a Plataforma Central de Core Banking",
+            company: "Citibank España",
+            sector: "Banca Internacional & IT",
+            tagline: "Coordinación de pruebas y aseguramiento de calidad en la transición a plataforma bancaria HTML.",
+            problem: "Migración crítica del sistema bancario central de Citibank hacia una nueva plataforma core basada en HTML que demandaba cero errores operativos y estricto cumplimiento de cronograma.",
+            solution: "Coordinación directa de un equipo de 20 testers, resolución ágil de bloqueos operativos, control riguroso de defectos y emisión de informes ejecutivos de estado al Project Manager.",
+            roleContribution: "Coordinador del equipo de pruebas y enlace operativo principal para servicios de tarjetas y plataforma.",
+            results: "Migración completada en tiempo y con los más altos estándares de calidad y continuidad del negocio.",
+            metrics: { label: "Equipo de Testers", value: "20 Personas" }
+          }
+        ],
+        skillGroups: [
+          {
+            category: "Desarrollo de Producto & Estrategia",
+            skills: ["End-to-End Product Development", "Product Strategy", "Product Discovery", "Business Case Development", "Product Roadmap", "Go-to-Market (GTM)", "Agile (Scrum)", "User Acceptance Testing (UAT)", "Value Proposition Design", "Design Sprints"]
+          },
+          {
+            category: "Liderazgo & Desarrollo de Negocios",
+            skills: ["Business Development", "Consultative Selling", "Executive Stakeholder Management", "Cross-functional Leadership", "Commercial Strategy", "Incentive Programs & Sales Campaigns", "Executive Governance", "Client Presentation"]
+          },
+          {
+            category: "Dominio Financiero & Bancario",
+            skills: ["Financial Services", "Banking Operations", "Payment Schemes & Methods", "Debit & Credit Cards", "Savings & Investment Products", "Financial Inclusion", "Regulatory Compliance & Risk", "Transactional Systems"]
+          },
+          {
+            category: "Innovación, Datos & IA",
+            skills: ["AI & Digital Business Development", "Data-Driven Decision Making", "Core Banking Migration", "Market Analysis & Research", "KPI Reporting & Dashboards", "Women-Centered Design", "Digital Transformation"]
+          }
+        ],
+        industries: [
+          { name: "Banca Múltiple & Comercial", institutions: ["Citibank", "Compartamos Banco", "Banco Azteca", "Bansefi", "Santander", "Banorte"], description: "Gestión y desarrollo de productos de ahorro, inversión, crédito y sistemas core bancarios." },
+          { name: "Medios de Pago & Tarjetas", institutions: ["Visa", "Citibank", "Banco Azteca"], description: "Iniciativas estratégicas en productos de pago de consumo, emisión de débito y esquemas transaccionales." },
+          { name: "Inclusión Financiera & FinTech", institutions: ["Women’s World Banking", "Mercado Pago", "Santander", "Banorte"], description: "Customer discovery, design sprints e innovación para ampliar el acceso a servicios financieros." },
+          { name: "Sector Público & Gobernanza", institutions: ["Secretaría de Comunicaciones y Transportes (SCT)"], description: "Coordinación estratégica interinstitucional, gestión de riesgos e indicadores de desempeño." }
+        ],
+        education: [
+          { degree: "AI & Digital Business Development", institution: "Pau Martí | Skool", location: "Online / Especialización Ejecutiva", year: "2026 – En curso (Jul 2027)", honors: "Especialización Avanzada en Inteligencia Artificial y Negocios Digitales" },
+          { degree: "International Business - BA (Hons.)", institution: "Nottingham Trent University", location: "Nottingham, United Kingdom", year: "Jul 2007", honors: "Honours Degree (Grado Universitario con Honores Internacionales)" }
+        ],
+        languages: [
+          { language: "Español", level: "Nativo", score: "Native" },
+          { language: "Inglés", level: "B2 (Competencia Profesional)", score: "B2 Level" },
+          { language: "Alemán", level: "A2 (Básico / Elemental)", score: "A2 Level" }
+        ],
+        recruiterHighlights: [
+          "17+ años de trayectoria en Banca, Medios de Pago e Inclusión Financiera.",
+          "Experiencia comprobada en Visa, Citi, Compartamos, Azteca, Bansefi y consultoría con Santander, Mercado Pago y Banorte.",
+          "Resultados medibles: -60% en fuga de capital (~MXN $30M/sem salvados) y 4 productos bancarios lanzados como Product Owner.",
+          "Especialización actual en Inteligencia Artificial aplicada a FinTech y Negocios Digitales.",
+          "Educación universitaria internacional en el Reino Unido (BA Hons. en Nottingham Trent University)."
+        ]
+      },
+      en: {
+        whyme: [
+          {
+            title: "Proven End-to-End Product Leadership",
+            description: "Full oversight of the product lifecycle: from customer research, business cases, and governance committees to UAT, go-to-market, and post-launch optimization.",
+            evidence: "Product Owner for 4 banking products at Compartamos Banco and key initiatives at Visa and Banco Azteca.",
+            badge: "Product Lifecycle",
+            icon: "layers"
+          },
+          {
+            title: "Measurable Financial & Retention Impact",
+            description: "Analytical mindset able to pinpoint business leakages and implement immediate tactical product solutions without requiring dedicated marketing budgets.",
+            evidence: "Reduced weekly capital outflows by 60% (saving ~MXN $30M/week) for the Azteca Creciente investment account.",
+            badge: "ROI & Metrics",
+            icon: "trending-up"
+          },
+          {
+            title: "Multi-Institutional & Top-Tier Consulting Pedigree",
+            description: "Direct corporate experience in global giants and leading banks, complemented by strategic consulting for major regional FinTech and banking leaders.",
+            evidence: "Engagements with Visa, Citi, Santander, Mercado Pago, Banorte, Compartamos Banco, and Bansefi.",
+            badge: "Financial Ecosystem",
+            icon: "shield-check"
+          },
+          {
+            title: "Human-Centered Innovation & Design Sprints",
+            description: "Facilitating co-creation workshops, rapid prototyping, and customer validation sessions using Women-Centered Design and Agile methodologies.",
+            evidence: "5 years directing innovation and research initiatives across Latin America at Women’s World Banking.",
+            badge: "User Research & Innovation",
+            icon: "users"
+          },
+          {
+            title: "Executive Governance & Cross-Functional Alignment",
+            description: "Natural bridge between C-Suite committees and multidisciplinary teams, aligning technical, commercial, risk, and regulatory priorities.",
+            evidence: "Regularly presents findings and strategic roadmaps to executive leadership across Latin America.",
+            badge: "Executive Governance",
+            icon: "award"
+          },
+          {
+            title: "Future-Proof Tech Vision: Strategy + Data + AI",
+            description: "Continuous dedication to technology modernization, from Core Banking migrations to the integration of Artificial Intelligence into financial services.",
+            evidence: "Specialization in AI & Digital Business Development and BA (Hons.) from Nottingham Trent University (UK).",
+            badge: "AI & Modern Tech",
+            icon: "sparkles"
+          }
+        ],
+        experiences: [
+          {
+            id: "wwb",
+            company: "Women’s World Banking Inc.",
+            role: "Specialist, Business Development",
+            location: "New York / Mexico City",
+            period: "Jan 2020 – Dec 2024",
+            sector: "Financial Inclusion & Consulting",
+            summary: "Led customer research, product discovery, and innovation projects for financial institutions across Latin America using Women-Centered Design methodology.",
+            responsibilities: [
+              "Facilitated Design Sprints, co-creation workshops, and prototype validation sessions with multidisciplinary teams.",
+              "Coordinated end-to-end product development initiatives from customer research through pilot implementation and rollout.",
+              "Conducted qualitative and quantitative research to identify market opportunities and unmet customer needs.",
+              "Developed strategic recommendations based on customer insights, market analysis, and business priorities.",
+              "Presented findings and product recommendations to executive leadership and client organizations."
+            ],
+            achievements: [
+              "Consulting engagements included Santander, Mercado Pago, Banorte, and Banco Azteca, focused on CX and digital products.",
+              "Delivered actionable product roadmaps driving digital adoption and financial inclusion across Latin American markets."
+            ],
+            technologies: ["Design Sprints", "Women-Centered Design", "Customer Discovery Frameworks", "Analytics"],
+            methodologies: ["Agile / Scrum", "Design Thinking", "Co-creation Workshops", "Prototype Validation"],
+            consultingClients: ["Santander", "Mercado Pago", "Banorte", "Banco Azteca"],
+            reference: { name: "Megan D. Baumann", role: "Social-environmental Research", phone: "+1 (312) 771-7512" }
+          },
+          {
+            id: "visa",
+            company: "Visa",
+            role: "Manager, Consumer Products",
+            location: "Mexico City, Mexico",
+            period: "Jul 2019 – Dec 2019",
+            sector: "Payments",
+            summary: "Managed strategic initiatives for Visa consumer payment products in collaboration with issuing financial institutions and internal business units.",
+            responsibilities: [
+              "Coordinated cross-functional teams across Product, Business Development, Operations, Technology, and Commercial areas.",
+              "Collaborated with financial institutions to identify business opportunities and improve adoption of consumer payment solutions.",
+              "Participated in product enhancement initiatives focused on improving customer value proposition and market competitiveness.",
+              "Supported product planning activities including prioritization, implementation tracking, and stakeholder alignment."
+            ],
+            achievements: [
+              "Strengthened issuer alignment and enabled expanded consumer payment use cases across key financial partners in Mexico."
+            ],
+            technologies: ["Payment Schemes", "Consumer Cards", "Issuing Platforms"],
+            methodologies: ["Stakeholder Alignment", "Cross-functional Coordination", "Business Case Validation"],
+            reference: { name: "Erika Granados", role: "Business Development - Payments", phone: "+52 (55) 2962-5761" }
+          },
+          {
+            id: "compartamos",
+            company: "Compartamos Banco S.A. Institución de Banca Múltiple",
+            role: "Product Development Manager",
+            location: "Mexico City, Mexico",
+            period: "Feb 2015 – Jun 2019",
+            sector: "Banking",
+            summary: "Acted as Product Owner for four banking products, defining, coordinating, and supervising the full product-development lifecycle from concept through implementation, launch, and follow-up.",
+            responsibilities: [
+              "Led the end-to-end development of savings, investment, and transactional financial products from concept definition through market launch.",
+              "Defined product strategy, value proposition, business requirements, business cases, feasibility assessments, and implementation plans.",
+              "Led multidisciplinary teams across Business, Technology, Operations, Legal, Compliance, Risk, Finance, and Marketing.",
+              "Directly managed teams of 2–3 people while coordinating larger cross-functional groups across the bank.",
+              "Coordinated solution design, technology development, User Acceptance Testing (UAT), production readiness, and go-to-market activities."
+            ],
+            achievements: [
+              "Successfully brought 4 banking products to market (savings, investments, transactional) with 100% regulatory compliance and strong deposit growth.",
+              "Established robust UAT and governance workflows that accelerated time-to-market without compromising operational security."
+            ],
+            technologies: ["Core Banking Systems", "Transactional Platforms", "Savings & Investment Engines", "UAT Tools"],
+            methodologies: ["Agile / Scrum", "Product Ownership", "Executive Governance", "Regulatory Compliance"],
+            scopeAndTeam: "Direct management of 2–3 team members and leadership over large cross-functional groups.",
+            reference: { name: "Ana Gabriela García Zepeda", role: "Director of Financial Products", phone: "+52 (55) 5402-4518" }
+          },
+          {
+            id: "azteca",
+            company: "Banco Azteca S.A. Institución de Banca Múltiple",
+            role: "Product Manager",
+            location: "Mexico City, Mexico",
+            period: "Jun 2013 – Feb 2015",
+            sector: "Banking",
+            summary: "Managed financial-product performance and customer retention, spearheading high-impact capital loss prevention under zero-budget constraints.",
+            responsibilities: [
+              "Managed financial-product performance and follow-up, identifying strategies to attract and retain customers.",
+              "Led customer research, competitive analysis, and product validation to identify market opportunities and improve CX.",
+              "Defined product strategy, value proposition, functional specifications, and implementation plans.",
+              "Coordinated cross-functional teams across Business, Technology, Operations, Legal, Risk, and Marketing."
+            ],
+            achievements: [
+              "Following an interest-rate change in investment products, identified approximately MXN 50M in weekly outflows. With no dedicated budget, conducted branch research and created debit upgrade strategy for 'Azteca Creciente'.",
+              "The strategy reduced weekly outflows from ~MXN 50M to MXN 20M, achieving a 60% reduction in weekly capital loss (~MXN 30M/week saved).",
+              "Presented findings and recommendations to executive stakeholders and coordinated immediate execution."
+            ],
+            technologies: ["Branch POS & Systems", "Debit Card Issuing", "Investment Accounts Platform", "Retention Analytics"],
+            methodologies: ["Customer Research", "Root-Cause Analysis", "Cross-functional Execution", "Product Enhancement"],
+            reference: { name: "Rosa Ramírez Galindo", role: "Director of Financial Products", phone: "+52 (55) 2128-5522" }
+          },
+          {
+            id: "bansefi",
+            company: "Banco del Ahorro Nacional y Servicios Financieros (Bansefi)",
+            role: "Commercial Strategy Manager",
+            location: "Mexico City, Mexico",
+            period: "Nov 2009 – Jun 2013",
+            sector: "Banking",
+            summary: "Developed nationwide commercial strategies and incentive programs to improve product adoption, customer acquisition, and branch network performance.",
+            responsibilities: [
+              "Designed and executed sales campaigns and incentive programs to improve commercial performance across the nationwide branch network.",
+              "Led strategic initiatives and cross-functional projects supporting the launch and growth of financial products.",
+              "Monitored product KPIs, commercial performance, and sales trends, identifying opportunities to improve results.",
+              "Prepared executive reports and performance dashboards to support strategic decision-making."
+            ],
+            achievements: [
+              "Drove substantial gains in savings product adoption across underserved segments through nationwide branch network campaigns.",
+              "Delivered executive performance dashboards unifying commercial visibility for top leadership."
+            ],
+            technologies: ["Commercial Dashboards", "Branch Network Systems", "KPI Reporting Systems"],
+            methodologies: ["Commercial Strategy", "Incentive Programs", "Sales Analytics", "Stakeholder Management"],
+            reference: { name: "Esteban Adrián González Herrera", role: "Deputy Director", phone: "+52 (55) 2271-6090" }
+          },
+          {
+            id: "sct",
+            company: "Secretaría de Comunicaciones y Transportes (SCT)",
+            role: "Deputy Director Legal and Financial",
+            location: "Mexico City, Mexico",
+            period: "Apr 2008 – Nov 2009",
+            sector: "Public Sector",
+            summary: "Coordinated high-profile strategic initiatives, ensuring rigorous alignment across government departments and external stakeholders.",
+            responsibilities: [
+              "Monitored project milestones, deliverables, risks, and performance indicators to support timely execution.",
+              "Prepared executive reports, presentations, and analyses to support management decision-making.",
+              "Collaborated with cross-functional teams to improve operational processes and project execution."
+            ],
+            achievements: [
+              "Ensured on-time milestone delivery and regulatory adherence across key infrastructure and communications projects."
+            ],
+            technologies: ["Strategic Management Tools", "Executive Reporting Frameworks"],
+            methodologies: ["Project Governance", "Risk Management", "Public Sector Alignment"],
+            reference: { name: "Ricardo Martínez Ferrer", role: "Deputy Director of Infrastructure", phone: "+52 (55) 3749-1854" }
+          },
+          {
+            id: "citi",
+            company: "Citibank",
+            role: "Business Support Coordinator",
+            location: "Barcelona, Spain",
+            period: "Oct 2004 – Feb 2006",
+            sector: "Banking",
+            summary: "Primary operational contact for debit card services across Spain and test team coordinator during the bank’s major Core Banking platform migration.",
+            responsibilities: [
+              "Served as the primary operational contact for debit card services, supporting branch offices across Spain.",
+              "Participated in the planning and execution of credit card marketing campaigns to support product growth.",
+              "Coordinated a team of 20 testers during migration to the bank’s new HTML-based core banking platform.",
+              "Resolved operational issues and removed blockers affecting the testing team, minimizing project delays."
+            ],
+            achievements: [
+              "Flawless cutover to the new HTML-based Core Banking platform with 20 testers managed and zero operational disruption."
+            ],
+            technologies: ["HTML Core Banking Platform", "Debit Card Systems", "Defect Tracking Tools"],
+            methodologies: ["UAT Testing Coordination", "Operational Support", "Defect Management"],
+            scopeAndTeam: "Direct coordination of 20 testers during the Core Banking migration project."
+          }
+        ],
+        projects: [
+          {
+            id: "p1",
+            title: "\"Azteca Creciente\" Capital Retention Strategy",
+            company: "Banco Azteca",
+            sector: "Banking & Retention",
+            tagline: "Mitigating massive weekly capital outflows post-rate shift through agile debit-card product enhancement.",
+            problem: "Following an interest-rate change in investment products, the bank suffered massive weekly outflows of ~MXN $50 Million, threatening core deposits.",
+            solution: "With no marketing budget, conducted branch-level customer research to uncover user intent. Designed and launched a debit-card upgrade strategy for the Azteca Creciente investment account, providing liquidity and immediate transaction value.",
+            roleContribution: "Led root-cause diagnosis, in-branch research, product solution design, executive presentation to leadership, and cross-functional implementation rollout.",
+            results: "Reduced weekly outflows from ~MXN $50M to MXN $20M, securing a 60% reduction in weekly capital losses (~MXN $30M saved per week).",
+            metrics: { label: "Weekly Outflow Reduction", value: "-60%" }
+          },
+          {
+            id: "p2",
+            title: "End-to-End Launch of 4 Banking Products",
+            company: "Compartamos Banco",
+            sector: "Multiple Banking & Inclusion",
+            tagline: "Definition, development, and market delivery of a full portfolio of savings, investment, and transactional products.",
+            problem: "Need to expand the bank’s portfolio by introducing formal savings, investment, and transactional products for microfinance and mass-market clients.",
+            solution: "Served as dedicated Product Owner for the entire lifecycle of 4 products: defining value propositions, business cases, functional specs, leading governance committees, and supervising UAT and rollout.",
+            roleContribution: "Product Owner: managed 2-3 direct reports, led cross-functional tables (Business, IT, Operations, Legal, Risk, Compliance, Finance), ensuring regulatory approval.",
+            results: "4 banking products successfully released to production with 100% regulatory compliance and high customer adoption.",
+            metrics: { label: "Products Launched", value: "4 Products" }
+          },
+          {
+            id: "p3",
+            title: "FinTech & Banking Product Innovation across LATAM",
+            company: "Women’s World Banking",
+            sector: "Strategic Consulting & FinTech",
+            tagline: "Customer-centered discovery and Design Sprints for Santander, Mercado Pago, Banorte, and Azteca.",
+            problem: "Leading financial institutions and fintechs across Latin America sought to redesign digital products to accelerate financial inclusion, customer acquisition, and retention.",
+            solution: "Facilitated Design Sprints, co-creation workshops, and rapid prototype validation sessions using Women-Centered Design frameworks.",
+            roleContribution: "Business Development Specialist: conducted field research, articulated strategic recommendations, and pitched roadmaps to executive leadership.",
+            results: "Delivered strategic roadmaps and actionable product specifications adopted by top institutions including Santander, Mercado Pago, Banorte, and Azteca.",
+            metrics: { label: "Top LATAM Clients", value: "4 Giants" }
+          },
+          {
+            id: "p4",
+            title: "Core Banking Platform Migration",
+            company: "Citibank Spain",
+            sector: "International Banking & IT",
+            tagline: "Testing coordination and quality assurance during the transition to an HTML-based core banking platform.",
+            problem: "Critical migration of Citibank’s core banking architecture across Spain requiring zero downtime and strict adherence to quality benchmarks.",
+            solution: "Coordinated a team of 20 testers, resolved operational bottlenecks in real time, tracked defect resolution, and delivered executive status dashboards.",
+            roleContribution: "Test Team Coordinator and primary operational liaison for card services.",
+            results: "Flawless system migration delivered on schedule with no disruption to daily branch banking operations.",
+            metrics: { label: "Testing Team", value: "20 Testers" }
+          }
+        ],
+        skillGroups: [
+          {
+            category: "Product Development & Strategy",
+            skills: ["End-to-End Product Development", "Product Strategy", "Product Discovery", "Business Case Development", "Product Roadmap", "Go-to-Market (GTM)", "Agile (Scrum)", "User Acceptance Testing (UAT)", "Value Proposition Design", "Design Sprints"]
+          },
+          {
+            category: "Leadership & Business Development",
+            skills: ["Business Development", "Consultative Selling", "Executive Stakeholder Management", "Cross-functional Leadership", "Commercial Strategy", "Incentive Programs & Sales Campaigns", "Executive Governance", "Client Presentation"]
+          },
+          {
+            category: "Banking & Financial Domain",
+            skills: ["Financial Services", "Banking Operations", "Payment Schemes & Methods", "Debit & Credit Cards", "Savings & Investment Products", "Financial Inclusion", "Regulatory Compliance & Risk", "Transactional Systems"]
+          },
+          {
+            category: "Innovation, Data & AI",
+            skills: ["AI & Digital Business Development", "Data-Driven Decision Making", "Core Banking Migration", "Market Analysis & Research", "KPI Reporting & Dashboards", "Women-Centered Design", "Digital Transformation"]
+          }
+        ],
+        industries: [
+          { name: "Commercial & Retail Banking", institutions: ["Citibank", "Compartamos Banco", "Banco Azteca", "Bansefi", "Santander", "Banorte"], description: "Savings, investment, credit products, and core banking system rollouts." },
+          { name: "Payments & Card Schemes", institutions: ["Visa", "Citibank", "Banco Azteca"], description: "Strategic consumer payment initiatives, debit issuance, and value-added payment features." },
+          { name: "Financial Inclusion & Consulting", institutions: ["Women’s World Banking", "Mercado Pago", "Santander", "Banorte"], description: "Customer discovery, design sprints, and digital solutions to widen access to financial services." },
+          { name: "Public Sector & Governance", institutions: ["Ministry of Communications and Transportation (SCT)"], description: "Inter-agency coordination, strategic risk monitoring, and executive governance." }
+        ],
+        education: [
+          { degree: "AI & Digital Business Development", institution: "Pau Martí | Skool", location: "Executive Specialization", year: "2026 – Ongoing (Jul 2027)", honors: "Advanced Specialization in Artificial Intelligence & Digital Business" },
+          { degree: "International Business - BA (Hons.)", institution: "Nottingham Trent University", location: "Nottingham, United Kingdom", year: "Jul 2007", honors: "Honours Degree (International Business)" }
+        ],
+        languages: [
+          { language: "Spanish", level: "Native", score: "Native" },
+          { language: "English", level: "B2 (Professional Working)", score: "B2 Level" },
+          { language: "German", level: "A2 (Elementary)", score: "A2 Level" }
+        ],
+        recruiterHighlights: [
+          "17+ years leading Product Development, Banking, and Payments.",
+          "Direct track record with Visa, Citi, Compartamos, Azteca, Bansefi + consulting for Santander, Mercado Pago, and Banorte.",
+          "Quantifiable impact: -60% weekly capital outflow loss (~MXN $30M/week saved) and 4 banking products launched as Product Owner.",
+          "Actively specializing in AI & Digital Business Development applied to FinTech.",
+          "International degree from the UK: BA (Hons.) in International Business from Nottingham Trent University."
+        ]
+      }
+    };
+
+    let currentLang = 'es';
+    let isDarkMode = false;
+    let expandedExperiences = { wwb: true, compartamos: true, azteca: true };
+    let currentSectorFilter = 'all';
+
+    function initApp() {
+      // Load saved language
+      const savedLang = localStorage.getItem('cv_html_lang');
+      if (savedLang === 'es' || savedLang === 'en') {
+        currentLang = savedLang;
+      }
+      document.getElementById('lang-label').innerText = currentLang.toUpperCase();
+
+      // Load saved theme
+      const savedTheme = localStorage.getItem('cv_html_theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        isDarkMode = true;
+        document.documentElement.classList.add('dark');
+        document.getElementById('theme-icon-sun').classList.remove('hidden');
+        document.getElementById('theme-icon-moon').classList.add('hidden');
+      }
+
+      renderAll();
+      lucide.createIcons();
+    }
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'es' ? 'en' : 'es';
+      localStorage.setItem('cv_html_lang', currentLang);
+      document.getElementById('lang-label').innerText = currentLang.toUpperCase();
+      renderAll();
+      lucide.createIcons();
+    }
+
+    function toggleDarkMode() {
+      isDarkMode = !isDarkMode;
+      if (isDarkMode) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('cv_html_theme', 'dark');
+        document.getElementById('theme-icon-sun').classList.remove('hidden');
+        document.getElementById('theme-icon-moon').classList.add('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('cv_html_theme', 'light');
+        document.getElementById('theme-icon-sun').classList.add('hidden');
+        document.getElementById('theme-icon-moon').classList.remove('hidden');
+      }
+      lucide.createIcons();
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    function celebrate() {
+      try {
+        confetti({
+          particleCount: 50,
+          spread: 60,
+          origin: { y: 0.8 },
+          colors: ['#0284c7', '#38bdf8', '#fbbf24', '#0f172a']
+        });
+      } catch (e) {}
+    }
+
+    function copyToClipboard(text, btnEl) {
+      navigator.clipboard.writeText(text);
+      const originalHTML = btnEl.innerHTML;
+      btnEl.innerHTML = `<i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i><span class="text-emerald-500 text-xs font-bold">¡Copiado!</span>`;
+      lucide.createIcons();
+      setTimeout(() => {
+        btnEl.innerHTML = originalHTML;
+        lucide.createIcons();
+      }, 2000);
+    }
+
+    function renderAll() {
+      const data = CV_DATA[currentLang];
+
+      // Update static data-i18n elements if needed
+      // 1. Why Me
+      const whyMeContainer = document.getElementById('whyme-grid');
+      whyMeContainer.innerHTML = data.whyme.map((item, idx) => `
+        <div class="group rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 sm:p-7 shadow-xs hover:shadow-lg hover:border-sky-300 dark:hover:border-sky-700 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="p-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 shadow-xs text-sky-500 group-hover:scale-110 transition-transform">
+                <i data-lucide="${item.icon}" class="w-5 h-5"></i>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-sky-100 dark:bg-sky-950/80 text-sky-800 dark:text-sky-300 border border-sky-200 dark:border-sky-800">
+                ${item.badge}
+              </span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white leading-snug group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+              ${item.title}
+            </h3>
+            <p class="mt-2.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              ${item.description}
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200/80 dark:border-slate-800 flex items-start gap-2 text-xs">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+            <span class="text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
+              <strong class="text-slate-900 dark:text-white font-semibold">${currentLang === 'es' ? 'Evidencia real:' : 'Verified evidence:'} </strong>
+              ${item.evidence}
+            </span>
+          </div>
+        </div>
+      `).join('');
+
+      // 2. Experience Timeline
+      renderExperience();
+
+      // 3. Projects
+      const projectsContainer = document.getElementById('projects-grid');
+      projectsContainer.innerHTML = data.projects.map(p => `
+        <div class="group rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 sm:p-7 shadow-xs hover:shadow-xl hover:border-sky-400 dark:hover:border-sky-600 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300 border border-sky-200 dark:border-sky-800">
+                ${p.sector}
+              </span>
+              <span class="text-xs font-bold text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                <i data-lucide="building-2" class="w-3.5 h-3.5 text-sky-500"></i>
+                ${p.company}
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+              ${p.title}
+            </h3>
+            <p class="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              ${p.tagline}
+            </p>
+            ${p.metrics ? `
+              <div class="mt-4 p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 flex items-center justify-between">
+                <span class="text-xs font-semibold text-emerald-900 dark:text-emerald-300">${p.metrics.label}</span>
+                <span class="text-base font-black text-emerald-700 dark:text-emerald-400">${p.metrics.value}</span>
+              </div>
+            ` : ''}
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200/80 dark:border-slate-800">
+            <button onclick="openProjectModal('${p.id}')" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs text-sky-700 dark:text-sky-300 bg-sky-50 dark:bg-sky-950/60 hover:bg-sky-100 dark:hover:bg-sky-900/60 border border-sky-200 dark:border-sky-800 transition-colors cursor-pointer">
+              <span>${currentLang === 'es' ? 'Ver Caso de Negocio' : 'View Business Case'}</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+      `).join('');
+
+      // 4. Skills Matrix
+      const skillsContainer = document.getElementById('skills-grid');
+      skillsContainer.innerHTML = data.skillGroups.map((group, idx) => `
+        <div class="rounded-2xl p-6 sm:p-7 border ${idx === 0 ? 'bg-white dark:bg-slate-800/90 border-sky-300 dark:border-sky-700/80 shadow-md ring-1 ring-sky-400/20' : 'bg-white dark:bg-slate-800/80 border-slate-200 dark:border-slate-700/80 shadow-xs'}">
+          <div class="flex items-center justify-between mb-5">
+            <div class="flex items-center gap-3">
+              <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/60 border border-slate-100 dark:border-slate-700 shadow-xs text-sky-500">
+                <i data-lucide="layers" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">${group.category}</h3>
+                <span class="text-xs text-slate-500 dark:text-slate-400">${group.skills.length} ${currentLang === 'es' ? 'habilidades clave' : 'key capabilities'}</span>
+              </div>
+            </div>
+            ${idx === 0 ? `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300 border border-sky-200 dark:border-sky-800">Core Focus</span>` : ''}
+          </div>
+          <div class="flex flex-wrap gap-2">
+            ${group.skills.map(s => `
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-50 dark:bg-slate-900/80 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-sky-400 dark:hover:border-sky-600 transition-all cursor-default">
+                <i data-lucide="check-circle-2" class="w-3 h-3 text-sky-500 shrink-0"></i>
+                <span>${s}</span>
+              </span>
+            `).join('')}
+          </div>
+        </div>
+      `).join('');
+
+      // 5. Industries
+      const indContainer = document.getElementById('industries-grid');
+      indContainer.innerHTML = data.industries.map(ind => `
+        <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 flex flex-col justify-between shadow-xs hover:shadow-md hover:border-sky-300 dark:hover:border-sky-700 transition-all">
+          <div>
+            <div class="p-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 w-fit mb-4 shadow-xs text-sky-500">
+              <i data-lucide="landmark" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white leading-snug">${ind.name}</h3>
+            <p class="mt-2 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">${ind.description}</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200/80 dark:border-slate-800">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-2">${currentLang === 'es' ? 'Instituciones Clave' : 'Key Institutions'}</span>
+            <div class="flex flex-wrap gap-1.5">
+              ${ind.institutions.map(inst => `
+                <span class="px-2 py-0.5 rounded-md text-[11px] font-semibold bg-sky-50 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200/80 dark:border-sky-800">${inst}</span>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      // 6. Education
+      const eduContainer = document.getElementById('education-list');
+      eduContainer.innerHTML = data.education.map(edu => `
+        <div class="p-5 rounded-xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-700 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300 border border-sky-200 dark:border-sky-800">
+              ${edu.year}
+            </span>
+            <span class="text-xs font-semibold text-slate-500 dark:text-slate-400 flex items-center gap-1">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+              ${edu.location}
+            </span>
+          </div>
+          <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">${edu.degree}</h4>
+          <p class="text-sm font-bold text-sky-600 dark:text-sky-400">${edu.institution}</p>
+          ${edu.honors ? `
+            <p class="text-xs text-slate-600 dark:text-slate-400 pt-2 border-t border-slate-200/60 dark:border-slate-800 flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-500 shrink-0"></i>
+              <span>${edu.honors}</span>
+            </p>
+          ` : ''}
+        </div>
+      `).join('');
+
+      // 7. Languages
+      const langContainer = document.getElementById('languages-list');
+      langContainer.innerHTML = data.languages.map(l => `
+        <div class="flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-700">
+          <div class="flex items-center gap-3">
+            <div class="w-2.5 h-2.5 rounded-full bg-sky-500"></div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white">${l.language}</h4>
+              <span class="text-xs text-slate-500 dark:text-slate-400">${l.level}</span>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
+            ${l.score}
+          </span>
+        </div>
+      `).join('');
+
+      // 8. Recruiter Modal Content
+      const rmHighlights = document.getElementById('rm-highlights-grid');
+      rmHighlights.innerHTML = data.recruiterHighlights.map(h => `
+        <div class="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+          <span class="text-slate-700 dark:text-slate-200">${h}</span>
+        </div>
+      `).join('');
+
+      const rmRoles = document.getElementById('rm-roles-list');
+      rmRoles.innerHTML = data.experiences.map(e => `
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
+          <div>
+            <span class="font-bold text-slate-900 dark:text-white text-sm">${e.role}</span>
+            <div class="text-slate-600 dark:text-slate-300 font-semibold flex items-center gap-1.5 mt-0.5">
+              <i data-lucide="building-2" class="w-3 h-3 text-sky-500"></i>
+              <span>${e.company}</span>
+              <span class="text-slate-400 font-normal">(${e.location})</span>
+            </div>
+          </div>
+          <span class="text-xs font-semibold text-slate-500 dark:text-slate-400 font-mono">${e.period}</span>
+        </div>
+      `).join('');
+    }
+
+    function filterExperience(sector) {
+      currentSectorFilter = sector;
+      document.querySelectorAll('.exp-filter-btn').forEach(btn => {
+        if (btn.dataset.sector === sector) {
+          btn.classList.add('bg-sky-600', 'text-white');
+          btn.classList.remove('bg-white', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+        } else {
+          btn.classList.remove('bg-sky-600', 'text-white');
+          btn.classList.add('bg-white', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+        }
+      });
+      renderExperience();
+      lucide.createIcons();
+    }
+
+    function toggleAllExperiences(shouldExpand) {
+      const data = CV_DATA[currentLang];
+      data.experiences.forEach(e => {
+        expandedExperiences[e.id] = shouldExpand;
+      });
+      renderExperience();
+      lucide.createIcons();
+    }
+
+    function toggleExpCard(id) {
+      expandedExperiences[id] = !expandedExperiences[id];
+      renderExperience();
+      lucide.createIcons();
+    }
+
+    function renderExperience() {
+      const data = CV_DATA[currentLang];
+      const filtered = currentSectorFilter === 'all' 
+        ? data.experiences 
+        : data.experiences.filter(e => e.sector === currentSectorFilter);
+
+      const expContainer = document.getElementById('experience-timeline');
+      expContainer.innerHTML = filtered.map(exp => {
+        const isExp = !!expandedExperiences[exp.id];
+        return `
+          <div class="relative group">
+            <div class="absolute -left-[35px] sm:-left-[51px] top-4 w-7 h-7 rounded-full bg-white dark:bg-slate-900 border-2 border-sky-500 text-sky-600 dark:text-sky-400 flex items-center justify-center shadow-xs group-hover:scale-110 group-hover:bg-sky-500 group-hover:text-white transition-all">
+              <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
+            </div>
+
+            <div class="rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700/80 shadow-xs hover:shadow-md transition-all overflow-hidden">
+              <div onclick="toggleExpCard('${exp.id}')" class="p-6 cursor-pointer hover:bg-slate-50/70 dark:hover:bg-slate-700/40 transition-colors">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div>
+                    <div class="flex flex-wrap items-center gap-2">
+                      <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300 border border-sky-200 dark:border-sky-800">${exp.sector}</span>
+                      <span class="text-xs font-medium text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                        <i data-lucide="calendar" class="w-3 h-3 text-slate-400"></i>
+                        ${exp.period}
+                      </span>
+                    </div>
+                    <h3 class="mt-2 text-xl font-bold text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">${exp.role}</h3>
+                    <div class="flex flex-wrap items-center gap-3 mt-1 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                      <span class="flex items-center gap-1.5 text-sky-600 dark:text-sky-400">
+                        <i data-lucide="building-2" class="w-4 h-4"></i>
+                        ${exp.company}
+                      </span>
+                      <span class="text-slate-300 dark:text-slate-600">•</span>
+                      <span class="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400 font-normal">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                        ${exp.location}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-2 self-start sm:self-center mt-3 sm:mt-0">
+                    <span class="text-xs font-semibold text-sky-600 dark:text-sky-400 hidden sm:inline">${isExp ? (currentLang === 'es' ? 'Ocultar detalles' : 'Hide details') : (currentLang === 'es' ? 'Ver detalles y logros' : 'View details & impact')}</span>
+                    <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+                      <i data-lucide="${isExp ? 'chevron-up' : 'chevron-down'}" class="w-4 h-4"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">${exp.summary}</p>
+
+                ${exp.consultingClients ? `
+                  <div class="mt-3 flex flex-wrap items-center gap-1.5">
+                    <span class="text-xs font-bold text-slate-500 dark:text-slate-400 mr-1">${currentLang === 'es' ? 'Clientes de Consultoría:' : 'Consulting Clients:'}</span>
+                    ${exp.consultingClients.map(c => `
+                      <span class="px-2 py-0.5 rounded-md text-[11px] font-semibold bg-emerald-50 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">${c}</span>
+                    `).join('')}
+                  </div>
+                ` : ''}
+              </div>
+
+              ${isExp ? `
+                <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-700/60 bg-slate-50/50 dark:bg-slate-900/40 space-y-5 animate-in fade-in duration-200">
+                  ${exp.achievements ? `
+                    <div>
+                      <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5 mb-2.5">
+                        <i data-lucide="trending-up" class="w-3.5 h-3.5 text-emerald-500"></i>
+                        <span>${currentLang === 'es' ? 'Logros Clave y Resultados' : 'Key Achievements & Outcomes'}</span>
+                      </h4>
+                      <div class="space-y-2">
+                        ${exp.achievements.map(ach => `
+                          <div class="flex items-start gap-2.5 p-3 rounded-xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-200/80 dark:border-emerald-900/60 text-xs sm:text-sm text-emerald-950 dark:text-emerald-200 font-medium">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5"></i>
+                            <span>${ach}</span>
+                          </div>
+                        `).join('')}
+                      </div>
+                    </div>
+                  ` : ''}
+
+                  <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5 mb-2.5">
+                      <i data-lucide="layers" class="w-3.5 h-3.5 text-sky-500"></i>
+                      <span>${currentLang === 'es' ? 'Responsabilidades Principales' : 'Key Responsibilities'}</span>
+                    </h4>
+                    <ul class="space-y-2">
+                      ${exp.responsibilities.map(r => `
+                        <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                          <span class="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 shrink-0"></span>
+                          <span>${r}</span>
+                        </li>
+                      `).join('')}
+                    </ul>
+                  </div>
+
+                  ${exp.scopeAndTeam ? `
+                    <div class="p-3 rounded-xl bg-sky-50/60 dark:bg-sky-950/30 border border-sky-100 dark:border-sky-900 text-xs text-sky-900 dark:text-sky-200 flex items-center gap-2">
+                      <i data-lucide="users" class="w-4 h-4 text-sky-600 dark:text-sky-400 shrink-0"></i>
+                      <span><strong>${currentLang === 'es' ? 'Alcance & Liderazgo:' : 'Scope & Leadership:'}</strong> ${exp.scopeAndTeam}</span>
+                    </div>
+                  ` : ''}
+
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t border-slate-200/60 dark:border-slate-800 text-xs">
+                    <div>
+                      <span class="font-bold text-slate-700 dark:text-slate-300 block mb-2 flex items-center gap-1.5">
+                        <i data-lucide="wrench" class="w-3.5 h-3.5 text-slate-400"></i>
+                        ${currentLang === 'es' ? 'Tecnologías y Plataformas' : 'Technologies & Systems'}
+                      </span>
+                      <div class="flex flex-wrap gap-1.5">
+                        ${exp.technologies.map(tech => `
+                          <span class="px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-[11px] font-medium">${tech}</span>
+                        `).join('')}
+                      </div>
+                    </div>
+                    <div>
+                      <span class="font-bold text-slate-700 dark:text-slate-300 block mb-2 flex items-center gap-1.5">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-slate-400"></i>
+                        ${currentLang === 'es' ? 'Metodologías y Gestión' : 'Methodologies & Leadership'}
+                      </span>
+                      <div class="flex flex-wrap gap-1.5">
+                        ${exp.methodologies.map(meth => `
+                          <span class="px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-[11px] font-medium">${meth}</span>
+                        `).join('')}
+                      </div>
+                    </div>
+                  </div>
+
+                  ${exp.reference ? `
+                    <div class="pt-3 border-t border-slate-200/60 dark:border-slate-800 flex items-center justify-between flex-wrap gap-2 text-xs text-slate-500 dark:text-slate-400">
+                      <div class="flex items-center gap-1.5">
+                        <i data-lucide="user-check" class="w-3.5 h-3.5 text-sky-500"></i>
+                        <span><strong>${currentLang === 'es' ? 'Referencia Profesional en CV:' : 'CV Reference:'}</strong> ${exp.reference.name} (${exp.reference.role})</span>
+                      </div>
+                      <div class="flex items-center gap-1 text-slate-600 dark:text-slate-300 font-mono">
+                        <i data-lucide="phone" class="w-3 h-3"></i>
+                        <span>${exp.reference.phone}</span>
+                      </div>
+                    </div>
+                  ` : ''}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Modal Handlers
+    function openRecruiterModal() {
+      document.getElementById('recruiter-modal').classList.remove('hidden');
+      document.getElementById('recruiter-modal').classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeRecruiterModal() {
+      document.getElementById('recruiter-modal').classList.add('hidden');
+      document.getElementById('recruiter-modal').classList.remove('flex');
+      document.body.style.overflow = 'unset';
+    }
+
+    function openProjectModal(id) {
+      const data = CV_DATA[currentLang];
+      const proj = data.projects.find(p => p.id === id);
+      if (!proj) return;
+
+      document.getElementById('pm-sector').innerText = proj.sector;
+      document.getElementById('pm-company').innerText = proj.company;
+      document.getElementById('pm-title').innerText = proj.title;
+      document.getElementById('pm-tagline').innerText = proj.tagline;
+
+      const metricBox = document.getElementById('pm-metrics-box');
+      if (proj.metrics) {
+        metricBox.classList.remove('hidden');
+        metricBox.classList.add('flex');
+        document.getElementById('pm-metric-label').innerText = proj.metrics.label;
+        document.getElementById('pm-metric-val').innerText = proj.metrics.value;
+      } else {
+        metricBox.classList.add('hidden');
+      }
+
+      document.getElementById('pm-problem').innerText = proj.problem;
+      document.getElementById('pm-solution').innerText = proj.solution;
+      document.getElementById('pm-role').innerText = proj.roleContribution;
+      document.getElementById('pm-results').innerText = proj.results;
+
+      document.getElementById('project-modal').classList.remove('hidden');
+      document.getElementById('project-modal').classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeProjectModal() {
+      document.getElementById('project-modal').classList.add('hidden');
+      document.getElementById('project-modal').classList.remove('flex');
+      document.body.style.overflow = 'unset';
+    }
+
+    // Escape listener for modals
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeRecruiterModal();
+        closeProjectModal();
+      }
+    });
+
+    // Run on load
+    document.addEventListener('DOMContentLoaded', initApp);
+  </script>
+</body>
+</html>
