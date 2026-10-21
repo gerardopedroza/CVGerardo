@@ -2,12 +2,17 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Gerardo Pedroza | Desarrollo de Negocios y Servicios Financieros',
-  description: 'CV y portfolio de Gerardo Pedroza: 17+ años en servicios financieros, banca, pagos y desarrollo de negocios B2B. Experiencia en prospección, clientes, propuestas y consultoría con Banorte, Mercado Pago, Banco Azteca y Santander.',
+  title: 'Gerardo Pedroza | Senior Business Development Manager - Financial Services',
+  description: 'CV y portfolio de Gerardo Pedroza: 17+ años en banca y servicios financieros, con experiencia en desarrollo de negocios B2B, apertura de oportunidades, asesoría consultiva, propuestas y coordinación multidisciplinaria.',
   keywords: [
     'Gerardo Pedroza',
     'Senior Business Development Manager',
     'Business Development',
+    'B2B Sales',
+    'Market Development',
+    'Financial Services',
+    'Strategic Account Management',
+    'Consultative Selling',
     'Client Relationship Management',
     'Banking',
     'Payments',
@@ -30,8 +35,8 @@ export const metadata: Metadata = {
     locale: 'es_MX',
     alternateLocale: 'en_US',
     url: 'https://gerardopedroza.com',
-    title: 'Gerardo Pedroza | Executive Digital CV & Portfolio',
-    description: '17+ años en servicios financieros y desarrollo de negocios B2B en México y América Latina.',
+    title: 'Gerardo Pedroza | Senior Business Development Manager',
+    description: '17+ años en banca y servicios financieros: prospección B2B, desarrollo de mercado, propuestas consultivas y coordinación de iniciativas en América Latina.',
     siteName: 'Gerardo Pedroza - Portfolio Profesional',
   },
   robots: {

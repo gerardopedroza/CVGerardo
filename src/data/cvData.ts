@@ -4,6 +4,7 @@ export interface ExperienceItem {
   role: string;
   location: string;
   period: string;
+  transitionNote?: string;
   startDate: string;
   endDate: string;
   sector: 'Banking' | 'Payments' | 'Financial Inclusion & Consulting' | 'Public Sector';
@@ -96,8 +97,8 @@ export interface ProfileData {
 export const cvData = {
   es: {
     name: 'Gerardo Pedroza',
-    headline: "Profesional de Desarrollo de Negocios y Servicios Financieros",
-    subheadline: "17+ años en banca, pagos, inclusión financiera y transformación digital; experiencia en estrategia, productos y liderazgo de iniciativas de discovery a implementación y lanzamiento.",
+    headline: "Gerente Senior de Desarrollo de Negocios | Servicios Financieros",
+    subheadline: "17+ años en banca y servicios financieros: desarrollo de oportunidades B2B, expansión de mercado, asesoría consultiva y coordinación de iniciativas desde el discovery hasta su implementación.",
     location: 'Ciudad de México, México',
     email: 'gerardo.p.corral@gmail.com',
     phone: '+52 55 5951 8935',
@@ -128,13 +129,13 @@ export const cvData = {
         "description": "Banorte, Mercado Pago, Banco Azteca y Santander."
     }
 ],
-    executiveSummary: "Profesional de desarrollo de negocios y servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Identifica retos de clientes y de negocio, desarrolla estrategias y coordina equipos multidisciplinarios desde el discovery hasta la implementación y el lanzamiento. Ha trabajado directamente en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking y la Secretaría de Comunicaciones y Transportes, además de participar en proyectos para Santander, Mercado Pago y Banorte. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
+    executiveSummary: "Gerente senior de desarrollo de negocios y profesional de servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Su experiencia combina prospección B2B, identificación de necesidades y oportunidades en instituciones financieras, desarrollo y presentación de propuestas, seguimiento comercial y coordinación con equipos multidisciplinarios para llevar iniciativas desde el discovery hasta pilotos e implementación. Ha trabajado en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking y la Secretaría de Comunicaciones y Transportes, además de participar en proyectos para Santander, Mercado Pago y Banorte. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
     aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
     whyMe: [
     {
         "title": "Desarrollo de Negocios B2B",
-        "description": "Prospección, identificación de oportunidades y seguimiento comercial en servicios financieros.",
-        "evidence": "Reuniones con clientes, evaluación de necesidades y desarrollo de propuestas.",
+        "description": "Prospección, identificación de oportunidades y desarrollo de mercado en servicios financieros.",
+        "evidence": "Reuniones con instituciones financieras, evaluación de necesidades, propuestas y seguimiento comercial.",
         "badge": "Business Development"
     },
     {
@@ -179,20 +180,20 @@ export const cvData = {
         endDate: '2024-12',
         sector: 'Financial Inclusion & Consulting',
         summary:
-          'Lideró proyectos de investigación de clientes, product discovery e innovación para instituciones financieras en América Latina, y contribuyó al desarrollo de negocios y a iniciativas de producto desde el discovery hasta pilotos y despliegues.',
+          'Contribuyó a abrir y desarrollar oportunidades con instituciones financieras y fintechs en América Latina. Lideró proyectos de investigación de clientes, product discovery e innovación, y llevó iniciativas desde el discovery hasta pilotos y despliegues.',
         responsibilities: [
-          'Lideró customer research, product discovery y proyectos de innovación para identificar necesidades de clientes y oportunidades de negocio.',
+          'Identificó necesidades y oportunidades comerciales en instituciones financieras y fintechs mediante prospección, análisis de mercado y reuniones con clientes, contribuyendo a la apertura de mercado en América Latina.',
+          'Desarrolló propuestas consultivas y dio seguimiento comercial a oportunidades de negocio; presentó hallazgos y recomendaciones a clientes y líderes ejecutivos.',
+          'Coordinó iniciativas desde discovery hasta pilotos y rollout con equipos de Producto, Operaciones, Tecnología y Marketing.',
+          'Lideró customer research, product discovery y proyectos de innovación para entender necesidades de clientes y orientar oportunidades de productos digitales.',
           'Facilitó Design Sprints, talleres de co-creación y sesiones de validación de prototipos con equipos multidisciplinarios, usando prácticas de Women-Centered Design.',
           'Desarrolló recomendaciones estratégicas basadas en insights de clientes, investigación cualitativa y cuantitativa, análisis de mercado y prioridades del negocio.',
-          'Presentó hallazgos y recomendaciones de producto a equipos cliente y liderazgo ejecutivo.',
-          'Coordinó iniciativas desde discovery hasta implementación piloto y rollout, colaborando con Producto, Operaciones, Tecnología y Marketing.',
-          'Participó en reuniones con clientes, preparación de propuestas y seguimiento comercial para oportunidades de desarrollo de negocios.',
-          'Apoyó a Banorte en identificar mejoras para su app móvil; las recomendaciones contribuyeron a mejorar la comunicación con clientes.',
+          'Apoyó a Banorte a identificar oportunidades para mejorar la experiencia de usuario (UX) y la comunicación en su app móvil.',
           'Contribuyó al análisis de adopción de crédito en Mercado Pago, incluida una nueva estrategia y calendario de comunicación.',
-          'Apoyó a Santander en analizar percepciones de clientes sobre su app móvil e identificar puntos de dolor.',
+          'Apoyó a Santander a analizar percepciones de clientes sobre su app móvil e identificar oportunidades de mejora en UX.',
         ],
         achievements: [
-          'Participó en consultorías para Santander, Mercado Pago, Banorte y Banco Azteca, enfocadas en experiencia de cliente, productos digitales y oportunidades de negocio.'
+          'Participó en consultorías para Santander, Mercado Pago, Banorte y Banco Azteca, enfocadas en UX, productos digitales y oportunidades de negocio.'
           
         ],
         technologies: ['Salesforce', 'HIVE', 'Financial Services', 'Digital Banking'],
@@ -210,6 +211,7 @@ export const cvData = {
         role: 'Manager, Consumer Products',
         location: 'Ciudad de México, México',
         period: 'Jul 2019 – Dic 2019',
+        transitionNote: 'Después aceptó una oportunidad en Women’s World Banking, una organización internacional que apoya a instituciones financieras; su trabajo se enfocó en América Latina.',
         startDate: '2019-07',
         endDate: '2019-12',
         sector: 'Payments',
@@ -237,6 +239,7 @@ export const cvData = {
         role: 'Product Development Manager',
         location: 'Ciudad de México, México',
         period: 'Feb 2015 – Jun 2019',
+        transitionNote: 'Después aceptó una oportunidad en Visa para gestionar productos de pago de consumo.',
         startDate: '2015-02',
         endDate: '2019-06',
         sector: 'Banking',
@@ -270,6 +273,7 @@ export const cvData = {
         role: 'Product Manager',
         location: 'Ciudad de México, México',
         period: 'Jun 2013 – Feb 2015',
+        transitionNote: 'Su jefa en Banco Azteca lo invitó a incorporarse a Compartamos Banco para liderar el desarrollo de productos.',
         startDate: '2013-06',
         endDate: '2015-02',
         sector: 'Banking',
@@ -301,6 +305,7 @@ export const cvData = {
         role: 'Commercial Strategy Manager',
         location: 'Ciudad de México, México',
         period: 'Nov 2009 – Jun 2013',
+        transitionNote: 'Aceptó la oportunidad de liderar los productos de inversión en Banco Azteca.',
         startDate: '2009-11',
         endDate: '2013-06',
         sector: 'Banking',
@@ -426,20 +431,20 @@ export const cvData = {
       },
       {
         id: 'proj-wwb-consulting',
-        title: 'Investigación de Clientes, Product Discovery e Innovación en LATAM',
+        title: 'Desarrollo de Negocios y Expansión de Oportunidades en LATAM',
         company: 'Women’s World Banking',
         sector: 'Consultoría Estratégica & Fintech',
-        tagline: 'Investigación de clientes, co-creación y validación de prototipos para instituciones financieras de América Latina.',
+        tagline: 'Prospección, identificación de oportunidades y propuestas consultivas para instituciones financieras de América Latina.',
         problem:
-          'Bancos y fintechs líderes en América Latina requerían diseñar o mejorar productos digitales para incrementar la inclusión, adquisición y retención de segmentos clave.',
+          'Instituciones financieras y fintechs buscaban identificar necesidades de mercado y convertir oportunidades de negocio en iniciativas de producto y servicios digitales.',
         solution:
-          'Lideró customer research y product discovery; facilitó Design Sprints, talleres de co-creación y validación de prototipos para convertir insights de clientes y análisis de mercado en recomendaciones estratégicas.',
+          'Contribuyó a abrir y desarrollar oportunidades mediante prospección, reuniones con clientes, análisis de necesidades, desarrollo de propuestas y seguimiento comercial. Complementó este trabajo con customer research, product discovery, Design Sprints y validación de prototipos.',
         roleContribution:
-          'Especialista en Business Development: presentó hallazgos a clientes y liderazgo ejecutivo y coordinó iniciativas desde discovery hasta pilotos y rollout con equipos de Producto, Operaciones, Tecnología y Marketing.',
+          'Especialista en Business Development: presentó propuestas y recomendaciones a clientes y liderazgo ejecutivo y coordinó iniciativas desde discovery hasta pilotos y rollout con equipos de Producto, Operaciones, Tecnología y Marketing.',
         technologies: ['Servicios financieros', 'Banca digital', 'Salesforce', 'HIVE'],
         methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Qualitative & Quantitative Research'],
         results:
-          'Consultorías para Santander, Mercado Pago, Banorte y Banco Azteca sobre experiencia de cliente, productos digitales y oportunidades de negocio; incluyeron análisis de adopción de crédito y de experiencia en apps móviles.',
+          'Consultorías para Santander, Mercado Pago, Banorte y Banco Azteca sobre UX, productos digitales y oportunidades de negocio; incluyeron análisis de adopción de crédito y de experiencia en apps móviles.',
         metrics: {
           label: 'Instituciones Cliente',
           value: '4 en LATAM',
@@ -554,9 +559,9 @@ export const cvData = {
     recruiterSummary: {
     "title": "Perfil para selección",
     "keyHighlights": [
-        "17+ años en servicios financieros, banca y desarrollo de negocios.",
-        "Desarrollo de negocios B2B: prospección, reuniones, propuestas y seguimiento comercial.",
-        "Lideró investigación de clientes, product discovery e innovación; presentó recomendaciones a liderazgo ejecutivo.",
+         "17+ años en banca y servicios financieros, con experiencia en desarrollo de negocios B2B y expansión de oportunidades.",
+         "Prospección, identificación de necesidades, propuestas consultivas y seguimiento comercial con instituciones financieras.",
+         "En Women’s World Banking contribuyó a abrir y desarrollar oportunidades en América Latina y coordinó iniciativas con equipos multidisciplinarios.",
         "Redujo 60% las salidas semanales de una cuenta de inversión en Banco Azteca en tres semanas, sin inversión adicional.",
         "Proficiente en Salesforce y HIVE; coordinó 20 testers durante una migración de core bancario."
     ],
@@ -608,6 +613,7 @@ export const cvData = {
         methodologiesTitle: 'Metodologías y Gestión',
         clientsTitle: 'Clientes de Consultoría',
         referenceTitle: 'Referencia Profesional en CV',
+        transitionTitle: 'Motivo de transición',
       },
       projects: {
         title: 'Proyectos Destacados',
@@ -664,8 +670,8 @@ export const cvData = {
   },
   en: {
     name: 'Gerardo Pedroza',
-    headline: "Business Development and Financial Services Professional",
-    subheadline: "17+ years across banking, payments, financial inclusion, and digital transformation; experienced in strategy, products, and leading initiatives from discovery through implementation and launch.",
+    headline: "Senior Business Development Manager | Financial Services",
+    subheadline: "17+ years in banking and financial services: B2B opportunity development, market expansion, consultative client work, and cross-functional coordination from discovery through implementation.",
     location: 'Mexico City, Mexico',
     email: 'gerardo.p.corral@gmail.com',
     phone: '+52 55 5951 8935',
@@ -696,13 +702,13 @@ export const cvData = {
         "description": "Banorte, Mercado Pago, Banco Azteca, and Santander."
     }
 ],
-    executiveSummary: "Business development and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Identifies customer and business problems, develops strategies, and leads multidisciplinary teams from discovery through implementation and launch. Direct experience includes Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking, and Mexico’s Secretariat of Communications and Transportation (SCT), alongside consulting engagements for Santander, Mercado Pago, and Banorte. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
+    executiveSummary: "Senior business development manager and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Experience includes B2B prospecting, identifying needs and opportunities at financial institutions, developing and presenting proposals, commercial follow-up, and coordinating multidisciplinary teams to move initiatives from discovery through pilots and implementation. Worked at Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking, and Mexico’s Secretariat of Communications and Transportation (SCT), as well as on engagements for Santander, Mercado Pago, and Banorte. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
     aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
     whyMe: [
     {
         "title": "B2B Business Development",
-        "description": "Prospecting, opportunity identification, and commercial follow-up in financial services.",
-        "evidence": "Client meetings, needs assessment, and proposal development.",
+        "description": "Prospecting, opportunity identification, and market development in financial services.",
+        "evidence": "Financial institution meetings, needs assessment, proposals, and commercial follow-up.",
         "badge": "Business Development"
     },
     {
@@ -747,20 +753,20 @@ export const cvData = {
         endDate: '2024-12',
         sector: 'Financial Inclusion & Consulting',
         summary:
-          'Led customer research, product discovery, and innovation projects for financial institutions across Latin America, contributing to business development and product initiatives from discovery through pilots and rollout.',
+          'Contributed to opening and developing opportunities with financial institutions and fintechs across Latin America. Led customer research, product discovery, and innovation projects, moving initiatives from discovery through pilots and rollout.',
         responsibilities: [
-          'Led customer research, product discovery, and innovation projects to identify customer needs and business opportunities.',
+          'Identified commercial needs and opportunities at financial institutions and fintechs through prospecting, market analysis, and client meetings, contributing to market development across Latin America.',
+          'Developed consultative proposals and followed up on business opportunities; presented findings and recommendations to clients and executive leaders.',
+          'Coordinated initiatives from discovery through pilots and rollout with Product, Operations, Technology, and Marketing teams.',
+          'Led customer research, product discovery, and innovation projects to understand customer needs and inform digital product opportunities.',
           'Facilitated Design Sprints, co-creation workshops, and prototype validation sessions with multidisciplinary teams, using Women-Centered Design practices.',
           'Developed strategic recommendations based on customer insights, qualitative and quantitative research, market analysis, and business priorities.',
-          'Presented findings and product recommendations to client organizations and executive leadership.',
-          'Coordinated initiatives from discovery through pilot implementation and rollout, working across Product, Operations, Technology, and Marketing.',
-          'Participated in client meetings, proposal development, and commercial follow-up for business development opportunities.',
-          'Supported Banorte in identifying mobile app improvement opportunities; recommendations contributed to improved customer communication.',
+          'Supported Banorte in identifying opportunities to improve mobile app user experience (UX) and customer communication.',
           'Contributed to Mercado Pago’s assessment of credit product adoption, including a new communication strategy and timing.',
-          'Supported Santander in analyzing customer perceptions of its mobile app and identifying customer pain points.',
+          'Supported Santander in analyzing customer perceptions of its mobile app and identifying UX improvement opportunities.',
         ],
         achievements: [
-          'Contributed to consulting engagements for Santander, Mercado Pago, Banorte, and Banco Azteca focused on customer experience, digital products, and business opportunities.',
+          'Contributed to consulting engagements for Santander, Mercado Pago, Banorte, and Banco Azteca focused on UX, digital products, and business opportunities.',
           
         ],
         technologies: ['Salesforce', 'HIVE', 'Financial Services', 'Digital Banking'],
@@ -778,6 +784,7 @@ export const cvData = {
         role: 'Manager, Consumer Products',
         location: 'Mexico City, Mexico',
         period: 'Jul 2019 – Dec 2019',
+        transitionNote: 'Then accepted an opportunity at Women’s World Banking, an international organization supporting financial institutions; his project work focused on Latin America.',
         startDate: '2019-07',
         endDate: '2019-12',
         sector: 'Payments',
@@ -805,6 +812,7 @@ export const cvData = {
         role: 'Product Development Manager',
         location: 'Mexico City, Mexico',
         period: 'Feb 2015 – Jun 2019',
+        transitionNote: 'Then accepted an opportunity at Visa to manage consumer payment products.',
         startDate: '2015-02',
         endDate: '2019-06',
         sector: 'Banking',
@@ -839,6 +847,7 @@ export const cvData = {
         role: 'Product Manager',
         location: 'Mexico City, Mexico',
         period: 'Jun 2013 – Feb 2015',
+        transitionNote: 'His manager at Banco Azteca invited him to join Compartamos Banco to lead product development.',
         startDate: '2013-06',
         endDate: '2015-02',
         sector: 'Banking',
@@ -870,6 +879,7 @@ export const cvData = {
         role: 'Commercial Strategy Manager',
         location: 'Mexico City, Mexico',
         period: 'Nov 2009 – Jun 2013',
+        transitionNote: 'Accepted an opportunity to lead investment products at Banco Azteca.',
         startDate: '2009-11',
         endDate: '2013-06',
         sector: 'Banking',
@@ -995,20 +1005,20 @@ export const cvData = {
       },
       {
         id: 'proj-wwb-consulting',
-        title: 'Customer Research, Product Discovery & Innovation in Latin America',
+        title: 'Business Development & Opportunity Expansion in Latin America',
         company: 'Women’s World Banking',
         sector: 'Strategic Consulting & FinTech',
-        tagline: 'Customer research, co-creation, and prototype validation for financial institutions across Latin America.',
+        tagline: 'Prospecting, opportunity identification, and consultative proposals for financial institutions across Latin America.',
         problem:
-          'Leading financial institutions and fintechs across Latin America sought to redesign digital products to accelerate financial inclusion, customer acquisition, and retention.',
+          'Financial institutions and fintechs needed to identify market needs and turn business opportunities into digital product and service initiatives.',
         solution:
-          'Led customer research and product discovery; facilitated Design Sprints, co-creation workshops, and prototype validation to turn customer insights and market analysis into strategic recommendations.',
+          'Contributed to opening and developing opportunities through prospecting, client meetings, needs assessment, proposal development, and commercial follow-up. Complemented this work with customer research, product discovery, Design Sprints, and prototype validation.',
         roleContribution:
-          'Business Development Specialist: presented findings to clients and executive leadership and coordinated initiatives from discovery through pilots and rollout with Product, Operations, Technology, and Marketing teams.',
+          'Business Development Specialist: presented proposals and recommendations to clients and executive leadership and coordinated initiatives from discovery through pilots and rollout with Product, Operations, Technology, and Marketing teams.',
         technologies: ['Financial Services', 'Digital Banking', 'Salesforce', 'HIVE'],
         methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Qualitative & Quantitative Research'],
         results:
-          'Consulting engagements for Santander, Mercado Pago, Banorte, and Banco Azteca covered customer experience, digital products, and business opportunities, including credit adoption and mobile app experience analysis.',
+          'Consulting engagements for Santander, Mercado Pago, Banorte, and Banco Azteca covered UX, digital products, and business opportunities, including credit adoption and mobile app experience analysis.',
         metrics: {
           label: 'Client Institutions',
           value: '4 in LATAM',
@@ -1123,9 +1133,9 @@ export const cvData = {
     recruiterSummary: {
     "title": "Recruiter Profile",
     "keyHighlights": [
-        "17+ years across financial services, banking, and business development.",
-        "B2B business development: prospecting, client meetings, proposals, and commercial follow-up.",
-        "Led customer research, product discovery, and innovation projects; presented recommendations to executive leadership.",
+         "17+ years across banking and financial services, with B2B business development and opportunity expansion experience.",
+         "Prospecting, needs assessment, consultative proposals, and commercial follow-up with financial institutions.",
+         "At Women’s World Banking, contributed to opening and developing opportunities in Latin America and coordinated initiatives with multidisciplinary teams.",
         "Reduced weekly outflows from an investment account by 60% in three weeks at Banco Azteca, with no additional investment.",
         "Proficient in Salesforce and HIVE; coordinated 20 testers during a core banking migration."
     ],
@@ -1177,6 +1187,7 @@ export const cvData = {
         methodologiesTitle: 'Methodologies & Leadership',
         clientsTitle: 'Consulting Clients',
         referenceTitle: 'CV Reference Contact',
+        transitionTitle: 'Reason for transition',
       },
       projects: {
         title: 'Featured Business Cases',

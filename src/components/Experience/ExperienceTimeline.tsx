@@ -18,6 +18,7 @@ import {
   Phone,
   UserCheck,
   TrendingUp,
+  ArrowRight,
 } from 'lucide-react';
 
 interface ExperienceTimelineProps {
@@ -172,6 +173,13 @@ export const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ lang }) 
                     <p className="mt-4 text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
                       {exp.summary}
                     </p>
+
+                    {exp.transitionNote && (
+                      <div className="mt-3 flex items-start gap-2 rounded-lg bg-sky-50/80 dark:bg-sky-950/30 px-3 py-2 text-xs text-sky-900 dark:text-sky-200">
+                        <ArrowRight className="mt-0.5 h-3.5 w-3.5 shrink-0 text-sky-600 dark:text-sky-400" />
+                        <span><strong>{t.transitionTitle}:</strong> {exp.transitionNote}</span>
+                      </div>
+                    )}
 
                     {/* Quick Highlight Preview if consulting / specific achievement */}
                     {exp.consultingClients && (
