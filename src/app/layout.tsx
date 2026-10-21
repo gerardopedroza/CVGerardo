@@ -35,12 +35,12 @@ export const metadata: Metadata = {
     type: 'profile',
     locale: 'es_MX',
     alternateLocale: 'en_US',
-    url: 'https://cvgerardo.pages.dev/?v=3',
+    url: 'https://cvgerardo.pages.dev/?v=4',
     title: 'Gerardo Pedroza | Senior Business Development Manager',
     description: '17+ años en banca y servicios financieros: prospección B2B, desarrollo de mercado, propuestas consultivas y coordinación de iniciativas en América Latina.',
     siteName: 'Gerardo Pedroza - Portfolio Profesional',
     images: [{
-      url: '/og-gerardo.jpg?v=3',
+      url: '/og-gerardo.jpg?v=4',
       width: 1200,
       height: 630,
       alt: 'Gerardo Pedroza, Senior Business Development Manager en servicios financieros',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Gerardo Pedroza | Senior Business Development Manager',
     description: 'Desarrollo de negocios, apertura de mercado y servicios financieros.',
-    images: ['/og-gerardo.jpg?v=3'],
+    images: ['/og-gerardo.jpg?v=4'],
   },
   robots: {
     index: true,
