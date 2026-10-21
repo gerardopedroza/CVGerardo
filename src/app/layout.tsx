@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gerardopedroza.com'),
+  metadataBase: new URL('https://cvgerardo.pages.dev'),
   title: 'Gerardo Pedroza | Senior Business Development Manager - Financial Services',
   description: 'CV y portfolio de Gerardo Pedroza: 17+ años en banca y servicios financieros, con experiencia en desarrollo de negocios B2B, apertura de oportunidades, asesoría consultiva, propuestas y coordinación multidisciplinaria.',
   keywords: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: 'profile',
     locale: 'es_MX',
     alternateLocale: 'en_US',
-    url: 'https://gerardopedroza.com',
+    url: 'https://cvgerardo.pages.dev/',
     title: 'Gerardo Pedroza | Senior Business Development Manager',
     description: '17+ años en banca y servicios financieros: prospección B2B, desarrollo de mercado, propuestas consultivas y coordinación de iniciativas en América Latina.',
     siteName: 'Gerardo Pedroza - Portfolio Profesional',
