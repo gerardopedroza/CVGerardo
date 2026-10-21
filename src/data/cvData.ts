@@ -130,7 +130,7 @@ export const cvData = {
     }
 ],
     executiveSummary: "Gerente senior de desarrollo de negocios y profesional de servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Su experiencia combina prospección B2B, identificación de necesidades y oportunidades en instituciones financieras, desarrollo y presentación de propuestas, seguimiento comercial y coordinación con equipos multidisciplinarios para llevar iniciativas desde el discovery hasta pilotos e implementación. Ha trabajado en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking y la Secretaría de Comunicaciones y Transportes, además de participar en proyectos para Banco Azteca, Santander, Mercado Pago y Banorte. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
-    aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2026).",
+    aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (En curso).",
     whyMe: [
     {
         "title": "Desarrollo de Negocios B2B",
@@ -618,7 +618,7 @@ export const cvData = {
         degree: 'AI & Digital Business Development',
         institution: 'Pau Martí | Skool',
         location: 'En línea',
-        year: 'Jul 2026',
+        year: '2026 – En curso',
         
       },
       {
@@ -781,7 +781,7 @@ export const cvData = {
     }
 ],
     executiveSummary: "Senior business development manager and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Experience includes B2B prospecting, identifying needs and opportunities at financial institutions, developing and presenting proposals, commercial follow-up, and coordinating multidisciplinary teams to move initiatives from discovery through pilots and implementation. Worked at Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking, and Mexico’s Secretariat of Communications and Transportation (SCT), as well as on engagements for Banco Azteca, Santander, Mercado Pago, and Banorte. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
-    aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2026).",
+    aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Ongoing).",
     whyMe: [
     {
         "title": "B2B Business Development",
@@ -1270,7 +1270,7 @@ export const cvData = {
         degree: 'AI & Digital Business Development',
         institution: 'Pau Martí | Skool',
         location: 'Executive Specialization',
-        year: 'Jul 2026',
+        year: '2026 – Ongoing',
         
       },
       {
