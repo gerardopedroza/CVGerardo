@@ -130,7 +130,7 @@ export const cvData = {
     }
 ],
     executiveSummary: "Gerente senior de desarrollo de negocios y profesional de servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Su experiencia combina prospección B2B, identificación de necesidades y oportunidades en instituciones financieras, desarrollo y presentación de propuestas, seguimiento comercial y coordinación con equipos multidisciplinarios para llevar iniciativas desde el discovery hasta pilotos e implementación. Ha trabajado en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking y la Secretaría de Comunicaciones y Transportes, además de participar en proyectos para Banco Azteca, Santander, Mercado Pago y Banorte. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
-    aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
+    aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2026).",
     whyMe: [
     {
         "title": "Desarrollo de Negocios B2B",
@@ -451,6 +451,72 @@ export const cvData = {
         },
       },
       {
+        id: 'proj-azteca-chambeador',
+        title: 'Chambeador: mejoras para SuperAPP BAZ',
+        company: 'Banco Azteca',
+        sector: 'Banca Digital & UX',
+        tagline: 'Identificación de oportunidades de mejora en Chambeador y su traslado mayoritario a SuperAPP BAZ.',
+        problem:
+          'El proyecto buscaba detectar oportunidades para mejorar la experiencia y funcionalidad digital de Chambeador.',
+        solution:
+          'Contribuyó al análisis del producto y a la identificación de más de 100 oportunidades de mejora.',
+        roleContribution:
+          'Participó en el análisis y documentación de oportunidades para que la mayoría pudiera trasladarse a SuperAPP BAZ.',
+        technologies: ['Banca Digital', 'SuperAPP BAZ'],
+        methodologies: ['Análisis de producto', 'Identificación de oportunidades'],
+        results:
+          'Se encontraron más de 100 oportunidades de mejora; la mayoría se trasladó a la aplicación SuperAPP BAZ.',
+        metrics: { label: 'Mejoras identificadas', value: '100+' },
+      },
+      {
+        id: 'proj-banorte-app-adoption',
+        title: 'Adopción y uso de la app móvil',
+        company: 'Banorte',
+        sector: 'Banca Digital & UX',
+        tagline: 'Iniciativa enfocada en aumentar la adopción y el uso de la aplicación por parte de los usuarios.',
+        problem:
+          'El proyecto buscaba impulsar que más usuarios adoptaran y utilizaran la aplicación móvil de Banorte.',
+        solution:
+          'Analizó oportunidades relacionadas con la experiencia de la app y la adopción de sus funcionalidades.',
+        roleContribution:
+          'Contribuyó a identificar oportunidades para promover mayor adopción y uso de la aplicación.',
+        technologies: ['Aplicación móvil', 'Banca Digital'],
+        methodologies: ['Análisis de UX', 'Adopción Digital'],
+        results: 'Trabajo orientado a incrementar la adopción y el uso de la app entre los usuarios.',
+      },
+      {
+        id: 'proj-santander-app-ux',
+        title: 'Oportunidades de mejora para la app',
+        company: 'Santander',
+        sector: 'Banca Digital & UX',
+        tagline: 'Detección de áreas de oportunidad para mejorar la experiencia de usuario en la aplicación.',
+        problem:
+          'Se requería entender dónde podía mejorar la experiencia de los usuarios al interactuar con la app de Santander.',
+        solution:
+          'Revisó la experiencia de la aplicación para detectar áreas de oportunidad desde la perspectiva del usuario.',
+        roleContribution:
+          'Contribuyó a identificar oportunidades de mejora de UX para la aplicación móvil.',
+        technologies: ['Aplicación móvil', 'Banca Digital'],
+        methodologies: ['Evaluación de UX', 'Análisis de experiencia'],
+        results: 'Se identificaron áreas de oportunidad para mejorar la UX de la aplicación.',
+      },
+      {
+        id: 'proj-mercadopago-pos-credit',
+        title: 'Adopción de crédito para negocios con POS',
+        company: 'Mercado Pago',
+        sector: 'Fintech & Pagos',
+        tagline: 'Oportunidades para incrementar la adopción de crédito entre negocios que utilizan el POS.',
+        problem:
+          'Mercado Pago buscaba aumentar la adopción de sus créditos para negocios usuarios de su terminal POS.',
+        solution:
+          'Analizó oportunidades de adopción y apoyó el desarrollo de una estrategia y calendario de comunicación para dar visibilidad a la oferta de crédito.',
+        roleContribution:
+          'Contribuyó a identificar oportunidades para acercar los créditos de Mercado Pago a negocios que utilizan el POS.',
+        technologies: ['Mercado Pago', 'POS', 'Crédito para Negocios'],
+        methodologies: ['Análisis de adopción', 'Estrategia de comunicación'],
+        results: 'Iniciativa enfocada en incrementar la adopción de créditos para negocios usuarios del POS.',
+      },
+      {
         id: 'proj-citi-migration',
         title: 'Migración a Plataforma Central de Core Banking',
         company: 'Citibank España',
@@ -552,7 +618,7 @@ export const cvData = {
         degree: 'AI & Digital Business Development',
         institution: 'Pau Martí | Skool',
         location: 'En línea',
-        year: 'Jul 2027',
+        year: 'Jul 2026',
         
       },
       {
@@ -715,7 +781,7 @@ export const cvData = {
     }
 ],
     executiveSummary: "Senior business development manager and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Experience includes B2B prospecting, identifying needs and opportunities at financial institutions, developing and presenting proposals, commercial follow-up, and coordinating multidisciplinary teams to move initiatives from discovery through pilots and implementation. Worked at Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking, and Mexico’s Secretariat of Communications and Transportation (SCT), as well as on engagements for Banco Azteca, Santander, Mercado Pago, and Banorte. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
-    aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
+    aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2026).",
     whyMe: [
     {
         "title": "B2B Business Development",
@@ -1037,6 +1103,72 @@ export const cvData = {
         },
       },
       {
+        id: 'proj-azteca-chambeador',
+        title: 'Chambeador: Improvements for SuperAPP BAZ',
+        company: 'Banco Azteca',
+        sector: 'Digital Banking & UX',
+        tagline: 'Identified improvement opportunities in Chambeador, most of which were carried into SuperAPP BAZ.',
+        problem:
+          'The project aimed to identify opportunities to improve Chambeador’s digital experience and functionality.',
+        solution:
+          'Contributed to product analysis and identified more than 100 improvement opportunities.',
+        roleContribution:
+          'Participated in analyzing and documenting opportunities so most could be carried into SuperAPP BAZ.',
+        technologies: ['Digital Banking', 'SuperAPP BAZ'],
+        methodologies: ['Product Analysis', 'Opportunity Identification'],
+        results:
+          'More than 100 improvement opportunities were identified; most were carried into the SuperAPP BAZ app.',
+        metrics: { label: 'Improvements identified', value: '100+' },
+      },
+      {
+        id: 'proj-banorte-app-adoption',
+        title: 'Mobile App Adoption and Usage',
+        company: 'Banorte',
+        sector: 'Digital Banking & UX',
+        tagline: 'Engagement focused on increasing user adoption and usage of the mobile app.',
+        problem:
+          'The project aimed to encourage more users to adopt and use Banorte’s mobile app.',
+        solution:
+          'Analyzed opportunities related to the app experience and adoption of its features.',
+        roleContribution:
+          'Contributed to identifying opportunities to encourage greater app adoption and usage.',
+        technologies: ['Mobile App', 'Digital Banking'],
+        methodologies: ['UX Analysis', 'Digital Adoption'],
+        results: 'Work focused on increasing app adoption and usage among users.',
+      },
+      {
+        id: 'proj-santander-app-ux',
+        title: 'Mobile App UX Improvement Opportunities',
+        company: 'Santander',
+        sector: 'Digital Banking & UX',
+        tagline: 'Identified opportunities to improve the user experience of the mobile app.',
+        problem:
+          'The project required understanding where Santander app users’ experience could be improved.',
+        solution:
+          'Reviewed the app experience to identify improvement opportunities from the user perspective.',
+        roleContribution:
+          'Contributed to identifying UX improvement opportunities for the mobile app.',
+        technologies: ['Mobile App', 'Digital Banking'],
+        methodologies: ['UX Evaluation', 'Experience Analysis'],
+        results: 'Identified opportunities to improve the app’s UX.',
+      },
+      {
+        id: 'proj-mercadopago-pos-credit',
+        title: 'Business Credit Adoption through POS',
+        company: 'Mercado Pago',
+        sector: 'FinTech & Payments',
+        tagline: 'Opportunities to increase credit adoption among businesses using Mercado Pago POS.',
+        problem:
+          'Mercado Pago aimed to increase adoption of its business credit among merchants using its POS terminal.',
+        solution:
+          'Analyzed adoption opportunities and supported a communication strategy and calendar to raise awareness of the credit offer.',
+        roleContribution:
+          'Contributed to identifying opportunities to connect Mercado Pago credit with businesses using POS.',
+        technologies: ['Mercado Pago', 'POS', 'Business Credit'],
+        methodologies: ['Adoption Analysis', 'Communication Strategy'],
+        results: 'Engagement focused on increasing credit adoption among businesses using POS.',
+      },
+      {
         id: 'proj-citi-migration',
         title: 'Core Banking Platform Migration',
         company: 'Citibank Spain',
@@ -1138,7 +1270,7 @@ export const cvData = {
         degree: 'AI & Digital Business Development',
         institution: 'Pau Martí | Skool',
         location: 'Executive Specialization',
-        year: 'Jul 2027',
+        year: 'Jul 2026',
         
       },
       {
