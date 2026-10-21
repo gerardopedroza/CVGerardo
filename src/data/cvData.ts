@@ -128,7 +128,7 @@ export const cvData = {
         "description": "Banorte, Mercado Pago, Banco Azteca y Santander."
     }
 ],
-    executiveSummary: "Profesional de desarrollo de negocios y servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Identifica retos de clientes y de negocio, desarrolla estrategias y coordina equipos multidisciplinarios desde el discovery hasta la implementación y el lanzamiento. Ha trabajado directamente en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa y Women’s World Banking, además de participar en proyectos para Santander, Mercado Pago, Banorte y Banco Azteca. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
+    executiveSummary: "Profesional de desarrollo de negocios y servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Identifica retos de clientes y de negocio, desarrolla estrategias y coordina equipos multidisciplinarios desde el discovery hasta la implementación y el lanzamiento. Ha trabajado directamente en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking y la Secretaría de Comunicaciones y Transportes, además de participar en proyectos para Santander, Mercado Pago y Banorte. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
     aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
     whyMe: [
     {
@@ -696,7 +696,7 @@ export const cvData = {
         "description": "Banorte, Mercado Pago, Banco Azteca, and Santander."
     }
 ],
-    executiveSummary: "Business development and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Identifies customer and business problems, develops strategies, and leads multidisciplinary teams from discovery through implementation and launch. Direct experience includes Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, and Women’s World Banking, alongside consulting engagements for Santander, Mercado Pago, Banorte, and Banco Azteca. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
+    executiveSummary: "Business development and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Identifies customer and business problems, develops strategies, and leads multidisciplinary teams from discovery through implementation and launch. Direct experience includes Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking, and Mexico’s Secretariat of Communications and Transportation (SCT), alongside consulting engagements for Santander, Mercado Pago, and Banorte. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
     aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
     whyMe: [
     {
