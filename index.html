@@ -1731,6 +1731,36 @@
     function renderAll() {
       const data = CV_DATA[currentLang];
 
+      const navLabels = currentLang === 'en'
+        ? {
+            nav_snapshot: 'Snapshot',
+            nav_why_me: 'Value Proposition',
+            nav_experience: 'Experience',
+            nav_projects: 'Projects',
+            nav_skills: 'Skills',
+            nav_industries: 'Industries',
+            nav_education: 'Education',
+            nav_contact: 'Contact',
+            nav_recruiter: 'Recruiter Mode',
+            nav_download: 'Download CV',
+          }
+        : {
+            nav_snapshot: 'Resumen',
+            nav_why_me: 'Propuesta de Valor',
+            nav_experience: 'Experiencia',
+            nav_projects: 'Proyectos',
+            nav_skills: 'Habilidades',
+            nav_industries: 'Industrias',
+            nav_education: 'Educación',
+            nav_contact: 'Contacto',
+            nav_recruiter: 'Modo Recruiter',
+            nav_download: 'Descargar CV',
+          };
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const translation = navLabels[element.dataset.i18n];
+        if (translation) element.textContent = translation;
+      });
+
       // Update static data-i18n elements if needed
       // 1. Why Me
       const whyMeContainer = document.getElementById('whyme-grid');
