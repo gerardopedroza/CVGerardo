@@ -156,7 +156,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Download CV CTA */}
             <a
               href="/cv/CV.pdf"
-              download="Gerardo_Pedroza_CV.pdf"
+              download="Gerardo_Pedroza_CV_2026.pdf"
               onClick={handleDownloadClick}
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-700 hover:to-blue-700 shadow-sm shadow-sky-600/20 hover:shadow-sky-600/30 transition-all cursor-pointer"
             >
@@ -221,7 +221,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="pt-3 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-2">
             <a
               href="/cv/CV.pdf"
-              download="Gerardo_Pedroza_CV.pdf"
+              download="Gerardo_Pedroza_CV_2026.pdf"
               onClick={() => {
                 handleDownloadClick();
                 setMobileMenuOpen(false);

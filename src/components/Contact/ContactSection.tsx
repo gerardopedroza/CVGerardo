@@ -193,28 +193,24 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
               </h4>
 
               <p className="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-                Descarga el archivo PDF oficial y completo de Gerardo Pedroza con toda la trayectoria detallada, certificaciones, roles y referencias laborales comprobadas.
+                Descarga el CV actualizado de Gerardo Pedroza con su experiencia en desarrollo de negocios, servicios financieros y banca.
               </p>
 
               <div className="mt-6 p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-slate-300 space-y-1.5">
                 <div className="flex items-center justify-between">
                   <span className="text-slate-400">Formato:</span>
-                  <span className="font-semibold text-white">PDF Oficial (246 KB)</span>
+                  <span className="font-semibold text-white">PDF actualizado (127 KB)</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-slate-400">Última actualización:</span>
                   <span className="font-semibold text-emerald-400">2026 / Actual</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-400">Disponibilidad:</span>
-                  <span className="font-semibold text-sky-400">Inmediata / Liderazgo</span>
                 </div>
               </div>
             </div>
 
             <a
               href="/cv/CV.pdf"
-              download="Gerardo_Pedroza_CV.pdf"
+              download="Gerardo_Pedroza_CV_2026.pdf"
               onClick={handleDownload}
               className="mt-8 inline-flex items-center justify-center gap-2.5 w-full py-3.5 px-6 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 shadow-lg shadow-sky-500/30 hover:shadow-sky-500/50 hover:-translate-y-0.5 transition-all cursor-pointer"
             >

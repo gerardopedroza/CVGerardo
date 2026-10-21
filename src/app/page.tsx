@@ -83,15 +83,9 @@ export default function Home() {
       name: 'Nottingham Trent University',
     },
     knowsAbout: [
-      'Financial Services',
-      'Product Management',
-      'Banking',
-      'Payments',
-      'Financial Inclusion',
-      'Digital Transformation',
-      'Artificial Intelligence',
-      'Agile Methodology',
-      'Design Sprints',
+      'Business Development', 'B2B Consultative Sales', 'Client Relationship Management',
+      'Financial Services', 'Banking', 'Payments', 'Product Development', 'Market Analysis',
+      'Proposal Development', 'Digital Banking', 'Salesforce', 'HIVE',
     ],
     sameAs: [content.linkedinUrl],
   };

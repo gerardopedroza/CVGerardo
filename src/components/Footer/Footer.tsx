@@ -57,7 +57,7 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
 
             <a
               href="/cv/CV.pdf"
-              download="Gerardo_Pedroza_CV.pdf"
+              download="Gerardo_Pedroza_CV_2026.pdf"
               onClick={() => triggerExecutiveCelebration()}
               className="text-sky-400 hover:text-sky-300 font-semibold transition-colors flex items-center gap-1.5"
             >

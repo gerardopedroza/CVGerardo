@@ -88,7 +88,7 @@ export const RecruiterModeModal: React.FC<RecruiterModeModalProps> = ({
           <div className="flex items-center gap-2">
             <a
               href="/cv/CV.pdf"
-              download="Gerardo_Pedroza_CV.pdf"
+              download="Gerardo_Pedroza_CV_2026.pdf"
               onClick={handleDownload}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-slate-950 hover:bg-slate-800 transition-colors shadow-xs"
             >
@@ -116,7 +116,7 @@ export const RecruiterModeModal: React.FC<RecruiterModeModalProps> = ({
                   {content.name}
                 </h3>
                 <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-900 dark:bg-amber-950 dark:text-amber-300 border border-amber-300 dark:border-amber-800">
-                  {content.yearsOfExperience} Años Exp.
+                  {content.yearsOfExperience} {lang === 'es' ? 'Años de experiencia' : 'Years of experience'}
                 </span>
               </div>
               <p className="text-sm font-semibold text-sky-600 dark:text-sky-400 mt-0.5">
@@ -162,7 +162,7 @@ export const RecruiterModeModal: React.FC<RecruiterModeModalProps> = ({
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2 flex items-center gap-1.5">
               <TrendingUp className="w-3.5 h-3.5 text-sky-500" />
-              <span>Logros y Diferenciales Clave (Top Wins)</span>
+              <span>{lang === 'es' ? 'Experiencia y resultados clave' : 'Experience and key results'}</span>
             </h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
               {content.recruiterSummary.keyHighlights.map((highlight, idx) => (
@@ -211,21 +211,10 @@ export const RecruiterModeModal: React.FC<RecruiterModeModalProps> = ({
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2 flex items-center gap-1.5">
               <Zap className="w-3.5 h-3.5 text-amber-500" />
-              <span>Top Skills & Especialización</span>
+              <span>{lang === 'es' ? 'Competencias clave' : 'Key Skills'}</span>
             </h4>
             <div className="flex flex-wrap gap-1.5">
-              {[
-                'Product Strategy & Lifecycle',
-                'End-to-End Product Ownership',
-                'Banking & Payments',
-                'Design Sprints & Customer Research',
-                'Executive Stakeholder Management',
-                'Artificial Intelligence in FinTech',
-                'Agile / Scrum',
-                'UAT & Core Banking Migration',
-                'Capital Retention & Loss Prevention',
-                'Financial Inclusion & LATAM Markets',
-              ].map((skill, idx) => (
+              {content.skillGroups.flatMap((group) => group.skills).slice(0, 10).map((skill, idx) => (
                 <span
                   key={idx}
                   className="px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-50 text-sky-900 dark:bg-sky-950 dark:text-sky-200 border border-sky-200 dark:border-sky-800"
@@ -247,7 +236,7 @@ export const RecruiterModeModal: React.FC<RecruiterModeModalProps> = ({
             <div className="flex items-center gap-2">
               <LangIcon className="w-4 h-4 text-sky-500" />
               <span>
-                <strong>Idiomas:</strong> Español (Nativo) • English (B2) • Deutsch (A2)
+                <strong>{lang === 'es' ? 'Idiomas:' : 'Languages:'}</strong> {content.languages.map((item) => item.language).join(' • ')}
               </span>
             </div>
           </div>
@@ -267,7 +256,7 @@ export const RecruiterModeModal: React.FC<RecruiterModeModalProps> = ({
             </button>
             <a
               href="/cv/CV.pdf"
-              download="Gerardo_Pedroza_CV.pdf"
+              download="Gerardo_Pedroza_CV_2026.pdf"
               onClick={handleDownload}
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-white bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer shadow-sm"
             >

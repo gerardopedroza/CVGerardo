@@ -2,19 +2,20 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Gerardo Pedroza | Líder en Desarrollo de Productos Financieros, Pagos & FinTech',
-  description: 'CV y Portfolio Digital Ejecutivo de Gerardo Pedroza. 17+ años de experiencia en banca, pagos, inclusión financiera y transformación digital con Citi, Visa, Compartamos, Azteca y consultoría con Santander y Mercado Pago.',
+  title: 'Gerardo Pedroza | Desarrollo de Negocios y Servicios Financieros',
+  description: 'CV y portfolio de Gerardo Pedroza: 17+ años en servicios financieros, banca, pagos y desarrollo de negocios B2B. Experiencia en prospección, clientes, propuestas y consultoría con Banorte, Mercado Pago, Banco Azteca y Santander.',
   keywords: [
     'Gerardo Pedroza',
-    'Financial Products Leader',
-    'Product Management',
-    'Product Owner',
+    'Senior Business Development Manager',
+    'Business Development',
+    'Client Relationship Management',
     'Banking',
     'Payments',
     'FinTech',
     'Digital Transformation',
-    'Women-Centered Design',
-    'Artificial Intelligence in Banking',
+    'Proposal Development',
+    'Salesforce',
+    'HIVE',
     'Visa',
     'Citibank',
     'Compartamos Banco',
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     alternateLocale: 'en_US',
     url: 'https://gerardopedroza.com',
     title: 'Gerardo Pedroza | Executive Digital CV & Portfolio',
-    description: '17+ años liderando desarrollo de productos financieros, pagos y transformación digital en México y América Latina.',
+    description: '17+ años en servicios financieros y desarrollo de negocios B2B en México y América Latina.',
     siteName: 'Gerardo Pedroza - Portfolio Profesional',
   },
   robots: {

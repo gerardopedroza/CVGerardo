@@ -52,8 +52,6 @@ export interface EducationItem {
 
 export interface LanguageItem {
   language: string;
-  level: string;
-  proficiencyScore: string;
 }
 
 export interface WhyMeItem {
@@ -98,8 +96,8 @@ export interface ProfileData {
 export const cvData = {
   es: {
     name: 'Gerardo Pedroza',
-    headline: 'Líder en Desarrollo de Productos Financieros, Pagos y Transformación Digital',
-    subheadline: '17+ años transformando problemas de negocio y cliente en productos bancarios escalables, estrategias comerciales y soluciones digitales de alto impacto.',
+    headline: "Gerente Senior de Desarrollo de Negocios y Servicios Financieros",
+    subheadline: "17+ años en servicios financieros, banca, pagos y desarrollo de negocios B2B: prospección, relación con clientes, propuestas y seguimiento comercial.",
     location: 'Ciudad de México, México',
     email: 'gerardo.p.corral@gmail.com',
     phone: '+52 55 5951 8935',
@@ -109,74 +107,67 @@ export const cvData = {
     cvPdfPath: '/cv/CV.pdf',
     yearsOfExperience: '17+',
     stats: [
-      {
-        number: '17+',
-        label: 'Años de Experiencia',
-        description: 'En banca, medios de pago, inclusión financiera y desarrollo de productos.',
-      },
-      {
-        number: '60%',
-        label: 'Reducción de Fuga Semanal',
-        description: 'De MXN $50M a $20M en Banco Azteca con estrategia de débito para inversión.',
-      },
-      {
-        number: '4',
-        label: 'Productos Bancarios Lanzados',
-        description: 'Como Product Owner end-to-end (ahorro, inversión y transaccionales) en Compartamos.',
-      },
-      {
-        number: '20',
-        label: 'Testers Coordinados',
-        description: 'En la migración a la nueva plataforma de Core Banking en Citibank España.',
-      },
-      {
-        number: '8+',
-        label: 'Grandes Instituciones',
-        description: 'Citi, Visa, Compartamos, Azteca, Bansefi + Consultorías con Santander, Mercado Pago, Banorte.',
-      },
-    ],
-    executiveSummary:
-      'Profesional de Desarrollo de Negocios y Servicios Financieros con más de 17 años de experiencia liderando el diseño, desarrollo e implementación de productos financieros e iniciativas digitales en banca, pagos y organizaciones de inclusión financiera. Experto en identificar problemas de clientes y de negocio, coordinar equipos multidisciplinarios (Negocio, Tecnología, Operaciones, Legal, Riesgo, Compliance y Finanzas), definir estrategias de producto y liderar lanzamientos end-to-end con metodologías ágiles. Actualmente especializándose en Inteligencia Artificial para potenciar la intersección entre estrategia de negocio, tecnología, datos e IA.',
-    aiFocusStatement:
-      'Especializándose activamente en Inteligencia Artificial para fortalecer la intersección de negocio, tecnología, datos e IA aplicada a servicios financieros.',
+    {
+        "number": "17+",
+        "label": "Años de Experiencia",
+        "description": "En servicios financieros, banca, pagos y desarrollo de negocios."
+    },
+    {
+        "number": "60%",
+        "label": "Reducción de Salidas Semanales",
+        "description": "De MXN 50M a MXN 20M en tres semanas para una cuenta de inversión de Banco Azteca, sin inversión adicional."
+    },
+    {
+        "number": "20",
+        "label": "Testers Coordinados",
+        "description": "Durante la migración de plataforma bancaria de Citibank en España."
+    },
+    {
+        "number": "4",
+        "label": "Clientes de Consultoría",
+        "description": "Banorte, Mercado Pago, Banco Azteca y Santander."
+    }
+],
+    executiveSummary: "Profesional de servicios financieros y desarrollo de negocios con más de 17 años de experiencia en banca, inclusión financiera, pagos y transformación digital. Cuenta con experiencia en prospección B2B, reuniones con clientes, desarrollo y presentación de propuestas, seguimiento comercial y análisis de necesidades institucionales. Ha contribuido a iniciativas con Banorte, Mercado Pago, Banco Azteca y Santander, además de trabajar directamente en Women’s World Banking, Visa, Compartamos Banco, Bansefi, SCT y Citibank. Maneja Salesforce y HIVE.",
+    aiFocusStatement: "Estudia AI & Digital Business Development con Pau Martí | Skool (fecha indicada en el CV: julio de 2027).",
     whyMe: [
-      {
-        title: 'Liderazgo de Producto End-to-End Comprobado',
-        description: 'Supervisión completa del ciclo de vida del producto: desde customer research, business cases y comités de gobierno hasta UAT, go-to-market y optimización post-lanzamiento.',
-        evidence: 'Product Owner de 4 productos bancarios en Compartamos y coordinación de iniciativas clave en Visa y Banco Azteca.',
-        badge: 'Product Lifecycle',
-      },
-      {
-        title: 'Impacto Cuantitativo en Retención y Rentabilidad',
-        description: 'Capacidad analítica para diagnosticar anomalías de negocio y diseñar soluciones tácticas de rápida implementación sin requerir presupuestos adicionales.',
-        evidence: 'Reducción de fuga de capital en un 60% (salvando ~MXN $30M semanales) para la cuenta Azteca Creciente.',
-        badge: 'ROI & Resultados',
-      },
-      {
-        title: 'Visión Multi-Institucional y de Consultoría de Alto Nivel',
-        description: 'Experiencia directa en gigantes globales y bancos líderes, sumada a consultorías estratégicas con líderes fintech y banca tradicional.',
-        evidence: 'Colaboración con Visa, Citi, Santander, Mercado Pago, Banorte, Compartamos Banco y Bansefi.',
-        badge: 'Ecosistema Financiero',
-      },
-      {
-        title: 'Innovación Centrada en el Usuario & Design Sprints',
-        description: 'Facilitación de workshops de co-creación, prototipado rápido y validación con usuarios utilizando metodologías Women-Centered Design y Agile.',
-        evidence: '5 años liderando proyectos de innovación e investigación en Women’s World Banking en toda América Latina.',
-        badge: 'User Research & Innovation',
-      },
-      {
-        title: 'Alineación Ejecutiva y Gobernanza Transversal',
-        description: 'Liderazgo natural de mesas multidisciplinarias y comités ejecutivos, alineando prioridades técnicas, comerciales, legales y regulatorias.',
-        evidence: 'Presentaciones periódicas a comités directivos y equipos C-Level en México y LATAM.',
-        badge: 'Executive Stakeholder Mgmt',
-      },
-      {
-        title: 'Visión Tecnológica Futura: Estrategia + Datos + IA',
-        description: 'Enfoque continuo en modernización tecnológica, desde migraciones de Core Banking hasta la integración de Inteligencia Artificial en productos financieros.',
-        evidence: 'Formación internacional en Reino Unido (BA Hons) y especialización continua en IA aplicada a negocio.',
-        badge: 'AI & Modern Tech',
-      },
-    ],
+    {
+        "title": "Desarrollo de Negocios B2B",
+        "description": "Prospección, identificación de oportunidades y seguimiento comercial en servicios financieros.",
+        "evidence": "Reuniones con clientes, evaluación de necesidades y desarrollo de propuestas.",
+        "badge": "Business Development"
+    },
+    {
+        "title": "Relación Consultiva con Clientes",
+        "description": "Convierte retos institucionales y necesidades de clientes en oportunidades y recomendaciones.",
+        "evidence": "Contribuciones a trabajos con Banorte, Mercado Pago, Banco Azteca y Santander.",
+        "badge": "Client Relationships"
+    },
+    {
+        "title": "Impacto Medible en Banco Azteca",
+        "description": "Contribuyó a una iniciativa para reducir las salidas semanales de una cuenta de inversión.",
+        "evidence": "Las salidas bajaron de MXN 50M a MXN 20M en tres semanas, sin inversión adicional.",
+        "badge": "60% Reduction"
+    },
+    {
+        "title": "Experiencia en Productos Financieros",
+        "description": "Participación en el desarrollo e implementación de productos de ahorro e inversión y soluciones de pagos.",
+        "evidence": "Trayectoria en Compartamos Banco, Banco Azteca y Visa.",
+        "badge": "Financial Products"
+    },
+    {
+        "title": "Coordinación Multidisciplinaria",
+        "description": "Coordinación con equipos de negocio, operaciones, tecnología y áreas comerciales.",
+        "evidence": "Coordinó 20 testers durante la migración de plataforma bancaria de Citibank.",
+        "badge": "Cross-functional"
+    },
+    {
+        "title": "Análisis Comercial y de Clientes",
+        "description": "Analiza necesidades y oportunidades para convertir hallazgos en recomendaciones accionables.",
+        "evidence": "Proficiente en Salesforce y HIVE para seguimiento comercial.",
+        "badge": "Consulting & Analysis"
+    }
+],
     experiences: [
       {
         id: 'wwb',
@@ -188,21 +179,21 @@ export const cvData = {
         endDate: '2024-12',
         sector: 'Financial Inclusion & Consulting',
         summary:
-          'Lideró proyectos de investigación de clientes, product discovery e innovación para instituciones financieras en América Latina aplicando la metodología Women-Centered Design.',
+          'Desarrollo de negocios y consultoría para instituciones financieras y fintechs en América Latina, con prospección, reuniones con clientes, propuestas y seguimiento comercial.',
         responsibilities: [
-          'Facilitó Design Sprints, talleres de co-creación y sesiones de validación de prototipos con equipos multidisciplinarios.',
-          'Coordinó iniciativas de desarrollo de producto end-to-end desde el customer research hasta la implementación piloto y despliegue masivo (rollout).',
-          'Condujo investigación cualitativa y cuantitativa para identificar oportunidades de mercado y necesidades insatisfechas de los usuarios.',
-          'Desarrolló recomendaciones estratégicas fundamentadas en insights de clientes, análisis competitivo y prioridades de negocio.',
-          'Presentó hallazgos, roadmaps y recomendaciones de producto al liderazgo ejecutivo de bancos y organizaciones cliente.',
+          'Realizó prospección y participó en reuniones con clientes, preparación de propuestas y seguimiento comercial.',
+          'Apoyó a Banorte en identificar mejoras para su app móvil; las recomendaciones contribuyeron a mejorar la comunicación con clientes.',
+          'Contribuyó al análisis de adopción de crédito en Mercado Pago, incluida una nueva estrategia y calendario de comunicación.',
+          'Apoyó a Santander en analizar percepciones de clientes sobre su app móvil e identificar puntos de dolor.',
+          'Participó en reuniones con clientes y elaboró recomendaciones accionables para las instituciones.',
           'Trabajó estrechamente con áreas de Producto, Operaciones, Tecnología, Marketing y stakeholders ejecutivos para asegurar la viabilidad de implementación.',
         ],
         achievements: [
-          'Ejecutó proyectos de consultoría estratégica para clientes de primer nivel: Santander, Mercado Pago, Banorte y Banco Azteca enfocados en experiencia de cliente (CX), productos digitales y oportunidades de negocio.',
-          'Diseñó e implementó soluciones financieras centradas en el usuario que impulsaron la inclusión y adopción digital en la región.',
+          'Contribuyó a iniciativas con Santander, Mercado Pago, Banorte y Banco Azteca.'
+          
         ],
-        technologies: ['Design Sprints', 'Women-Centered Design', 'Customer Discovery Frameworks', 'Qualitative & Quantitative Analytics'],
-        methodologies: ['Agile / Scrum', 'Design Thinking', 'Co-creation Workshops', 'Prototype Validation'],
+        technologies: ['Salesforce', 'HIVE', 'Financial Services', 'Digital Banking'],
+        methodologies: ['B2B Prospecting', 'Client Needs Assessment', 'Proposal Development', 'Commercial Follow-up'],
         consultingClients: ['Santander', 'Mercado Pago', 'Banorte', 'Banco Azteca'],
         reference: {
           name: 'Megan D. Baumann',
@@ -228,15 +219,13 @@ export const cvData = {
           'Respaldó la planificación de producto: priorización de iniciativas, seguimiento de ejecución y alineación de stakeholders.',
           'Elaboró presentaciones ejecutivas y recomendaciones estratégicas de negocio para directivos internos y externos.',
         ],
-        achievements: [
-          'Alineación y habilitación de nuevos casos de uso y valor añadido en el portafolio de medios de pago para emisores bancarios clave en México.',
-        ],
+        achievements: [],
         technologies: ['Payment Schemes', 'Consumer Cards', 'Issuing Platforms'],
         methodologies: ['Stakeholder Alignment', 'Cross-functional Coordination', 'Business Case Validation'],
         reference: {
-          name: 'Erika Granados',
-          role: 'Business Development - Payments',
-          phone: '+52 (55) 2962-5761',
+          name: 'Gerardo Ortiz',
+          role: 'Support Service',
+          phone: '+52 (55) 1362-7799',
         },
       },
       {
@@ -249,23 +238,23 @@ export const cvData = {
         endDate: '2019-06',
         sector: 'Banking',
         summary:
-          'Actuó como Product Owner para cuatro productos bancarios, dirigiendo el desarrollo end-to-end de productos financieros de ahorro, inversión y transaccionales desde el concepto hasta el mercado.',
+          'Desarrolló e implementó productos de ahorro e inversión, coordinando actividades desde la definición hasta la implementación.',
         responsibilities: [
           'Definió la estrategia de producto, propuesta de valor, requerimientos de negocio, business cases, evaluaciones de viabilidad y planes de implementación.',
           'Lideró equipos multidisciplinarios a través de Negocio, Tecnología, Operaciones, Legal, Compliance, Riesgo, Finanzas y Marketing.',
-          'Gestionó directamente un equipo de 2–3 personas mientras coordinaba grupos transversales extensos en toda la institución.',
+          'Coordinó con equipos transversales de distintas áreas de la institución.',
           'Coordinó el diseño de soluciones, desarrollo tecnológico, Pruebas de Aceptación de Usuario (UAT), preparación para producción y actividades de go-to-market.',
           'Lideró comités ejecutivos y reuniones de gobierno para gestionar prioridades, mitigar riesgos y asegurar la alineación de dependencias.',
           'Aseguró que todos los productos cumplieran con los rigurosos estándares regulatorios, operativos y de gobernanza interna antes de su liberación al mercado.',
           'Monitoreó el desempeño post-lanzamiento, KPIs de negocio y retroalimentación de clientes para aplicar mejoras continuas.',
         ],
         achievements: [
-          'Lanzamiento exitoso al mercado de 4 productos bancarios (ahorro, inversión y transaccionales) cumpliendo al 100% las normativas financieras y los objetivos comerciales de captación.',
-          'Establecimiento de un marco de gobernanza y UAT robusto para acelerar el ciclo de desarrollo sin comprometer la seguridad ni el cumplimiento.',
+          
+          
         ],
         technologies: ['Core Banking Systems', 'Transactional Platforms', 'Savings & Investment Engines', 'UAT Management Tools'],
-        methodologies: ['Agile / Scrum', 'Product Ownership', 'Executive Governance', 'Regulatory Compliance'],
-        scopeAndTeam: 'Gestión directa de 2-3 colaboradores y liderazgo de equipos transversales multifuncionales.',
+        methodologies: ['Product Development', 'Implementation Coordination', 'User Acceptance Testing'],
+        
         reference: {
           name: 'Ana Gabriela García Zepeda',
           role: 'Directora de Productos Financieros',
@@ -285,15 +274,15 @@ export const cvData = {
           'Lideró la gestión y optimización de productos financieros, destacando el rescate de flujos de capital masivos ante fluctuaciones en tasas de interés.',
         responsibilities: [
           'Gestionó el rendimiento de productos financieros y definió estrategias de atracción y retención de clientes.',
-          'Lideró investigación de clientes, análisis competitivo y validación de producto para identificar oportunidades de mercado y mejorar la experiencia del usuario.',
-          'Definió estrategia de producto, propuesta de valor, especificaciones funcionales y planes de implementación.',
-          'Coordinó comités multidisciplinarios (Negocio, Tecnología, Operaciones, Legal, Riesgo y Marketing) a lo largo del ciclo de vida del producto.',
-          'Coordinó pruebas UAT, preparación para producción y estrategias de go-to-market.',
+          'Identificó inconsistencias en la lógica de desarrollo del producto y su funcionalidad esperada; participó en validar requerimientos y realizar pruebas.',
+          
+          
+          
         ],
         achievements: [
-          'Ante un cambio de tasas de interés que generó una fuga semanal de ~MXN $50M en productos de inversión, ejecutó investigación en sucursales sin presupuesto adicional y diseñó una estrategia de upgrade a tarjeta de débito para la cuenta de inversión "Azteca Creciente".',
-          'La estrategia redujo las salidas semanales de ~MXN $50M a MXN $20M, logrando una reducción del 60% en la pérdida semanal de capital.',
-          'Presentó los resultados e implicaciones de negocio a comités directivos ejecutivos y coordinó la ejecución transversal inmediata.',
+          'Tras un cambio de tasas de interés, participó en una iniciativa para reducir las salidas semanales de la cuenta de inversión Inversión Azteca Creciente.',
+          'Las salidas semanales bajaron de MXN 50M a MXN 20M en tres semanas, una reducción del 60% sin inversión adicional.',
+          'Presentó recomendaciones a las partes interesadas y monitoreó el desempeño del producto.',
         ],
         technologies: ['Branch POS & Systems', 'Debit Card Issuing', 'Investment Accounts Platform', 'Retention Analytics'],
         methodologies: ['Customer Research', 'Root-Cause Analysis', 'Cross-functional Execution', 'Product Enhancement'],
@@ -322,7 +311,7 @@ export const cvData = {
           'Coordinó planes de acción conjuntos entre Comercial, Operaciones, Tecnología y Producto.',
         ],
         achievements: [
-          'Impulso significativo en la adopción de productos de ahorro y servicios financieros en sectores populares y red de sucursales en México.',
+          
           'Diseño de dashboards ejecutivos que unificaron la visibilidad comercial y aceleraron la toma de decisiones directivas.',
         ],
         technologies: ['Commercial Dashboards', 'Branch Network Systems', 'KPI Reporting Systems'],
@@ -352,7 +341,7 @@ export const cvData = {
           'Respaldó la planeación estratégica y la coordinación interinstitucional en toda la organización.',
         ],
         achievements: [
-          'Alineación y cumplimiento en tiempo de hitos e iniciativas estratégicas del sector infraestructura y comunicaciones.',
+          
         ],
         technologies: ['Strategic Management Tools', 'Executive Reporting Frameworks'],
         methodologies: ['Project Governance', 'Risk Management', 'Public Sector Alignment'],
@@ -413,23 +402,23 @@ export const cvData = {
       },
       {
         id: 'proj-compartamos-products',
-        title: 'Lanzamiento End-to-End de 4 Productos Bancarios',
+        title: 'Desarrollo de productos de ahorro e inversión',
         company: 'Compartamos Banco',
         sector: 'Banca Múltiple e Inclusión',
         tagline: 'Definición, desarrollo y puesta en producción de un portafolio de ahorro, inversión y transaccionales.',
         problem:
           'Necesidad de diversificar la oferta financiera de la institución mediante productos estructurados de ahorro, inversión y transaccionales para segmentos masivos y de inclusión.',
         solution:
-          'Como Product Owner, dirigió todo el ciclo de vida de los 4 productos: desde la formulación de business cases, propuesta de valor y requerimientos funcionales, hasta la dirección de comités de gobernanza, pruebas UAT y preparación operativa.',
+          'Contribuyó a la estrategia de producto, definió requerimientos y coordinó actividades de diseño, desarrollo, UAT e implementación.',
         roleContribution:
-          'Product Owner integral: gestión directa de 2-3 colaboradores, liderazgo de mesas con Negocio, IT, Operaciones, Legal, Cumplimiento, Riesgos y Finanzas, asegurando aprobación regulatoria y lanzamiento comercial.',
+          'Coordinó con Negocio, Tecnología, Operaciones, Legal, Cumplimiento, Riesgo, Finanzas y Marketing.',
         technologies: ['Core Bancario', 'Motores de Ahorro e Inversión', 'Sistemas Transaccionales', 'Herramientas UAT'],
         methodologies: ['Agile / Scrum', 'Gobernanza Ejecutiva', 'Gestión de Riesgos y Compliance', 'Go-to-Market'],
         results:
-          '4 productos bancarios operativos y lanzados exitosamente con cumplimiento normativo total y altos estándares de adopción.',
+          'Productos de ahorro e inversión desarrollados e implementados con seguimiento posterior.',
         metrics: {
           label: 'Productos Lanzados',
-          value: '4 Productos',
+          value: 'Ahorro e inversión',
         },
       },
       {
@@ -437,15 +426,15 @@ export const cvData = {
         title: 'Innovación y Discovery de Productos en LATAM',
         company: 'Women’s World Banking',
         sector: 'Consultoría Estratégica & Fintech',
-        tagline: 'Proyectos de investigación centrada en el usuario y Design Sprints para Santander, Mercado Pago, Banorte y Azteca.',
+        tagline: 'Prospección, evaluación de necesidades y seguimiento comercial para clientes de servicios financieros.',
         problem:
           'Bancos y fintechs líderes en América Latina requerían diseñar o mejorar productos digitales para incrementar la inclusión, adquisición y retención de segmentos clave.',
         solution:
-          'Facilitación de Design Sprints, talleres de co-creación y sesiones de validación de prototipos con equipos multidisciplinarios basados en la metodología Women-Centered Design.',
+          'Apoyó reuniones con clientes, propuestas, seguimiento comercial, investigación de clientes y análisis de mercado.',
         roleContribution:
           'Especialista en Business Development: conducción de investigación cualitativa y cuantitativa, articulación de recomendaciones estratégicas y presentación de soluciones a directivos de alto nivel.',
-        technologies: ['Women-Centered Design Framework', 'Herramientas de Co-Creación', 'Modelos de Validación Rápida'],
-        methodologies: ['Design Sprints', 'Customer Research', 'Consultoría Estratégica', 'Prototipado Ágil'],
+        technologies: ['Servicios financieros', 'Banca digital', 'Salesforce', 'HIVE'],
+        methodologies: ['Prospección B2B', 'Evaluación de necesidades', 'Desarrollo de propuestas', 'Seguimiento comercial'],
         results:
           'Recomendaciones estratégicas y hojas de ruta adoptadas por entidades como Santander, Mercado Pago, Banorte y Banco Azteca para el despliegue de soluciones digitales.',
         metrics: {
@@ -476,62 +465,46 @@ export const cvData = {
       },
     ],
     skillGroups: [
-      {
-        category: 'Desarrollo de Producto & Estrategia',
-        highlight: true,
-        skills: [
-          'End-to-End Product Development',
-          'Product Strategy',
-          'Product Discovery',
-          'Business Case Development',
-          'Product Roadmap',
-          'Go-to-Market (GTM)',
-          'Agile (Scrum)',
-          'User Acceptance Testing (UAT)',
-          'Value Proposition Design',
-          'Design Sprints',
-          'Customer Journey Mapping',
-        ],
-      },
-      {
-        category: 'Liderazgo & Desarrollo de Negocios',
-        skills: [
-          'Business Development',
-          'Consultative Selling',
-          'Executive Stakeholder Management',
-          'Cross-functional Leadership',
-          'Commercial Strategy',
-          'Incentive Programs & Sales Campaigns',
-          'Executive Committees & Governance',
-          'Client Presentation & Negotiation',
-        ],
-      },
-      {
-        category: 'Dominio Financiero & Bancario',
-        skills: [
-          'Financial Services',
-          'Banking Operations',
-          'Payment Schemes & Methods',
-          'Debit & Credit Cards',
-          'Savings & Investment Products',
-          'Financial Inclusion',
-          'Regulatory Compliance & Risk',
-          'Transactional Systems',
-        ],
-      },
-      {
-        category: 'Innovación, Datos & IA',
-        skills: [
-          'Artificial Intelligence & Emerging Tech',
-          'Data-Driven Decision Making',
-          'Core Banking Migration',
-          'Market Analysis & Research',
-          'KPI Reporting & Dashboards',
-          'Women-Centered Design',
-          'Digital Transformation',
-        ],
-      },
-    ],
+    {
+        "category": "Desarrollo de Negocios",
+        "highlight": true,
+        "skills": [
+            "Desarrollo de negocios B2B",
+            "Prospección e identificación de oportunidades",
+            "Venta consultiva",
+            "Relación con clientes",
+            "Reuniones y evaluación de necesidades",
+            "Desarrollo y presentación de propuestas",
+            "Seguimiento comercial",
+            "Salesforce",
+            "HIVE"
+        ]
+    },
+    {
+        "category": "Servicios Financieros y Banca",
+        "skills": [
+            "Servicios financieros",
+            "Banca",
+            "Pagos de consumo",
+            "Banca digital",
+            "Adopción de productos de crédito",
+            "Productos de ahorro e inversión",
+            "Desarrollo de productos"
+        ]
+    },
+    {
+        "category": "Análisis y Coordinación",
+        "skills": [
+            "Consultoría y análisis de negocio",
+            "Investigación de clientes",
+            "Análisis de mercado",
+            "Coordinación multidisciplinaria",
+            "Pruebas funcionales de software",
+            "UAT",
+            "Migración de core bancario"
+        ]
+    }
+],
     industries: [
       {
         name: 'Banca Múltiple & Comercial',
@@ -546,7 +519,7 @@ export const cvData = {
       {
         name: 'Inclusión Financiera & Consultoría Estratégica',
         institutions: ['Women’s World Banking', 'Mercado Pago', 'Santander', 'Banorte'],
-        description: 'Customer discovery, design sprints e innovación para ampliar el acceso a servicios financieros.',
+        description: 'Desarrollo de negocios, investigación de clientes, banca digital y oportunidades de adopción de crédito.',
       },
       {
         name: 'Sector Público & Gobernanza',
@@ -558,9 +531,9 @@ export const cvData = {
       {
         degree: 'AI & Digital Business Development',
         institution: 'Pau Martí | Skool',
-        location: 'Online / Especialización Ejecutiva',
-        year: '2026 – En curso (Jul 2027)',
-        honors: 'Especialización Avanzada en Inteligencia Artificial y Negocios Digitales',
+        location: 'En línea',
+        year: 'Jul 2027',
+        
       },
       {
         degree: 'International Business - BA (Hons.)',
@@ -571,38 +544,26 @@ export const cvData = {
       },
     ],
     languages: [
-      {
-        language: 'Español',
-        level: 'Nativo',
-        proficiencyScore: 'Native',
-      },
-      {
-        language: 'Inglés',
-        level: 'B2 (Competencia Profesional)',
-        proficiencyScore: 'B2 Level',
-      },
-      {
-        language: 'Alemán',
-        level: 'A2 (Básico / Elemental)',
-        proficiencyScore: 'A2 Level',
-      },
+      { language: 'Español' },
+      { language: 'Inglés' },
+      { language: 'Alemán' },
     ],
     recruiterSummary: {
-      title: 'Perfil Ejecutivo Resumido (Screening en 30s)',
-      keyHighlights: [
-        '17+ años de trayectoria en Banca, Medios de Pago e Inclusión Financiera.',
-        'Experiencia directa comprobada en Visa, Citi, Compartamos, Azteca, Bansefi y consultoría con Santander, Mercado Pago y Banorte.',
-        'Historial de resultados medibles: -60% en fuga de capital (~MXN $30M/sem salvados) y 4 productos bancarios lanzados como Product Owner.',
-        'Especialización actual en Inteligencia Artificial para la intersección de negocio, tecnología y finanzas.',
-        'Educación internacional en el Reino Unido (BA Hons. en International Business en Nottingham Trent University).',
-      ],
-      targetRoles: [
-        'Head of Product / Director de Producto',
-        'VP / Senior Manager de Desarrollo de Negocios FinTech / Banca',
-        'Principal Product Manager - Pagos / Banking',
-        'Líder de Transformación Digital e Innovación Financiera',
-      ],
-    },
+    "title": "Perfil para selección",
+    "keyHighlights": [
+        "17+ años en servicios financieros, banca y desarrollo de negocios.",
+        "Desarrollo de negocios B2B: prospección, reuniones, propuestas y seguimiento comercial.",
+        "Contribuciones a iniciativas para Banorte, Mercado Pago, Banco Azteca y Santander.",
+        "Redujo 60% las salidas semanales de una cuenta de inversión en Banco Azteca en tres semanas, sin inversión adicional.",
+        "Proficiente en Salesforce y HIVE; coordinó 20 testers durante una migración de core bancario."
+    ],
+    "targetRoles": [
+        "Senior Business Development Manager",
+        "Desarrollo de Negocios B2B en banca o fintech",
+        "Relación con clientes de servicios financieros",
+        "Consultoría de servicios financieros"
+    ]
+},
     ui: {
       nav: {
         about: 'Perfil',
@@ -619,7 +580,7 @@ export const cvData = {
         downloadCv: 'Descargar CV',
       },
       hero: {
-        badge: 'Disponible para Liderazgo en Producto & FinTech',
+        badge: 'Desarrollo de Negocios | Servicios Financieros',
         ctaContact: 'Iniciar Contacto',
         ctaDownload: 'Descargar CV (PDF)',
         viewExperience: 'Ver Trayectoria',
@@ -631,7 +592,7 @@ export const cvData = {
       },
       whyMe: {
         title: '¿Por qué Gerardo Pedroza?',
-        subtitle: 'Propuesta de valor ejecutiva fundamentada en trayectoria comprobada y resultados reales',
+        subtitle: 'Desarrollo de negocios B2B, relaciones con clientes y servicios financieros',
       },
       experience: {
         title: 'Trayectoria Profesional',
@@ -647,7 +608,7 @@ export const cvData = {
       },
       projects: {
         title: 'Proyectos Destacados',
-        subtitle: 'Iniciativas reales con impacto en negocio, retención y transformación tecnológica',
+        subtitle: 'Contribuciones a iniciativas de negocio, productos financieros y banca digital',
         viewProject: 'Ver Caso de Negocio',
         closeModal: 'Cerrar Detalle',
         problemTitle: 'El Desafío / Problema',
@@ -681,7 +642,7 @@ export const cvData = {
       },
       contact: {
         title: 'Conectemos',
-        subtitle: 'Disponible para oportunidades de liderazgo en Producto, FinTech, Pagos y Transformación Digital',
+        subtitle: 'Conversaciones sobre desarrollo de negocios y servicios financieros',
         emailLabel: 'Correo Electrónico',
         phoneLabel: 'Teléfono Directo',
         locationLabel: 'Ubicación',
@@ -700,8 +661,8 @@ export const cvData = {
   },
   en: {
     name: 'Gerardo Pedroza',
-    headline: 'Financial Products, Payments & Digital Transformation Leader',
-    subheadline: '17+ years turning customer and business problems into scalable banking products, commercial strategies, and high-impact digital initiatives.',
+    headline: "Senior Business Development Manager and Financial Services Professional",
+    subheadline: "17+ years across financial services, banking, payments, and B2B business development: prospecting, client relationships, proposals, and commercial follow-up.",
     location: 'Mexico City, Mexico',
     email: 'gerardo.p.corral@gmail.com',
     phone: '+52 55 5951 8935',
@@ -711,74 +672,67 @@ export const cvData = {
     cvPdfPath: '/cv/CV.pdf',
     yearsOfExperience: '17+',
     stats: [
-      {
-        number: '17+',
-        label: 'Years of Experience',
-        description: 'Across banking, payments, financial inclusion, and product development.',
-      },
-      {
-        number: '60%',
-        label: 'Outflow Loss Reduction',
-        description: 'From ~MXN $50M to $20M weekly loss at Banco Azteca via debit card upgrade.',
-      },
-      {
-        number: '4',
-        label: 'Banking Products Launched',
-        description: 'As end-to-end Product Owner (savings, investments, transactional) at Compartamos.',
-      },
-      {
-        number: '20',
-        label: 'Testers Coordinated',
-        description: 'During Core Banking platform migration at Citibank Spain.',
-      },
-      {
-        number: '8+',
-        label: 'Top Financial Institutions',
-        description: 'Citi, Visa, Compartamos, Azteca, Bansefi + Consulting with Santander, Mercado Pago, Banorte.',
-      },
-    ],
-    executiveSummary:
-      'Product Development and Financial Services professional with 17+ years of experience leading the design, development, and implementation of financial products and digital initiatives across banking, payments, and financial inclusion organizations. Experienced identifying customer and business problems, coordinating cross-functional teams (Business, Tech, Operations, Legal, Risk, Compliance, and Finance), defining product strategy, managing executive stakeholders, and delivering end-to-end product launches using agile methodologies. Currently specializing in Artificial Intelligence to strengthen the intersection of business strategy, technology, data, and AI.',
-    aiFocusStatement:
-      'Currently specializing in Artificial Intelligence to connect business strategy, technology, data, and AI applied to financial services.',
+    {
+        "number": "17+",
+        "label": "Years of Experience",
+        "description": "Across financial services, banking, payments, and business development."
+    },
+    {
+        "number": "60%",
+        "label": "Weekly Outflow Reduction",
+        "description": "From MXN 50M to MXN 20M in three weeks for a Banco Azteca investment account, with no additional investment."
+    },
+    {
+        "number": "20",
+        "label": "Testers Coordinated",
+        "description": "During Citibank Spain’s core banking platform migration."
+    },
+    {
+        "number": "4",
+        "label": "Consulting Clients",
+        "description": "Banorte, Mercado Pago, Banco Azteca, and Santander."
+    }
+],
+    executiveSummary: "Financial services and business development professional with 17+ years of experience across banking, financial inclusion, payments, and digital transformation. Experienced in B2B prospecting, client meetings, proposal development and presentation, commercial follow-up, and institutional needs assessment. Contributed to engagements with Banorte, Mercado Pago, Banco Azteca, and Santander, alongside direct experience at Women’s World Banking, Visa, Compartamos Banco, Bansefi, SCT, and Citibank. Proficient in Salesforce and HIVE.",
+    aiFocusStatement: "Studying AI & Digital Business Development with Pau Martí | Skool (date shown on the CV: July 2027).",
     whyMe: [
-      {
-        title: 'Proven End-to-End Product Leadership',
-        description: 'Full oversight of the product lifecycle: from customer research, business cases, and governance committees to UAT, go-to-market, and post-launch optimization.',
-        evidence: 'Product Owner for 4 banking products at Compartamos Banco and key initiatives at Visa and Banco Azteca.',
-        badge: 'Product Lifecycle',
-      },
-      {
-        title: 'Measurable Financial & Retention Impact',
-        description: 'Analytical mindset able to pinpoint business leakages and implement immediate tactical product solutions without requiring dedicated marketing budgets.',
-        evidence: 'Reduced weekly capital outflows by 60% (saving ~MXN $30M/week) for the Azteca Creciente investment account.',
-        badge: 'ROI & Metrics',
-      },
-      {
-        title: 'Multi-Institutional & Top-Tier Consulting Pedigree',
-        description: 'Direct corporate experience in global giants and leading banks, complemented by strategic consulting for major regional FinTech and banking leaders.',
-        evidence: 'Engagements with Visa, Citi, Santander, Mercado Pago, Banorte, Compartamos Banco, and Bansefi.',
-        badge: 'Financial Ecosystem',
-      },
-      {
-        title: 'Human-Centered Innovation & Design Sprints',
-        description: 'Facilitating co-creation workshops, rapid prototyping, and customer validation sessions using Women-Centered Design and Agile methodologies.',
-        evidence: '5 years directing innovation and research initiatives across Latin America at Women’s World Banking.',
-        badge: 'User Research & Innovation',
-      },
-      {
-        title: 'Executive Governance & Cross-Functional Alignment',
-        description: 'Natural bridge between C-Suite committees and multidisciplinary teams, aligning technical, commercial, risk, and regulatory priorities.',
-        evidence: 'Regularly presents findings and strategic roadmaps to executive leadership across Latin America.',
-        badge: 'Executive Stakeholder Mgmt',
-      },
-      {
-        title: 'Future-Proof Tech Vision: Strategy + Data + AI',
-        description: 'Continuous dedication to technology modernization, from Core Banking migrations to the integration of Artificial Intelligence into financial services.',
-        evidence: 'International education in the UK (BA Hons) and ongoing specialization in AI applied to business.',
-        badge: 'AI & Modern Tech',
-      },
-    ],
+    {
+        "title": "B2B Business Development",
+        "description": "Prospecting, opportunity identification, and commercial follow-up in financial services.",
+        "evidence": "Client meetings, needs assessment, and proposal development.",
+        "badge": "Business Development"
+    },
+    {
+        "title": "Consultative Client Relationships",
+        "description": "Translates institutional challenges and customer needs into opportunities and recommendations.",
+        "evidence": "Contributed to engagements with Banorte, Mercado Pago, Banco Azteca, and Santander.",
+        "badge": "Client Relationships"
+    },
+    {
+        "title": "Measured Impact at Banco Azteca",
+        "description": "Contributed to an initiative to reduce weekly outflows from an investment account.",
+        "evidence": "Weekly outflows fell from MXN 50M to MXN 20M in three weeks, with no additional investment.",
+        "badge": "60% Reduction"
+    },
+    {
+        "title": "Financial Product Experience",
+        "description": "Contributed to savings and investment product development and implementation, as well as payment solutions.",
+        "evidence": "Experience at Compartamos Banco, Banco Azteca, and Visa.",
+        "badge": "Financial Products"
+    },
+    {
+        "title": "Cross-functional Coordination",
+        "description": "Coordinates with business, operations, technology, and commercial teams.",
+        "evidence": "Coordinated 20 testers during Citibank’s banking platform migration.",
+        "badge": "Cross-functional"
+    },
+    {
+        "title": "Commercial & Customer Analysis",
+        "description": "Assesses needs and opportunities and turns findings into actionable recommendations.",
+        "evidence": "Proficient in Salesforce and HIVE for commercial follow-up.",
+        "badge": "Consulting & Analysis"
+    }
+],
     experiences: [
       {
         id: 'wwb',
@@ -790,21 +744,21 @@ export const cvData = {
         endDate: '2024-12',
         sector: 'Financial Inclusion & Consulting',
         summary:
-          'Led customer research, product discovery, and innovation projects for financial institutions across Latin America using Women-Centered Design methodology.',
+          'Supported business development and consulting with financial institutions and fintechs in Latin America through prospecting, client meetings, proposals, and commercial follow-up.',
         responsibilities: [
-          'Facilitated Design Sprints, co-creation workshops, and prototype validation sessions with multidisciplinary teams.',
-          'Coordinated end-to-end product development initiatives from customer research through pilot implementation and rollout.',
-          'Conducted qualitative and quantitative research to identify market opportunities and unmet customer needs.',
-          'Developed strategic recommendations based on customer insights, market analysis, and business priorities.',
-          'Presented findings and product recommendations to executive leadership and client organizations.',
+          'Conducted prospecting and participated in client meetings, proposal development, and commercial follow-up.',
+          'Supported Banorte in identifying mobile app improvement opportunities; recommendations contributed to improved customer communication.',
+          'Contributed to Mercado Pago’s assessment of credit product adoption, including a new communication strategy and timing.',
+          'Supported Santander in analyzing customer perceptions of its mobile app and identifying customer pain points.',
+          'Participated in client meetings and prepared actionable recommendations for institutions.',
           'Worked closely with Product, Operations, Technology, Marketing, and Executive stakeholders to ensure successful implementation.',
         ],
         achievements: [
-          'Consulting engagements included Santander, Mercado Pago, Banorte, and Banco Azteca, focused on customer experience, digital products, and business opportunities.',
-          'Delivered actionable product roadmaps driving digital adoption and financial inclusion across Latin American markets.',
+          'Contributed to engagements involving Santander, Mercado Pago, Banorte, and Banco Azteca.',
+          
         ],
-        technologies: ['Design Sprints', 'Women-Centered Design', 'Customer Discovery Frameworks', 'Qualitative & Quantitative Analytics'],
-        methodologies: ['Agile / Scrum', 'Design Thinking', 'Co-creation Workshops', 'Prototype Validation'],
+        technologies: ['Salesforce', 'HIVE', 'Financial Services', 'Digital Banking'],
+        methodologies: ['B2B Prospecting', 'Client Needs Assessment', 'Proposal Development', 'Commercial Follow-up'],
         consultingClients: ['Santander', 'Mercado Pago', 'Banorte', 'Banco Azteca'],
         reference: {
           name: 'Megan D. Baumann',
@@ -830,15 +784,13 @@ export const cvData = {
           'Supported product planning activities including prioritization, implementation tracking, and stakeholder alignment.',
           'Prepared executive presentations and business recommendations for internal and external stakeholders.',
         ],
-        achievements: [
-          'Strengthened issuer alignment and enabled expanded consumer payment use cases across key financial partners in Mexico.',
-        ],
+        achievements: [],
         technologies: ['Payment Schemes', 'Consumer Cards', 'Issuing Platforms'],
         methodologies: ['Stakeholder Alignment', 'Cross-functional Coordination', 'Business Case Validation'],
         reference: {
-          name: 'Erika Granados',
-          role: 'Business Development - Payments',
-          phone: '+52 (55) 2962-5761',
+          name: 'Gerardo Ortiz',
+          role: 'Support Service',
+          phone: '+52 (55) 1362-7799',
         },
       },
       {
@@ -851,24 +803,24 @@ export const cvData = {
         endDate: '2019-06',
         sector: 'Banking',
         summary:
-          'Acted as Product Owner for four banking products, defining, coordinating, and supervising the full product-development lifecycle from concept through implementation, launch, and follow-up.',
+          'Developed and implemented savings and investment products, coordinating activities from definition through implementation.',
         responsibilities: [
           'Led the end-to-end development of savings, investment, and transactional financial products from concept definition through market launch.',
           'Defined product strategy, value proposition, business requirements, business cases, feasibility assessments, and implementation plans.',
           'Led multidisciplinary teams across Business, Technology, Operations, Legal, Compliance, Risk, Finance, and Marketing.',
-          'Directly managed teams of 2–3 people while coordinating larger cross-functional groups across the bank.',
+          'Coordinated with cross-functional teams across the bank.',
           'Coordinated solution design, technology development, User Acceptance Testing (UAT), production readiness, and go-to-market activities.',
           'Led governance meetings and executive committees, managing priorities, risks, dependencies, and stakeholder alignment.',
           'Ensured products complied with regulatory, operational, and internal governance requirements before market release.',
           'Monitored post-launch performance, business KPIs, and customer feedback, driving continuous product improvements.',
         ],
         achievements: [
-          'Successfully brought 4 banking products to market (savings, investments, transactional) with 100% regulatory compliance and strong deposit growth.',
-          'Established robust UAT and governance workflows that accelerated time-to-market without compromising operational security.',
+          
+          
         ],
         technologies: ['Core Banking Systems', 'Transactional Platforms', 'Savings & Investment Engines', 'UAT Management Tools'],
-        methodologies: ['Agile / Scrum', 'Product Ownership', 'Executive Governance', 'Regulatory Compliance'],
-        scopeAndTeam: 'Direct management of 2–3 team members and leadership over large cross-functional groups.',
+        methodologies: ['Product Development', 'Implementation Coordination', 'User Acceptance Testing'],
+        
         reference: {
           name: 'Ana Gabriela García Zepeda',
           role: 'Director of Financial Products',
@@ -888,15 +840,15 @@ export const cvData = {
           'Managed financial-product performance and customer retention, spearheading high-impact capital loss prevention under zero-budget constraints.',
         responsibilities: [
           'Managed financial-product performance and follow-up, identifying strategies to attract and retain customers.',
-          'Led customer research, competitive analysis, and product validation to identify market opportunities and improve customer experience.',
-          'Defined product strategy, value proposition, functional specifications, and implementation plans.',
-          'Coordinated cross-functional teams across Business, Technology, Operations, Legal, Risk, and Marketing throughout the product lifecycle.',
-          'Coordinated User Acceptance Testing (UAT), production readiness, and go-to-market rollouts.',
+          'Identified inconsistencies in product-development logic and expected functionality; participated in requirements validation and system testing.',
+          
+          
+          
         ],
         achievements: [
-          'Following an interest-rate change in investment products, identified approximately MXN 50M in weekly outflows. With no dedicated budget, conducted branch-level customer research and developed a debit-card upgrade strategy for the Azteca Creciente investment account.',
-          'The strategy reduced weekly outflows from ~MXN 50M to MXN 20M, achieving a 60% reduction in weekly capital loss (~MXN 30M/week saved).',
-          'Presented findings, product recommendations, and business implications to executive stakeholders and coordinated implementation with multidisciplinary teams.',
+          'Following an interest-rate change, contributed to an initiative to reduce weekly outflows from the Inversion Azteca Creciente investment account.',
+          'Weekly outflows fell from MXN 50M to MXN 20M within three weeks, a 60% reduction with no additional investment.',
+          'Presented recommendations to stakeholders and monitored product performance.',
         ],
         technologies: ['Branch POS & Systems', 'Debit Card Issuing', 'Investment Accounts Platform', 'Retention Analytics'],
         methodologies: ['Customer Research', 'Root-Cause Analysis', 'Cross-functional Execution', 'Product Enhancement'],
@@ -925,7 +877,7 @@ export const cvData = {
           'Coordinated initiatives across Commercial, Operations, Technology, and Product teams.',
         ],
         achievements: [
-          'Drove substantial gains in savings product adoption across underserved segments through nationwide branch network campaigns.',
+          
           'Delivered executive performance dashboards unifying commercial visibility for top leadership.',
         ],
         technologies: ['Commercial Dashboards', 'Branch Network Systems', 'KPI Reporting Systems'],
@@ -955,7 +907,7 @@ export const cvData = {
           'Supported planning activities and strategic coordination across the organization.',
         ],
         achievements: [
-          'Ensured on-time milestone delivery and regulatory adherence across key infrastructure and communications projects.',
+          
         ],
         technologies: ['Strategic Management Tools', 'Executive Reporting Frameworks'],
         methodologies: ['Project Governance', 'Risk Management', 'Public Sector Alignment'],
@@ -985,7 +937,7 @@ export const cvData = {
           'Collaborated with Business, Operations, and Technology teams to ensure successful delivery of strategic technology initiatives.',
         ],
         achievements: [
-          'Flawless cutover to the new HTML-based Core Banking platform with 20 testers managed and zero operational disruption.',
+          
         ],
         technologies: ['HTML-based Core Banking System', 'Debit Card Operational Systems', 'Defect Tracking Tools'],
         methodologies: ['UAT Testing Coordination', 'Operational Support', 'Incident Resolution', 'Defect Management'],
@@ -1016,41 +968,41 @@ export const cvData = {
       },
       {
         id: 'proj-compartamos-products',
-        title: 'End-to-End Launch of 4 Banking Products',
+        title: 'Savings and Investment Product Development',
         company: 'Compartamos Banco',
         sector: 'Multiple Banking & Financial Inclusion',
         tagline: 'Definition, development, and market delivery of a full portfolio of savings, investment, and transactional products.',
         problem:
           'Need to expand the bank’s portfolio by introducing formal savings, investment, and transactional products for microfinance and mass-market clients.',
         solution:
-          'Served as dedicated Product Owner for the entire lifecycle of 4 products: defining value propositions, business cases, functional specs, leading governance committees, and supervising UAT and market rollout.',
+          'Contributed to product strategy, requirements, design, development, UAT, and implementation activities.',
         roleContribution:
-          'Product Owner: managed 2-3 direct reports, led cross-functional tables (Business, IT, Operations, Legal, Risk, Compliance, Finance), ensuring regulatory approval.',
+          'Coordinated with Business, Technology, Operations, Legal, Compliance, Risk, Finance, and Marketing.',
         technologies: ['Core Banking Engine', 'Savings & Investment Systems', 'Transactional Platform', 'UAT Tracking'],
-        methodologies: ['Agile / Scrum', 'Executive Governance', 'Risk & Compliance Management', 'Go-to-Market'],
+        methodologies: ['Product Development', 'Implementation Coordination', 'User Acceptance Testing'],
         results:
-          '4 banking products successfully released to production with 100% regulatory compliance and high customer adoption.',
+          'Savings and investment products were developed and implemented, with post-launch follow-up.',
         metrics: {
-          label: 'Products Launched',
-          value: '4 Products',
+          label: 'Product scope',
+          value: 'Savings & Investment',
         },
       },
       {
         id: 'proj-wwb-consulting',
-        title: 'FinTech & Banking Product Innovation across LATAM',
+        title: 'Financial Services Business Development & Client Engagements',
         company: 'Women’s World Banking',
         sector: 'Strategic Consulting & FinTech',
-        tagline: 'Customer-centered discovery and Design Sprints for Santander, Mercado Pago, Banorte, and Azteca.',
+        tagline: 'Client prospecting, needs assessment, proposal development, and commercial follow-up for financial institutions and fintechs.',
         problem:
           'Leading financial institutions and fintechs across Latin America sought to redesign digital products to accelerate financial inclusion, customer acquisition, and retention.',
         solution:
-          'Facilitated Design Sprints, co-creation workshops, and rapid prototype validation sessions using Women-Centered Design frameworks.',
+          'Supported client meetings, proposals, commercial follow-up, customer research, and market analysis.',
         roleContribution:
-          'Business Development Specialist: conducted field research, articulated strategic recommendations, and pitched roadmaps to executive leadership.',
-        technologies: ['Women-Centered Design Framework', 'Co-Creation Tooling', 'Rapid Validation Models'],
-        methodologies: ['Design Sprints', 'Customer Research', 'Strategic Consulting', 'Agile Prototyping'],
+          'Business Development Specialist: supported prospecting, client needs assessment, proposals, and commercial follow-up.',
+        technologies: ['Financial Services', 'Digital Banking', 'Salesforce', 'HIVE'],
+        methodologies: ['B2B Prospecting', 'Client Needs Assessment', 'Proposal Development', 'Commercial Follow-up'],
         results:
-          'Delivered strategic roadmaps and actionable product specifications adopted by top institutions including Santander, Mercado Pago, Banorte, and Azteca.',
+          'Contributed to Banorte mobile app communication recommendations, Mercado Pago credit adoption analysis, and Santander mobile app pain-point research.',
         metrics: {
           label: 'Top LATAM Clients',
           value: '4 Giants',
@@ -1071,7 +1023,7 @@ export const cvData = {
         technologies: ['HTML Core Banking Platform', 'Defect Tracking Tools', 'Debit Card Systems'],
         methodologies: ['UAT Coordination', 'Defect Management', 'Incident Resolution'],
         results:
-          'Flawless system migration delivered on schedule with no disruption to daily branch banking operations.',
+          'Coordinated 20 testers and tracked issues and test progress during the migration.',
         metrics: {
           label: 'Testing Team',
           value: '20 Testers',
@@ -1079,62 +1031,46 @@ export const cvData = {
       },
     ],
     skillGroups: [
-      {
-        category: 'Product Development & Strategy',
-        highlight: true,
-        skills: [
-          'End-to-End Product Development',
-          'Product Strategy',
-          'Product Discovery',
-          'Business Case Development',
-          'Product Roadmap',
-          'Go-to-Market (GTM)',
-          'Agile (Scrum)',
-          'User Acceptance Testing (UAT)',
-          'Value Proposition Design',
-          'Design Sprints',
-          'Customer Journey Mapping',
-        ],
-      },
-      {
-        category: 'Leadership & Business Development',
-        skills: [
-          'Business Development',
-          'Consultative Selling',
-          'Executive Stakeholder Management',
-          'Cross-functional Leadership',
-          'Commercial Strategy',
-          'Incentive Programs & Sales Campaigns',
-          'Executive Committees & Governance',
-          'Client Presentation & Negotiation',
-        ],
-      },
-      {
-        category: 'Banking & Financial Domain',
-        skills: [
-          'Financial Services',
-          'Banking Operations',
-          'Payment Schemes & Methods',
-          'Debit & Credit Cards',
-          'Savings & Investment Products',
-          'Financial Inclusion',
-          'Regulatory Compliance & Risk',
-          'Transactional Systems',
-        ],
-      },
-      {
-        category: 'Innovation, Data & AI',
-        skills: [
-          'Artificial Intelligence & Emerging Tech',
-          'Data-Driven Decision Making',
-          'Core Banking Migration',
-          'Market Analysis & Research',
-          'KPI Reporting & Dashboards',
-          'Women-Centered Design',
-          'Digital Transformation',
-        ],
-      },
-    ],
+    {
+        "category": "Business Development",
+        "highlight": true,
+        "skills": [
+            "B2B Business Development",
+            "Prospecting & Opportunity Identification",
+            "Consultative Selling",
+            "Client Relationship Management",
+            "Client Meetings & Needs Assessment",
+            "Proposal Development & Presentation",
+            "Commercial Follow-up",
+            "Salesforce",
+            "HIVE"
+        ]
+    },
+    {
+        "category": "Financial Services & Banking",
+        "skills": [
+            "Financial Services",
+            "Banking",
+            "Consumer Payments",
+            "Digital Banking",
+            "Credit Product Adoption",
+            "Savings & Investment Products",
+            "Product Development"
+        ]
+    },
+    {
+        "category": "Analysis & Coordination",
+        "skills": [
+            "Consulting & Business Analysis",
+            "Customer Research",
+            "Market Analysis",
+            "Cross-functional Coordination",
+            "Functional Software Testing",
+            "UAT",
+            "Core Banking Migration"
+        ]
+    }
+],
     industries: [
       {
         name: 'Commercial & Retail Banking',
@@ -1149,7 +1085,7 @@ export const cvData = {
       {
         name: 'Financial Inclusion & Strategic Consulting',
         institutions: ['Women’s World Banking', 'Mercado Pago', 'Santander', 'Banorte'],
-        description: 'Customer discovery, design sprints, and digital solutions to widen access to financial services.',
+        description: 'Business development, customer research, digital banking, and credit adoption opportunities.',
       },
       {
         name: 'Public Sector & Governance',
@@ -1162,8 +1098,8 @@ export const cvData = {
         degree: 'AI & Digital Business Development',
         institution: 'Pau Martí | Skool',
         location: 'Executive Specialization',
-        year: '2026 – Ongoing (Jul 2027)',
-        honors: 'Advanced Specialization in Artificial Intelligence & Digital Business',
+        year: 'Jul 2027',
+        
       },
       {
         degree: 'International Business - BA (Hons.)',
@@ -1174,38 +1110,26 @@ export const cvData = {
       },
     ],
     languages: [
-      {
-        language: 'Spanish',
-        level: 'Native',
-        proficiencyScore: 'Native',
-      },
-      {
-        language: 'English',
-        level: 'B2 (Professional Working)',
-        proficiencyScore: 'B2 Level',
-      },
-      {
-        language: 'German',
-        level: 'A2 (Elementary)',
-        proficiencyScore: 'A2 Level',
-      },
+      { language: 'Spanish' },
+      { language: 'English' },
+      { language: 'German' },
     ],
     recruiterSummary: {
-      title: 'Executive Screening Profile (30s Review)',
-      keyHighlights: [
-        '17+ years leading Product Development, Banking, and Payments.',
-        'Direct track record with Visa, Citi, Compartamos, Azteca, Bansefi + consulting for Santander, Mercado Pago, and Banorte.',
-        'Quantifiable impact: -60% weekly capital outflow loss (~MXN $30M/week saved) and 4 banking products launched as Product Owner.',
-        'Actively specializing in Artificial Intelligence to drive AI-powered financial products.',
-        'International degree from the UK: BA (Hons.) in International Business from Nottingham Trent University.',
-      ],
-      targetRoles: [
-        'Head of Product / VP of Product',
-        'Director / Senior Manager of Business Development (FinTech / Banking)',
-        'Principal Product Manager - Payments / Core Banking',
-        'Digital Transformation & Financial Innovation Leader',
-      ],
-    },
+    "title": "Recruiter Profile",
+    "keyHighlights": [
+        "17+ years across financial services, banking, and business development.",
+        "B2B business development: prospecting, client meetings, proposals, and commercial follow-up.",
+        "Contributions to engagements for Banorte, Mercado Pago, Banco Azteca, and Santander.",
+        "Reduced weekly outflows from an investment account by 60% in three weeks at Banco Azteca, with no additional investment.",
+        "Proficient in Salesforce and HIVE; coordinated 20 testers during a core banking migration."
+    ],
+    "targetRoles": [
+        "Senior Business Development Manager",
+        "B2B Business Development in banking or fintech",
+        "Financial Services Client Relationships",
+        "Financial Services Consulting"
+    ]
+},
     ui: {
       nav: {
         about: 'Profile',
@@ -1222,7 +1146,7 @@ export const cvData = {
         downloadCv: 'Download CV',
       },
       hero: {
-        badge: 'Available for Product Leadership & FinTech Roles',
+        badge: 'Business Development | Financial Services',
         ctaContact: 'Get in Touch',
         ctaDownload: 'Download CV (PDF)',
         viewExperience: 'Explore Career',
@@ -1234,7 +1158,7 @@ export const cvData = {
       },
       whyMe: {
         title: 'Why Gerardo Pedroza?',
-        subtitle: 'Executive value proposition backed by verifiable results and cross-sector leadership',
+        subtitle: 'B2B business development, client relationships, and financial services experience',
       },
       experience: {
         title: 'Professional Experience',
@@ -1250,7 +1174,7 @@ export const cvData = {
       },
       projects: {
         title: 'Featured Business Cases',
-        subtitle: 'High-impact initiatives driving retention, new product lines, and digital innovation',
+        subtitle: 'Contributions to business, financial product, and digital banking initiatives',
         viewProject: 'View Business Case',
         closeModal: 'Close Detail',
         problemTitle: 'The Challenge / Problem',
@@ -1284,7 +1208,7 @@ export const cvData = {
       },
       contact: {
         title: 'Let’s Connect',
-        subtitle: 'Open to discussions for leadership roles in Product, FinTech, Payments, and Digital Transformation',
+        subtitle: 'Business development and financial services experience',
         emailLabel: 'Email Address',
         phoneLabel: 'Direct Phone',
         locationLabel: 'Location',

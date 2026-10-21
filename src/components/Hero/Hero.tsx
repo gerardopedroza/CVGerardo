@@ -83,7 +83,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
               </span>
               <span className="inline-flex items-center gap-1">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
-                Santander • Mercado Pago • Banorte (Consulting)
+                Santander • Mercado Pago • Banorte • Banco Azteca (Consulting)
               </span>
             </div>
 
@@ -92,7 +92,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
               {/* Download CV (Official PDF) */}
               <a
                 href="/cv/CV.pdf"
-                download="Gerardo_Pedroza_CV.pdf"
+                download="Gerardo_Pedroza_CV_2026.pdf"
                 onClick={() => triggerExecutiveCelebration()}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-700 hover:to-blue-700 shadow-md shadow-sky-600/25 hover:shadow-sky-600/40 hover:-translate-y-0.5 transition-all cursor-pointer w-full sm:w-auto"
               >
@@ -179,7 +179,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
                       Impacto Cuantitativo
                     </h4>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed">
-                      <strong className="text-slate-900 dark:text-white font-semibold">60% de reducción en fuga semanal de capital</strong> (~MXN $30M salvados/sem) en Banco Azteca mediante estrategia de upgrade a débito.
+                      <strong className="text-slate-900 dark:text-white font-semibold">60% de reducción en fuga semanal de capital</strong> (~MXN $30M salvados/sem) en Banco Azteca en la cuenta Inversión Azteca Creciente.
                     </p>
                   </div>
                 </div>
@@ -190,10 +190,12 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">
-                      Product Ownership Bancario
+                      {lang === 'es' ? 'Desarrollo de Negocios B2B' : 'B2B Business Development'}
                     </h4>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed">
-                      <strong className="text-slate-900 dark:text-white font-semibold">4 productos bancarios lanzados</strong> end-to-end (ahorro, inversión y transaccionales) en Compartamos Banco con comités ejecutivos y gobernanza.
+                      {lang === 'es'
+                        ? 'Prospección, reuniones con clientes, evaluación de necesidades, propuestas y seguimiento comercial.'
+                        : 'Prospecting, client meetings, needs assessment, proposals, and commercial follow-up.'}
                     </p>
                   </div>
                 </div>
@@ -204,10 +206,12 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">
-                      Enfoque en Inteligencia Artificial
+                      {lang === 'es' ? 'Consultoría Financiera' : 'Financial Services Consulting'}
                     </h4>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed">
-                      Especialización activa en IA para conectar estrategia de negocio, arquitectura de datos y soluciones tecnológicas en FinTech.
+                      {lang === 'es'
+                        ? 'Contribuciones a proyectos para Banorte, Mercado Pago, Banco Azteca y Santander; manejo de Salesforce y HIVE.'
+                        : 'Contributions to engagements for Banorte, Mercado Pago, Banco Azteca, and Santander; proficient in Salesforce and HIVE.'}
                     </p>
                   </div>
                 </div>
@@ -216,7 +220,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
               {/* Education & Language Quick Footer */}
               <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
                 <span>Nottingham Trent Univ. (UK)</span>
-                <span className="font-semibold text-slate-700 dark:text-slate-300">Español (Nat) • English (B2)</span>
+                <span className="font-semibold text-slate-700 dark:text-slate-300">{lang === 'es' ? 'Español • Inglés • Alemán' : 'Spanish • English • German'}</span>
               </div>
             </div>
           </div>
