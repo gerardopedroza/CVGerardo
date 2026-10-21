@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description: '17+ años en banca y servicios financieros: prospección B2B, desarrollo de mercado, propuestas consultivas y coordinación de iniciativas en América Latina.',
     siteName: 'Gerardo Pedroza - Portfolio Profesional',
     images: [{
-      url: '/og-gerardo.png',
+      url: '/og-gerardo.png?v=2',
       width: 1200,
       height: 630,
       alt: 'Gerardo Pedroza, Senior Business Development Manager en servicios financieros',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Gerardo Pedroza | Senior Business Development Manager',
     description: 'Desarrollo de negocios, apertura de mercado y servicios financieros.',
-    images: ['/og-gerardo.png'],
+    images: ['/og-gerardo.png?v=2'],
   },
   robots: {
     index: true,
