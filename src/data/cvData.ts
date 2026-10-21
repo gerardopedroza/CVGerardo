@@ -96,8 +96,8 @@ export interface ProfileData {
 export const cvData = {
   es: {
     name: 'Gerardo Pedroza',
-    headline: "Gerente Senior de Desarrollo de Negocios y Servicios Financieros",
-    subheadline: "17+ años en servicios financieros, banca, pagos y desarrollo de negocios B2B: prospección, relación con clientes, propuestas y seguimiento comercial.",
+    headline: "Profesional de Desarrollo de Negocios y Servicios Financieros",
+    subheadline: "17+ años en banca, pagos, inclusión financiera y transformación digital; experiencia en estrategia, productos y liderazgo de iniciativas de discovery a implementación y lanzamiento.",
     location: 'Ciudad de México, México',
     email: 'gerardo.p.corral@gmail.com',
     phone: '+52 55 5951 8935',
@@ -128,7 +128,7 @@ export const cvData = {
         "description": "Banorte, Mercado Pago, Banco Azteca y Santander."
     }
 ],
-    executiveSummary: "Profesional de servicios financieros y desarrollo de negocios con más de 17 años de experiencia en banca, inclusión financiera, pagos y transformación digital. Cuenta con experiencia en prospección B2B, reuniones con clientes, desarrollo y presentación de propuestas, seguimiento comercial y análisis de necesidades institucionales. Ha contribuido a iniciativas con Banorte, Mercado Pago, Banco Azteca y Santander, además de trabajar directamente en Women’s World Banking, Visa, Compartamos Banco, Bansefi, SCT y Citibank. Maneja Salesforce y HIVE.",
+    executiveSummary: "Profesional de desarrollo de negocios y servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Identifica retos de clientes y de negocio, desarrolla estrategias y coordina equipos multidisciplinarios desde el discovery hasta la implementación y el lanzamiento. Ha trabajado directamente en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa y Women’s World Banking, además de participar en proyectos para Santander, Mercado Pago, Banorte y Banco Azteca. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
     aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
     whyMe: [
     {
@@ -162,10 +162,10 @@ export const cvData = {
         "badge": "Cross-functional"
     },
     {
-        "title": "Análisis Comercial y de Clientes",
-        "description": "Analiza necesidades y oportunidades para convertir hallazgos en recomendaciones accionables.",
-        "evidence": "Proficiente en Salesforce y HIVE para seguimiento comercial.",
-        "badge": "Consulting & Analysis"
+        "title": "Investigación e Innovación Centrada en el Cliente",
+        "description": "Conduce customer research, product discovery y actividades de co-creación y validación.",
+        "evidence": "Facilitó Design Sprints, talleres de co-creación y validación de prototipos en Women’s World Banking.",
+        "badge": "Customer Discovery"
     }
 ],
     experiences: [
@@ -179,21 +179,24 @@ export const cvData = {
         endDate: '2024-12',
         sector: 'Financial Inclusion & Consulting',
         summary:
-          'Desarrollo de negocios y consultoría para instituciones financieras y fintechs en América Latina, con prospección, reuniones con clientes, propuestas y seguimiento comercial.',
+          'Lideró proyectos de investigación de clientes, product discovery e innovación para instituciones financieras en América Latina, y contribuyó al desarrollo de negocios y a iniciativas de producto desde el discovery hasta pilotos y despliegues.',
         responsibilities: [
-          'Realizó prospección y participó en reuniones con clientes, preparación de propuestas y seguimiento comercial.',
+          'Lideró customer research, product discovery y proyectos de innovación para identificar necesidades de clientes y oportunidades de negocio.',
+          'Facilitó Design Sprints, talleres de co-creación y sesiones de validación de prototipos con equipos multidisciplinarios, usando prácticas de Women-Centered Design.',
+          'Desarrolló recomendaciones estratégicas basadas en insights de clientes, investigación cualitativa y cuantitativa, análisis de mercado y prioridades del negocio.',
+          'Presentó hallazgos y recomendaciones de producto a equipos cliente y liderazgo ejecutivo.',
+          'Coordinó iniciativas desde discovery hasta implementación piloto y rollout, colaborando con Producto, Operaciones, Tecnología y Marketing.',
+          'Participó en reuniones con clientes, preparación de propuestas y seguimiento comercial para oportunidades de desarrollo de negocios.',
           'Apoyó a Banorte en identificar mejoras para su app móvil; las recomendaciones contribuyeron a mejorar la comunicación con clientes.',
           'Contribuyó al análisis de adopción de crédito en Mercado Pago, incluida una nueva estrategia y calendario de comunicación.',
           'Apoyó a Santander en analizar percepciones de clientes sobre su app móvil e identificar puntos de dolor.',
-          'Participó en reuniones con clientes y elaboró recomendaciones accionables para las instituciones.',
-          'Trabajó estrechamente con áreas de Producto, Operaciones, Tecnología, Marketing y stakeholders ejecutivos para asegurar la viabilidad de implementación.',
         ],
         achievements: [
-          'Contribuyó a iniciativas con Santander, Mercado Pago, Banorte y Banco Azteca.'
+          'Participó en consultorías para Santander, Mercado Pago, Banorte y Banco Azteca, enfocadas en experiencia de cliente, productos digitales y oportunidades de negocio.'
           
         ],
         technologies: ['Salesforce', 'HIVE', 'Financial Services', 'Digital Banking'],
-        methodologies: ['B2B Prospecting', 'Client Needs Assessment', 'Proposal Development', 'Commercial Follow-up'],
+        methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Agile / Scrum', 'Qualitative & Quantitative Research'],
         consultingClients: ['Santander', 'Mercado Pago', 'Banorte', 'Banco Azteca'],
         reference: {
           name: 'Megan D. Baumann',
@@ -423,23 +426,23 @@ export const cvData = {
       },
       {
         id: 'proj-wwb-consulting',
-        title: 'Innovación y Discovery de Productos en LATAM',
+        title: 'Investigación de Clientes, Product Discovery e Innovación en LATAM',
         company: 'Women’s World Banking',
         sector: 'Consultoría Estratégica & Fintech',
-        tagline: 'Prospección, evaluación de necesidades y seguimiento comercial para clientes de servicios financieros.',
+        tagline: 'Investigación de clientes, co-creación y validación de prototipos para instituciones financieras de América Latina.',
         problem:
           'Bancos y fintechs líderes en América Latina requerían diseñar o mejorar productos digitales para incrementar la inclusión, adquisición y retención de segmentos clave.',
         solution:
-          'Apoyó reuniones con clientes, propuestas, seguimiento comercial, investigación de clientes y análisis de mercado.',
+          'Lideró customer research y product discovery; facilitó Design Sprints, talleres de co-creación y validación de prototipos para convertir insights de clientes y análisis de mercado en recomendaciones estratégicas.',
         roleContribution:
-          'Especialista en Business Development: conducción de investigación cualitativa y cuantitativa, articulación de recomendaciones estratégicas y presentación de soluciones a directivos de alto nivel.',
+          'Especialista en Business Development: presentó hallazgos a clientes y liderazgo ejecutivo y coordinó iniciativas desde discovery hasta pilotos y rollout con equipos de Producto, Operaciones, Tecnología y Marketing.',
         technologies: ['Servicios financieros', 'Banca digital', 'Salesforce', 'HIVE'],
-        methodologies: ['Prospección B2B', 'Evaluación de necesidades', 'Desarrollo de propuestas', 'Seguimiento comercial'],
+        methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Qualitative & Quantitative Research'],
         results:
-          'Recomendaciones estratégicas y hojas de ruta adoptadas por entidades como Santander, Mercado Pago, Banorte y Banco Azteca para el despliegue de soluciones digitales.',
+          'Consultorías para Santander, Mercado Pago, Banorte y Banco Azteca sobre experiencia de cliente, productos digitales y oportunidades de negocio; incluyeron análisis de adopción de crédito y de experiencia en apps móviles.',
         metrics: {
-          label: 'Clientes Clave en LATAM',
-          value: '4 Gigantes',
+          label: 'Instituciones Cliente',
+          value: '4 en LATAM',
         },
       },
       {
@@ -553,7 +556,7 @@ export const cvData = {
     "keyHighlights": [
         "17+ años en servicios financieros, banca y desarrollo de negocios.",
         "Desarrollo de negocios B2B: prospección, reuniones, propuestas y seguimiento comercial.",
-        "Contribuciones a iniciativas para Banorte, Mercado Pago, Banco Azteca y Santander.",
+        "Lideró investigación de clientes, product discovery e innovación; presentó recomendaciones a liderazgo ejecutivo.",
         "Redujo 60% las salidas semanales de una cuenta de inversión en Banco Azteca en tres semanas, sin inversión adicional.",
         "Proficiente en Salesforce y HIVE; coordinó 20 testers durante una migración de core bancario."
     ],
@@ -661,8 +664,8 @@ export const cvData = {
   },
   en: {
     name: 'Gerardo Pedroza',
-    headline: "Senior Business Development Manager and Financial Services Professional",
-    subheadline: "17+ years across financial services, banking, payments, and B2B business development: prospecting, client relationships, proposals, and commercial follow-up.",
+    headline: "Business Development and Financial Services Professional",
+    subheadline: "17+ years across banking, payments, financial inclusion, and digital transformation; experienced in strategy, products, and leading initiatives from discovery through implementation and launch.",
     location: 'Mexico City, Mexico',
     email: 'gerardo.p.corral@gmail.com',
     phone: '+52 55 5951 8935',
@@ -693,7 +696,7 @@ export const cvData = {
         "description": "Banorte, Mercado Pago, Banco Azteca, and Santander."
     }
 ],
-    executiveSummary: "Financial services and business development professional with 17+ years of experience across banking, financial inclusion, payments, and digital transformation. Experienced in B2B prospecting, client meetings, proposal development and presentation, commercial follow-up, and institutional needs assessment. Contributed to engagements with Banorte, Mercado Pago, Banco Azteca, and Santander, alongside direct experience at Women’s World Banking, Visa, Compartamos Banco, Bansefi, SCT, and Citibank. Proficient in Salesforce and HIVE.",
+    executiveSummary: "Business development and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Identifies customer and business problems, develops strategies, and leads multidisciplinary teams from discovery through implementation and launch. Direct experience includes Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, and Women’s World Banking, alongside consulting engagements for Santander, Mercado Pago, Banorte, and Banco Azteca. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
     aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
     whyMe: [
     {
@@ -727,10 +730,10 @@ export const cvData = {
         "badge": "Cross-functional"
     },
     {
-        "title": "Commercial & Customer Analysis",
-        "description": "Assesses needs and opportunities and turns findings into actionable recommendations.",
-        "evidence": "Proficient in Salesforce and HIVE for commercial follow-up.",
-        "badge": "Consulting & Analysis"
+        "title": "Customer Research & Innovation",
+        "description": "Leads customer research, product discovery, co-creation, and validation activities.",
+        "evidence": "Facilitated Design Sprints, co-creation workshops, and prototype validation at Women’s World Banking.",
+        "badge": "Customer Discovery"
     }
 ],
     experiences: [
@@ -744,21 +747,24 @@ export const cvData = {
         endDate: '2024-12',
         sector: 'Financial Inclusion & Consulting',
         summary:
-          'Supported business development and consulting with financial institutions and fintechs in Latin America through prospecting, client meetings, proposals, and commercial follow-up.',
+          'Led customer research, product discovery, and innovation projects for financial institutions across Latin America, contributing to business development and product initiatives from discovery through pilots and rollout.',
         responsibilities: [
-          'Conducted prospecting and participated in client meetings, proposal development, and commercial follow-up.',
+          'Led customer research, product discovery, and innovation projects to identify customer needs and business opportunities.',
+          'Facilitated Design Sprints, co-creation workshops, and prototype validation sessions with multidisciplinary teams, using Women-Centered Design practices.',
+          'Developed strategic recommendations based on customer insights, qualitative and quantitative research, market analysis, and business priorities.',
+          'Presented findings and product recommendations to client organizations and executive leadership.',
+          'Coordinated initiatives from discovery through pilot implementation and rollout, working across Product, Operations, Technology, and Marketing.',
+          'Participated in client meetings, proposal development, and commercial follow-up for business development opportunities.',
           'Supported Banorte in identifying mobile app improvement opportunities; recommendations contributed to improved customer communication.',
           'Contributed to Mercado Pago’s assessment of credit product adoption, including a new communication strategy and timing.',
           'Supported Santander in analyzing customer perceptions of its mobile app and identifying customer pain points.',
-          'Participated in client meetings and prepared actionable recommendations for institutions.',
-          'Worked closely with Product, Operations, Technology, Marketing, and Executive stakeholders to ensure successful implementation.',
         ],
         achievements: [
-          'Contributed to engagements involving Santander, Mercado Pago, Banorte, and Banco Azteca.',
+          'Contributed to consulting engagements for Santander, Mercado Pago, Banorte, and Banco Azteca focused on customer experience, digital products, and business opportunities.',
           
         ],
         technologies: ['Salesforce', 'HIVE', 'Financial Services', 'Digital Banking'],
-        methodologies: ['B2B Prospecting', 'Client Needs Assessment', 'Proposal Development', 'Commercial Follow-up'],
+        methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Agile / Scrum', 'Qualitative & Quantitative Research'],
         consultingClients: ['Santander', 'Mercado Pago', 'Banorte', 'Banco Azteca'],
         reference: {
           name: 'Megan D. Baumann',
@@ -989,23 +995,23 @@ export const cvData = {
       },
       {
         id: 'proj-wwb-consulting',
-        title: 'Financial Services Business Development & Client Engagements',
+        title: 'Customer Research, Product Discovery & Innovation in Latin America',
         company: 'Women’s World Banking',
         sector: 'Strategic Consulting & FinTech',
-        tagline: 'Client prospecting, needs assessment, proposal development, and commercial follow-up for financial institutions and fintechs.',
+        tagline: 'Customer research, co-creation, and prototype validation for financial institutions across Latin America.',
         problem:
           'Leading financial institutions and fintechs across Latin America sought to redesign digital products to accelerate financial inclusion, customer acquisition, and retention.',
         solution:
-          'Supported client meetings, proposals, commercial follow-up, customer research, and market analysis.',
+          'Led customer research and product discovery; facilitated Design Sprints, co-creation workshops, and prototype validation to turn customer insights and market analysis into strategic recommendations.',
         roleContribution:
-          'Business Development Specialist: supported prospecting, client needs assessment, proposals, and commercial follow-up.',
+          'Business Development Specialist: presented findings to clients and executive leadership and coordinated initiatives from discovery through pilots and rollout with Product, Operations, Technology, and Marketing teams.',
         technologies: ['Financial Services', 'Digital Banking', 'Salesforce', 'HIVE'],
-        methodologies: ['B2B Prospecting', 'Client Needs Assessment', 'Proposal Development', 'Commercial Follow-up'],
+        methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Qualitative & Quantitative Research'],
         results:
-          'Contributed to Banorte mobile app communication recommendations, Mercado Pago credit adoption analysis, and Santander mobile app pain-point research.',
+          'Consulting engagements for Santander, Mercado Pago, Banorte, and Banco Azteca covered customer experience, digital products, and business opportunities, including credit adoption and mobile app experience analysis.',
         metrics: {
-          label: 'Top LATAM Clients',
-          value: '4 Giants',
+          label: 'Client Institutions',
+          value: '4 in LATAM',
         },
       },
       {
@@ -1119,7 +1125,7 @@ export const cvData = {
     "keyHighlights": [
         "17+ years across financial services, banking, and business development.",
         "B2B business development: prospecting, client meetings, proposals, and commercial follow-up.",
-        "Contributions to engagements for Banorte, Mercado Pago, Banco Azteca, and Santander.",
+        "Led customer research, product discovery, and innovation projects; presented recommendations to executive leadership.",
         "Reduced weekly outflows from an investment account by 60% in three weeks at Banco Azteca, with no additional investment.",
         "Proficient in Salesforce and HIVE; coordinated 20 testers during a core banking migration."
     ],
