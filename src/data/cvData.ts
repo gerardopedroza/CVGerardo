@@ -126,10 +126,10 @@ export const cvData = {
     {
         "number": "4",
         "label": "Clientes de Consultoría",
-        "description": "Banorte, Mercado Pago, Banco Azteca y Santander."
+        "description": "Banco Azteca, Santander, Mercado Pago y Banorte."
     }
 ],
-    executiveSummary: "Gerente senior de desarrollo de negocios y profesional de servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Su experiencia combina prospección B2B, identificación de necesidades y oportunidades en instituciones financieras, desarrollo y presentación de propuestas, seguimiento comercial y coordinación con equipos multidisciplinarios para llevar iniciativas desde el discovery hasta pilotos e implementación. Ha trabajado en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking y la Secretaría de Comunicaciones y Transportes, además de participar en proyectos para Santander, Mercado Pago y Banorte. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
+    executiveSummary: "Gerente senior de desarrollo de negocios y profesional de servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Su experiencia combina prospección B2B, identificación de necesidades y oportunidades en instituciones financieras, desarrollo y presentación de propuestas, seguimiento comercial y coordinación con equipos multidisciplinarios para llevar iniciativas desde el discovery hasta pilotos e implementación. Ha trabajado en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking y la Secretaría de Comunicaciones y Transportes, además de participar en proyectos para Banco Azteca, Santander, Mercado Pago y Banorte. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
     aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
     whyMe: [
     {
@@ -141,7 +141,7 @@ export const cvData = {
     {
         "title": "Relación Consultiva con Clientes",
         "description": "Convierte retos institucionales y necesidades de clientes en oportunidades y recomendaciones.",
-        "evidence": "Contribuciones a trabajos con Banorte, Mercado Pago, Banco Azteca y Santander.",
+        "evidence": "Contribuciones a trabajos con Banco Azteca, Santander, Mercado Pago y Banorte.",
         "badge": "Client Relationships"
     },
     {
@@ -193,12 +193,12 @@ export const cvData = {
           'Apoyó a Santander a analizar percepciones de clientes sobre su app móvil e identificar oportunidades de mejora en UX.',
         ],
         achievements: [
-          'Participó en consultorías para Santander, Mercado Pago, Banorte y Banco Azteca, enfocadas en UX, productos digitales y oportunidades de negocio.'
+          'Participó en consultorías para Banco Azteca, Santander, Mercado Pago y Banorte, enfocadas en UX, productos digitales y oportunidades de negocio.'
           
         ],
         technologies: ['Salesforce', 'HIVE', 'Financial Services', 'Digital Banking'],
         methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Agile / Scrum', 'Qualitative & Quantitative Research'],
-        consultingClients: ['Santander', 'Mercado Pago', 'Banorte', 'Banco Azteca'],
+        consultingClients: ['Banco Azteca', 'Santander', 'Mercado Pago', 'Banorte'],
         reference: {
           name: 'Megan D. Baumann',
           role: 'Social-environmental Research',
@@ -444,7 +444,7 @@ export const cvData = {
         technologies: ['Servicios financieros', 'Banca digital', 'Salesforce', 'HIVE'],
         methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Qualitative & Quantitative Research'],
         results:
-          'Consultorías para Santander, Mercado Pago, Banorte y Banco Azteca sobre UX, productos digitales y oportunidades de negocio; incluyeron análisis de adopción de crédito y de experiencia en apps móviles.',
+          'Consultorías para Banco Azteca, Santander, Mercado Pago y Banorte sobre UX, productos digitales y oportunidades de negocio; incluyeron análisis de adopción de crédito y de experiencia en apps móviles.',
         metrics: {
           label: 'Instituciones Cliente',
           value: '4 en LATAM',
@@ -699,10 +699,10 @@ export const cvData = {
     {
         "number": "4",
         "label": "Consulting Clients",
-        "description": "Banorte, Mercado Pago, Banco Azteca, and Santander."
+        "description": "Banco Azteca, Santander, Mercado Pago, and Banorte."
     }
 ],
-    executiveSummary: "Senior business development manager and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Experience includes B2B prospecting, identifying needs and opportunities at financial institutions, developing and presenting proposals, commercial follow-up, and coordinating multidisciplinary teams to move initiatives from discovery through pilots and implementation. Worked at Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking, and Mexico’s Secretariat of Communications and Transportation (SCT), as well as on engagements for Santander, Mercado Pago, and Banorte. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
+    executiveSummary: "Senior business development manager and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Experience includes B2B prospecting, identifying needs and opportunities at financial institutions, developing and presenting proposals, commercial follow-up, and coordinating multidisciplinary teams to move initiatives from discovery through pilots and implementation. Worked at Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking, and Mexico’s Secretariat of Communications and Transportation (SCT), as well as on engagements for Banco Azteca, Santander, Mercado Pago, and Banorte. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
     aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
     whyMe: [
     {
@@ -714,7 +714,7 @@ export const cvData = {
     {
         "title": "Consultative Client Relationships",
         "description": "Translates institutional challenges and customer needs into opportunities and recommendations.",
-        "evidence": "Contributed to engagements with Banorte, Mercado Pago, Banco Azteca, and Santander.",
+        "evidence": "Contributed to engagements with Banco Azteca, Santander, Mercado Pago, and Banorte.",
         "badge": "Client Relationships"
     },
     {
@@ -766,12 +766,12 @@ export const cvData = {
           'Supported Santander in analyzing customer perceptions of its mobile app and identifying UX improvement opportunities.',
         ],
         achievements: [
-          'Contributed to consulting engagements for Santander, Mercado Pago, Banorte, and Banco Azteca focused on UX, digital products, and business opportunities.',
+          'Contributed to consulting engagements for Banco Azteca, Santander, Mercado Pago, and Banorte focused on UX, digital products, and business opportunities.',
           
         ],
         technologies: ['Salesforce', 'HIVE', 'Financial Services', 'Digital Banking'],
         methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Agile / Scrum', 'Qualitative & Quantitative Research'],
-        consultingClients: ['Santander', 'Mercado Pago', 'Banorte', 'Banco Azteca'],
+        consultingClients: ['Banco Azteca', 'Santander', 'Mercado Pago', 'Banorte'],
         reference: {
           name: 'Megan D. Baumann',
           role: 'Social-environmental Research',
@@ -1018,7 +1018,7 @@ export const cvData = {
         technologies: ['Financial Services', 'Digital Banking', 'Salesforce', 'HIVE'],
         methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Qualitative & Quantitative Research'],
         results:
-          'Consulting engagements for Santander, Mercado Pago, Banorte, and Banco Azteca covered UX, digital products, and business opportunities, including credit adoption and mobile app experience analysis.',
+          'Consulting engagements for Banco Azteca, Santander, Mercado Pago, and Banorte covered UX, digital products, and business opportunities, including credit adoption and mobile app experience analysis.',
         metrics: {
           label: 'Client Institutions',
           value: '4 in LATAM',

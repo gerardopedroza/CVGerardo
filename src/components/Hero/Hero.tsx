@@ -83,7 +83,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
               </span>
               <span className="inline-flex items-center gap-1">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
-                Santander • Mercado Pago • Banorte • Banco Azteca (Consulting)
+                Banco Azteca • Santander • Mercado Pago • Banorte (Consulting)
               </span>
             </div>
 
@@ -210,8 +210,8 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
                     </h4>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed">
                       {lang === 'es'
-                        ? 'Contribuciones a proyectos para Banorte, Mercado Pago, Banco Azteca y Santander; manejo de Salesforce y HIVE.'
-                        : 'Contributions to engagements for Banorte, Mercado Pago, Banco Azteca, and Santander; proficient in Salesforce and HIVE.'}
+                        ? 'Contribuciones a proyectos para Banco Azteca, Santander, Mercado Pago y Banorte; manejo de Salesforce y HIVE.'
+                        : 'Contributions to engagements for Banco Azteca, Santander, Mercado Pago, and Banorte; proficient in Salesforce and HIVE.'}
                     </p>
                   </div>
                 </div>
