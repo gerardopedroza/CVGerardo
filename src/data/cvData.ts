@@ -129,7 +129,7 @@ export const cvData = {
     }
 ],
     executiveSummary: "Profesional de servicios financieros y desarrollo de negocios con más de 17 años de experiencia en banca, inclusión financiera, pagos y transformación digital. Cuenta con experiencia en prospección B2B, reuniones con clientes, desarrollo y presentación de propuestas, seguimiento comercial y análisis de necesidades institucionales. Ha contribuido a iniciativas con Banorte, Mercado Pago, Banco Azteca y Santander, además de trabajar directamente en Women’s World Banking, Visa, Compartamos Banco, Bansefi, SCT y Citibank. Maneja Salesforce y HIVE.",
-    aiFocusStatement: "Estudia AI & Digital Business Development con Pau Martí | Skool (fecha indicada en el CV: julio de 2027).",
+    aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
     whyMe: [
     {
         "title": "Desarrollo de Negocios B2B",
@@ -271,7 +271,7 @@ export const cvData = {
         endDate: '2015-02',
         sector: 'Banking',
         summary:
-          'Lideró la gestión y optimización de productos financieros, destacando el rescate de flujos de capital masivos ante fluctuaciones en tasas de interés.',
+          'Mejoró productos de inversión e identificó inconsistencias en la lógica de desarrollo y funcionalidad esperada.',
         responsibilities: [
           'Gestionó el rendimiento de productos financieros y definió estrategias de atracción y retención de clientes.',
           'Identificó inconsistencias en la lógica de desarrollo del producto y su funcionalidad esperada; participó en validar requerimientos y realizar pruebas.',
@@ -284,8 +284,8 @@ export const cvData = {
           'Las salidas semanales bajaron de MXN 50M a MXN 20M en tres semanas, una reducción del 60% sin inversión adicional.',
           'Presentó recomendaciones a las partes interesadas y monitoreó el desempeño del producto.',
         ],
-        technologies: ['Branch POS & Systems', 'Debit Card Issuing', 'Investment Accounts Platform', 'Retention Analytics'],
-        methodologies: ['Customer Research', 'Root-Cause Analysis', 'Cross-functional Execution', 'Product Enhancement'],
+        technologies: ['Investment Products', 'Product Testing', 'Product Monitoring'],
+        methodologies: ['Requirements Validation', 'Product Performance Monitoring', 'Stakeholder Recommendations'],
         reference: {
           name: 'Rosa Ramírez Galindo',
           role: 'Directora de Productos Financieros',
@@ -392,9 +392,9 @@ export const cvData = {
         roleContribution:
           'Lideró el diagnóstico del problema, el research con clientes en sucursal, la conceptualización de la solución de producto, la presentación ejecutiva a comités directivos y la coordinación de implementación con equipos multidisciplinarios.',
         technologies: ['Plataforma de Inversión', 'Emisión de Tarjetas de Débito', 'Sistemas de Sucursal'],
-        methodologies: ['Investigación en Campo', 'Product Enhancement', 'Gestión de Crisis', 'Alineación Ejecutiva'],
+        methodologies: ['Validación de requerimientos', 'Monitoreo de producto', 'Recomendaciones a stakeholders'],
         results:
-          'Reducción de las fugas semanales de MXN $50M a MXN $20M, logrando un 60% de reducción en la pérdida semanal de capital (~MXN $30M semanales salvados para el banco).',
+          'Las salidas semanales bajaron de MXN 50M a MXN 20M en tres semanas, una reducción del 60% sin inversión adicional.',
         metrics: {
           label: 'Reducción de Fuga Semanal',
           value: '-60%',
@@ -413,7 +413,7 @@ export const cvData = {
         roleContribution:
           'Coordinó con Negocio, Tecnología, Operaciones, Legal, Cumplimiento, Riesgo, Finanzas y Marketing.',
         technologies: ['Core Bancario', 'Motores de Ahorro e Inversión', 'Sistemas Transaccionales', 'Herramientas UAT'],
-        methodologies: ['Agile / Scrum', 'Gobernanza Ejecutiva', 'Gestión de Riesgos y Compliance', 'Go-to-Market'],
+        methodologies: ['Desarrollo de producto', 'Coordinación de implementación', 'UAT'],
         results:
           'Productos de ahorro e inversión desarrollados e implementados con seguimiento posterior.',
         metrics: {
@@ -694,7 +694,7 @@ export const cvData = {
     }
 ],
     executiveSummary: "Financial services and business development professional with 17+ years of experience across banking, financial inclusion, payments, and digital transformation. Experienced in B2B prospecting, client meetings, proposal development and presentation, commercial follow-up, and institutional needs assessment. Contributed to engagements with Banorte, Mercado Pago, Banco Azteca, and Santander, alongside direct experience at Women’s World Banking, Visa, Compartamos Banco, Bansefi, SCT, and Citibank. Proficient in Salesforce and HIVE.",
-    aiFocusStatement: "Studying AI & Digital Business Development with Pau Martí | Skool (date shown on the CV: July 2027).",
+    aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Jul 2027).",
     whyMe: [
     {
         "title": "B2B Business Development",
@@ -837,7 +837,7 @@ export const cvData = {
         endDate: '2015-02',
         sector: 'Banking',
         summary:
-          'Managed financial-product performance and customer retention, spearheading high-impact capital loss prevention under zero-budget constraints.',
+          'Improved investment products and identified inconsistencies in product-development logic and expected functionality.',
         responsibilities: [
           'Managed financial-product performance and follow-up, identifying strategies to attract and retain customers.',
           'Identified inconsistencies in product-development logic and expected functionality; participated in requirements validation and system testing.',
@@ -850,8 +850,8 @@ export const cvData = {
           'Weekly outflows fell from MXN 50M to MXN 20M within three weeks, a 60% reduction with no additional investment.',
           'Presented recommendations to stakeholders and monitored product performance.',
         ],
-        technologies: ['Branch POS & Systems', 'Debit Card Issuing', 'Investment Accounts Platform', 'Retention Analytics'],
-        methodologies: ['Customer Research', 'Root-Cause Analysis', 'Cross-functional Execution', 'Product Enhancement'],
+        technologies: ['Investment Products', 'Product Testing', 'Product Monitoring'],
+        methodologies: ['Requirements Validation', 'Product Performance Monitoring', 'Stakeholder Recommendations'],
         reference: {
           name: 'Rosa Ramírez Galindo',
           role: 'Director of Financial Products',
@@ -878,7 +878,7 @@ export const cvData = {
         ],
         achievements: [
           
-          'Delivered executive performance dashboards unifying commercial visibility for top leadership.',
+          ,
         ],
         technologies: ['Commercial Dashboards', 'Branch Network Systems', 'KPI Reporting Systems'],
         methodologies: ['Commercial Strategy', 'Incentive Programs', 'Sales Analytics', 'Stakeholder Management'],
@@ -950,17 +950,17 @@ export const cvData = {
         title: '“Azteca Creciente” Capital Retention Strategy',
         company: 'Banco Azteca',
         sector: 'Banking & Capital Retention',
-        tagline: 'Mitigating massive weekly capital outflows post-rate shift through agile debit-card product enhancement.',
+        tagline: 'Reducing weekly investment account outflows by 60% within three weeks, with no additional investment.',
         problem:
-          'Following an interest-rate change in investment products, the bank suffered massive weekly outflows of ~MXN $50 Million, threatening core deposits.',
+          'Following an interest-rate change, the investment account saw weekly outflows of approximately MXN 50M.',
         solution:
-          'With no marketing budget, conducted branch-level customer research to uncover user intent. Designed and launched a debit-card upgrade strategy for the Azteca Creciente investment account, providing liquidity and immediate transaction value.',
+          'Participated in product improvements and testing for Inversion Azteca Creciente.',
         roleContribution:
-          'Led root-cause diagnosis, in-branch research, product solution design, executive presentation to leadership, and cross-functional implementation rollout.',
+          'Participated in product requirements validation and testing, monitored performance, and presented recommendations.',
         technologies: ['Investment Platform', 'Debit Card Issuing', 'Branch Systems'],
         methodologies: ['Field Research', 'Product Enhancement', 'Crisis Management', 'Executive Alignment'],
         results:
-          'Reduced weekly outflows from ~MXN $50M to MXN $20M, securing a 60% reduction in weekly capital losses (~MXN $30M saved per week).',
+          'Weekly outflows fell from MXN 50M to MXN 20M within three weeks, a 60% reduction with no additional investment.',
         metrics: {
           label: 'Weekly Outflow Reduction',
           value: '-60%',
@@ -1015,7 +1015,7 @@ export const cvData = {
         sector: 'International Banking & IT',
         tagline: 'Testing coordination and quality assurance during the transition to an HTML-based core banking platform.',
         problem:
-          'Critical migration of Citibank’s core banking architecture across Spain requiring zero downtime and strict adherence to quality benchmarks.',
+          'Citibank’s migration to a new core banking platform required coordinated testing across teams.',
         solution:
           'Coordinated a team of 20 testers, resolved operational bottlenecks in real time, tracked defect resolution, and delivered executive status dashboards.',
         roleContribution:

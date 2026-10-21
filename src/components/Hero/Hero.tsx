@@ -179,7 +179,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
                       Impacto Cuantitativo
                     </h4>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed">
-                      <strong className="text-slate-900 dark:text-white font-semibold">60% de reducción en fuga semanal de capital</strong> (~MXN $30M salvados/sem) en Banco Azteca en la cuenta Inversión Azteca Creciente.
+                      <strong className="text-slate-900 dark:text-white font-semibold">60% de reducción de salidas semanales</strong> (de MXN 50M a MXN 20M en tres semanas, sin inversión adicional) en Banco Azteca.
                     </p>
                   </div>
                 </div>
