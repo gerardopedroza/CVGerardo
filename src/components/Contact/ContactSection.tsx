@@ -13,6 +13,7 @@ import {
   ExternalLink,
   Sparkles,
   Send,
+  MessageCircle,
 } from 'lucide-react';
 import { LinkedInIcon } from '../UI/Icons';
 import { triggerExecutiveCelebration } from '../UI/ConfettiTrigger';
@@ -134,6 +135,16 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                 >
                   <Phone className="w-3.5 h-3.5" />
                   <span>{t.callDirect}</span>
+                </a>
+                <a
+                  href="https://wa.me/525559518935"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contactar por WhatsApp al +52 55 5951 8935"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline"
+                >
+                  <MessageCircle className="w-3.5 h-3.5" />
+                  <span>WhatsApp</span>
                 </a>
                 {copiedPhone && (
                   <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400">
