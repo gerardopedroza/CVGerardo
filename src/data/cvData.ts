@@ -474,18 +474,43 @@ export const cvData = {
     ],
     skillGroups: [
     {
-        "category": "Desarrollo de Negocios",
+        "category": "Desarrollo de Negocios B2B",
         "highlight": true,
         "skills": [
             "Desarrollo de negocios B2B",
             "Prospección e identificación de oportunidades",
-            "Venta consultiva",
-            "Relación con clientes",
-            "Reuniones y evaluación de necesidades",
+            "Asesoría y venta consultiva",
+            "Gestión de relaciones con clientes",
+            "Reuniones y análisis de necesidades",
             "Desarrollo y presentación de propuestas",
-            "Seguimiento comercial",
+            "Seguimiento de oportunidades comerciales",
             "Salesforce",
             "HIVE"
+        ]
+    },
+    {
+        "category": "Desarrollo de Productos y Go-to-Market",
+        "skills": [
+            "Desarrollo de productos",
+            "Desarrollo end-to-end de productos",
+            "Estrategia de producto",
+            "Desarrollo de business cases",
+            "Roadmap de producto",
+            "Go-to-Market",
+            "Pruebas de aceptación de usuario (UAT)"
+        ]
+    },
+    {
+        "category": "Liderazgo, Análisis y Ejecución",
+        "skills": [
+            "Gestión de stakeholders",
+            "Liderazgo multidisciplinario",
+            "Agile (Scrum)",
+            "Análisis de mercado",
+            "Investigación de clientes",
+            "Product discovery",
+            "Coordinación cross-functional",
+            "Migración de core bancario"
         ]
     },
     {
@@ -496,20 +521,7 @@ export const cvData = {
             "Pagos de consumo",
             "Banca digital",
             "Adopción de productos de crédito",
-            "Productos de ahorro e inversión",
-            "Desarrollo de productos"
-        ]
-    },
-    {
-        "category": "Análisis y Coordinación",
-        "skills": [
-            "Consultoría y análisis de negocio",
-            "Investigación de clientes",
-            "Análisis de mercado",
-            "Coordinación multidisciplinaria",
-            "Pruebas funcionales de software",
-            "UAT",
-            "Migración de core bancario"
+            "Productos de ahorro e inversión"
         ]
     }
 ],
@@ -1048,7 +1060,7 @@ export const cvData = {
     ],
     skillGroups: [
     {
-        "category": "Business Development",
+        "category": "B2B Business Development",
         "highlight": true,
         "skills": [
             "B2B Business Development",
@@ -1057,9 +1069,34 @@ export const cvData = {
             "Client Relationship Management",
             "Client Meetings & Needs Assessment",
             "Proposal Development & Presentation",
-            "Commercial Follow-up",
+            "Commercial Opportunity Follow-up",
             "Salesforce",
             "HIVE"
+        ]
+    },
+    {
+        "category": "Product Development & Go-to-Market",
+        "skills": [
+            "Product Development",
+            "End-to-End Product Development",
+            "Product Strategy",
+            "Business Case Development",
+            "Product Roadmap",
+            "Go-to-Market",
+            "User Acceptance Testing (UAT)"
+        ]
+    },
+    {
+        "category": "Leadership, Analysis & Execution",
+        "skills": [
+            "Stakeholder Management",
+            "Cross-functional Leadership",
+            "Agile (Scrum)",
+            "Market Analysis",
+            "Customer Research",
+            "Product Discovery",
+            "Cross-functional Coordination",
+            "Core Banking Migration"
         ]
     },
     {
@@ -1070,20 +1107,7 @@ export const cvData = {
             "Consumer Payments",
             "Digital Banking",
             "Credit Product Adoption",
-            "Savings & Investment Products",
-            "Product Development"
-        ]
-    },
-    {
-        "category": "Analysis & Coordination",
-        "skills": [
-            "Consulting & Business Analysis",
-            "Customer Research",
-            "Market Analysis",
-            "Cross-functional Coordination",
-            "Functional Software Testing",
-            "UAT",
-            "Core Banking Migration"
+            "Savings & Investment Products"
         ]
     }
 ],
