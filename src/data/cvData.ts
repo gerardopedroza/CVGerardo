@@ -124,12 +124,12 @@ export const cvData = {
         "description": "Durante la migración de plataforma bancaria de Citibank en España."
     },
     {
-        "number": "4",
-        "label": "Clientes de Consultoría",
-        "description": "Banco Azteca, Santander, Mercado Pago y Banorte."
+        "number": "5",
+        "label": "Marcas Cliente en Consultoría",
+        "description": "Women’s World Banking: Banco Azteca, Mercado Pago y Banorte. NUBAJ: Tuiio y Santander México."
     }
 ],
-    executiveSummary: "Gerente senior de desarrollo de negocios y profesional de servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Su experiencia combina prospección B2B, identificación de necesidades y oportunidades en instituciones financieras, desarrollo y presentación de propuestas, seguimiento comercial y coordinación con equipos multidisciplinarios para llevar iniciativas desde el discovery hasta pilotos e implementación. Ha trabajado en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking y la Secretaría de Comunicaciones y Transportes, además de participar en proyectos para Banco Azteca, Santander, Mercado Pago y Banorte. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
+    executiveSummary: "Gerente senior de desarrollo de negocios y profesional de servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Su experiencia combina prospección B2B, identificación de necesidades y oportunidades en instituciones financieras, desarrollo y presentación de propuestas, seguimiento comercial y coordinación con equipos multidisciplinarios para llevar iniciativas desde el discovery hasta pilotos e implementación. Ha trabajado en Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking, NUBAJ y la Secretaría de Comunicaciones y Transportes. En Women’s World Banking participó en proyectos para Banco Azteca, Mercado Pago y Banorte; como Banking Consultant en NUBAJ analizó recorridos de clientes para Tuiio y Santander México. Presenta hallazgos y recomendaciones a líderes ejecutivos y actualmente se especializa en Inteligencia Artificial para conectar estrategia, tecnología y datos.",
     aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (En curso).",
     whyMe: [
     {
@@ -141,7 +141,7 @@ export const cvData = {
     {
         "title": "Relación Consultiva con Clientes",
         "description": "Convierte retos institucionales y necesidades de clientes en oportunidades y recomendaciones.",
-        "evidence": "Contribuciones a trabajos con Banco Azteca, Santander, Mercado Pago y Banorte.",
+        "evidence": "NUBAJ: Tuiio y Santander México. Women’s World Banking: Banco Azteca, Mercado Pago y Banorte.",
         "badge": "Client Relationships"
     },
     {
@@ -171,6 +171,26 @@ export const cvData = {
 ],
     experiences: [
       {
+        id: 'nubaj',
+        company: 'NUBAJ',
+        role: 'Consultor Bancario',
+        location: 'México',
+        period: 'Ene 2025 – Mar 2026',
+        startDate: '2025-01',
+        endDate: '2026-03',
+        sector: 'Financial Inclusion & Consulting',
+        summary: 'Condujo investigación con clientes de microfinanzas y microcrédito, incluyendo entrevistas, perfiles de usuario, análisis de comprensión de productos, mockups de usabilidad y validación de prototipos para recomendar mejoras de procesos y experiencia digital.',
+        responsibilities: [
+          'Tuiio (Grupo Santander): realizó investigación de clientes de servicios de microfinanzas y microcrédito, incluidas entrevistas, perfiles de usuario y análisis de cómo los clientes comprendían los productos financieros, para detectar oportunidades de mejora de procesos y experiencia digital.',
+          'Desarrolló mockups de usabilidad y validó prototipos para orientar mejoras a la app móvil; entregó análisis y recomendaciones accionables para mejorar la usabilidad y alinear mejor la experiencia con las necesidades de los usuarios.',
+          'Santander México: amplió el alcance para evaluar la app móvil mediante investigación con clientes, análisis de puntos de dolor, perfiles de usuario y validación de prototipos; identificó oportunidades de UX y entregó recomendaciones para mejorar la experiencia de banca digital.',
+        ],
+        achievements: ['Entregó análisis y recomendaciones accionables basadas en entrevistas, perfiles de usuario, mockups y validación de prototipos para Tuiio y Santander México.'],
+        technologies: ['Banca móvil', 'Microfinanzas', 'Microcrédito', 'Mockups de usabilidad', 'Prototipos'],
+        methodologies: ['Entrevistas con clientes', 'Perfiles de usuario', 'Análisis de recorridos de cliente', 'Evaluación UX', 'Validación de prototipos'],
+        consultingClients: ['Tuiio (Grupo Santander)', 'Santander México'],
+      },
+      {
         id: 'wwb',
         company: 'Women’s World Banking Inc.',
         role: 'Specialist, Business Development',
@@ -190,15 +210,14 @@ export const cvData = {
           'Desarrolló recomendaciones estratégicas basadas en insights de clientes, investigación cualitativa y cuantitativa, análisis de mercado y prioridades del negocio.',
           'Apoyó a Banorte a identificar oportunidades para mejorar la experiencia de usuario (UX) y la comunicación en su app móvil.',
           'Contribuyó al análisis de adopción de crédito en Mercado Pago, incluida una nueva estrategia y calendario de comunicación.',
-          'Apoyó a Santander a analizar percepciones de clientes sobre su app móvil e identificar oportunidades de mejora en UX.',
         ],
         achievements: [
-          'Participó en consultorías para Banco Azteca, Santander, Mercado Pago y Banorte, enfocadas en UX, productos digitales y oportunidades de negocio.'
+          'Participó en consultorías para Banco Azteca, Mercado Pago y Banorte, enfocadas en UX, productos digitales y oportunidades de negocio.'
           
         ],
         technologies: ['Salesforce', 'HIVE', 'Financial Services', 'Digital Banking'],
         methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Agile / Scrum', 'Qualitative & Quantitative Research'],
-        consultingClients: ['Banco Azteca', 'Santander', 'Mercado Pago', 'Banorte'],
+        consultingClients: ['Banco Azteca', 'Mercado Pago', 'Banorte'],
         reference: {
           name: 'Megan D. Baumann',
           role: 'Social-environmental Research',
@@ -444,10 +463,10 @@ export const cvData = {
         technologies: ['Servicios financieros', 'Banca digital', 'Salesforce', 'HIVE'],
         methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Qualitative & Quantitative Research'],
         results:
-          'Consultorías para Banco Azteca, Santander, Mercado Pago y Banorte sobre UX, productos digitales y oportunidades de negocio; incluyeron análisis de adopción de crédito y de experiencia en apps móviles.',
+          'Consultorías para Banco Azteca, Mercado Pago y Banorte sobre UX, productos digitales y oportunidades de negocio; incluyeron análisis de adopción de crédito y experiencia en canales móviles.',
         metrics: {
           label: 'Instituciones Cliente',
-          value: '4 en LATAM',
+          value: '3 en LATAM',
         },
       },
       {
@@ -487,18 +506,31 @@ export const cvData = {
       {
         id: 'proj-santander-app-ux',
         title: 'Oportunidades de mejora para la app',
-        company: 'Santander',
+        company: 'NUBAJ · Santander México',
         sector: 'Banca Digital & UX',
-        tagline: 'Detección de áreas de oportunidad para mejorar la experiencia de usuario en la aplicación.',
+        tagline: 'Investigación con clientes, análisis de puntos de dolor y validación de prototipos para mejorar la app móvil de Santander México.',
         problem:
-          'Se requería entender dónde podía mejorar la experiencia de los usuarios al interactuar con la app de Santander.',
+          'El alcance se amplió para evaluar la app móvil de Santander México, comprender necesidades de usuarios e identificar puntos de dolor en la experiencia.',
         solution:
-          'Revisó la experiencia de la aplicación para detectar áreas de oportunidad desde la perspectiva del usuario.',
+          'Realizó investigación con clientes, creó perfiles de usuario y validó prototipos para detectar oportunidades de mejora de UX.',
         roleContribution:
-          'Contribuyó a identificar oportunidades de mejora de UX para la aplicación móvil.',
-        technologies: ['Aplicación móvil', 'Banca Digital'],
-        methodologies: ['Evaluación de UX', 'Análisis de experiencia'],
-        results: 'Se identificaron áreas de oportunidad para mejorar la UX de la aplicación.',
+          'Como Banking Consultant en NUBAJ, amplió el análisis del proyecto y entregó recomendaciones para mejorar la experiencia general de banca digital.',
+        technologies: ['Aplicación móvil', 'Banca Digital', 'Perfiles de usuario', 'Prototipos'],
+        methodologies: ['Investigación con clientes', 'Análisis de puntos de dolor', 'Evaluación UX', 'Validación de prototipos'],
+        results: 'Recomendaciones para atender puntos de dolor y mejorar la experiencia de banca digital.',
+      },
+      {
+        id: 'proj-tuiio-journeys',
+        title: 'Recorridos de clientes de microfinanzas y microcrédito',
+        company: 'NUBAJ · Tuiio (Grupo Santander)',
+        sector: 'Microfinanzas & Banca Digital',
+        tagline: 'Investigación con clientes, entrevistas y perfiles de usuario para orientar mejoras en los procesos y la app móvil de Tuiio.',
+        problem: 'Se necesitaba comprender las necesidades de los usuarios y cómo entendían los productos de microfinanzas y microcrédito, e identificar oportunidades de mejora de procesos y experiencia digital.',
+        solution: 'Realizó entrevistas, análisis de recorridos y perfiles de usuario; desarrolló mockups de usabilidad y validó prototipos para informar mejoras a la app móvil.',
+        roleContribution: 'Como Banking Consultant en NUBAJ, entregó análisis y recomendaciones accionables para mejorar la usabilidad y alinear la experiencia con las necesidades de los clientes.',
+        technologies: ['Microfinanzas', 'Microcrédito', 'App móvil', 'Mockups', 'Prototipos'],
+        methodologies: ['Entrevistas con clientes', 'Perfiles de usuario', 'Análisis de recorridos', 'Validación de prototipos'],
+        results: 'Análisis y recomendaciones para mejorar los procesos, la usabilidad y la experiencia de la app móvil.',
       },
       {
         id: 'proj-mercadopago-pos-credit',
@@ -604,7 +636,7 @@ export const cvData = {
       },
       {
         name: 'Inclusión Financiera & Consultoría Estratégica',
-        institutions: ['Women’s World Banking', 'Mercado Pago', 'Santander', 'Banorte'],
+        institutions: ['Women’s World Banking', 'NUBAJ', 'Tuiio', 'Santander México', 'Mercado Pago', 'Banorte'],
         description: 'Desarrollo de negocios, investigación de clientes, banca digital y oportunidades de adopción de crédito.',
       },
       {
@@ -775,12 +807,12 @@ export const cvData = {
         "description": "During Citibank Spain’s core banking platform migration."
     },
     {
-        "number": "4",
-        "label": "Consulting Clients",
-        "description": "Banco Azteca, Santander, Mercado Pago, and Banorte."
+        "number": "5",
+        "label": "Consulting Client Brands",
+        "description": "Women’s World Banking: Banco Azteca, Mercado Pago, and Banorte. NUBAJ: Tuiio and Santander Mexico."
     }
 ],
-    executiveSummary: "Senior business development manager and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Experience includes B2B prospecting, identifying needs and opportunities at financial institutions, developing and presenting proposals, commercial follow-up, and coordinating multidisciplinary teams to move initiatives from discovery through pilots and implementation. Worked at Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking, and Mexico’s Secretariat of Communications and Transportation (SCT), as well as on engagements for Banco Azteca, Santander, Mercado Pago, and Banorte. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
+    executiveSummary: "Senior business development manager and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Experience includes B2B prospecting, identifying needs and opportunities at financial institutions, developing and presenting proposals, commercial follow-up, and coordinating multidisciplinary teams to move initiatives from discovery through pilots and implementation. Worked at Citi, Bansefi, Banco Azteca, Compartamos Banco, Visa, Women’s World Banking, NUBAJ, and Mexico’s Secretariat of Communications and Transportation (SCT). At Women’s World Banking, contributed to projects for Banco Azteca, Mercado Pago, and Banorte; as a Banking Consultant at NUBAJ, analyzed customer journeys for Tuiio and Santander Mexico. Presents findings and recommendations to executive leadership and is currently specializing in Artificial Intelligence to connect business strategy, technology, and data.",
     aiFocusStatement: "AI & Digital Business Development — Pau Martí | Skool (Ongoing).",
     whyMe: [
     {
@@ -792,7 +824,7 @@ export const cvData = {
     {
         "title": "Consultative Client Relationships",
         "description": "Translates institutional challenges and customer needs into opportunities and recommendations.",
-        "evidence": "Contributed to engagements with Banco Azteca, Santander, Mercado Pago, and Banorte.",
+        "evidence": "NUBAJ: Tuiio and Santander Mexico. Women’s World Banking: Banco Azteca, Mercado Pago, and Banorte.",
         "badge": "Client Relationships"
     },
     {
@@ -822,6 +854,26 @@ export const cvData = {
 ],
     experiences: [
       {
+        id: 'nubaj',
+        company: 'NUBAJ',
+        role: 'Banking Consultant',
+        location: 'Mexico',
+        period: 'Jan 2025 – Mar 2026',
+        startDate: '2025-01',
+        endDate: '2026-03',
+        sector: 'Financial Inclusion & Consulting',
+        summary: 'Conducted customer research for microfinance and microcredit services, including interviews, user profiling, product-comprehension analysis, usability mockups, and prototype validation to recommend process and digital experience improvements.',
+        responsibilities: [
+          'Tuiio (Santander Group): conducted customer research for microfinance and microcredit services, including client interviews, user profiling, and analysis of customer understanding of financial products to identify process and digital experience improvement opportunities.',
+          'Developed usability mockups and validated prototypes to inform mobile app enhancements, delivering actionable analyses and recommendations to improve usability and better align the customer experience with user needs.',
+          'Santander Mexico: expanded the engagement to assess the mobile app through customer research, pain-point analysis, user profiling, and prototype validation; identified UX opportunities and delivered recommendations to enhance the digital banking experience.',
+        ],
+        achievements: ['Delivered actionable analyses and recommendations based on interviews, user profiles, usability mockups, and prototype validation for Tuiio and Santander Mexico.'],
+        technologies: ['Mobile Banking', 'Microfinance', 'Microcredit', 'Usability Mockups', 'Prototypes'],
+        methodologies: ['Client Interviews', 'User Profiling', 'Customer Journey Analysis', 'UX Assessment', 'Prototype Validation'],
+        consultingClients: ['Tuiio (Santander Group)', 'Santander Mexico'],
+      },
+      {
         id: 'wwb',
         company: 'Women’s World Banking Inc.',
         role: 'Specialist, Business Development',
@@ -841,15 +893,14 @@ export const cvData = {
           'Developed strategic recommendations based on customer insights, qualitative and quantitative research, market analysis, and business priorities.',
           'Supported Banorte in identifying opportunities to improve mobile app user experience (UX) and customer communication.',
           'Contributed to Mercado Pago’s assessment of credit product adoption, including a new communication strategy and timing.',
-          'Supported Santander in analyzing customer perceptions of its mobile app and identifying UX improvement opportunities.',
         ],
         achievements: [
-          'Contributed to consulting engagements for Banco Azteca, Santander, Mercado Pago, and Banorte focused on UX, digital products, and business opportunities.',
+          'Contributed to consulting engagements for Banco Azteca, Mercado Pago, and Banorte focused on UX, digital products, and business opportunities.',
           
         ],
         technologies: ['Salesforce', 'HIVE', 'Financial Services', 'Digital Banking'],
         methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Agile / Scrum', 'Qualitative & Quantitative Research'],
-        consultingClients: ['Banco Azteca', 'Santander', 'Mercado Pago', 'Banorte'],
+        consultingClients: ['Banco Azteca', 'Mercado Pago', 'Banorte'],
         reference: {
           name: 'Megan D. Baumann',
           role: 'Social-environmental Research',
@@ -1096,10 +1147,10 @@ export const cvData = {
         technologies: ['Financial Services', 'Digital Banking', 'Salesforce', 'HIVE'],
         methodologies: ['Women-Centered Design', 'Design Sprints', 'Customer Research', 'Co-creation Workshops', 'Prototype Validation', 'Qualitative & Quantitative Research'],
         results:
-          'Consulting engagements for Banco Azteca, Santander, Mercado Pago, and Banorte covered UX, digital products, and business opportunities, including credit adoption and mobile app experience analysis.',
+          'Consulting engagements for Banco Azteca, Mercado Pago, and Banorte covered UX, digital products, and business opportunities, including credit adoption and digital experience analysis.',
         metrics: {
           label: 'Client Institutions',
-          value: '4 in LATAM',
+          value: '3 in LATAM',
         },
       },
       {
@@ -1139,18 +1190,31 @@ export const cvData = {
       {
         id: 'proj-santander-app-ux',
         title: 'Mobile App UX Improvement Opportunities',
-        company: 'Santander',
+        company: 'NUBAJ · Santander Mexico',
         sector: 'Digital Banking & UX',
-        tagline: 'Identified opportunities to improve the user experience of the mobile app.',
+        tagline: 'Customer research, pain-point analysis, and prototype validation to improve Santander Mexico’s mobile app.',
         problem:
-          'The project required understanding where Santander app users’ experience could be improved.',
+          'The engagement expanded to assess Santander Mexico’s mobile app, understand user needs, and identify experience pain points.',
         solution:
-          'Reviewed the app experience to identify improvement opportunities from the user perspective.',
+          'Conducted customer research, developed user profiles, and validated prototypes to identify UX improvement opportunities.',
         roleContribution:
-          'Contributed to identifying UX improvement opportunities for the mobile app.',
-        technologies: ['Mobile App', 'Digital Banking'],
-        methodologies: ['UX Evaluation', 'Experience Analysis'],
-        results: 'Identified opportunities to improve the app’s UX.',
+          'As a Banking Consultant at NUBAJ, expanded the engagement and delivered recommendations to enhance the overall digital banking experience.',
+        technologies: ['Mobile App', 'Digital Banking', 'User Profiles', 'Prototypes'],
+        methodologies: ['Customer Research', 'Pain-point Analysis', 'UX Assessment', 'Prototype Validation'],
+        results: 'Recommendations to address customer pain points and improve the overall digital banking experience.',
+      },
+      {
+        id: 'proj-tuiio-journeys',
+        title: 'Microfinance and Microcredit Customer Journeys',
+        company: 'NUBAJ · Tuiio (Santander Group)',
+        sector: 'Microfinance & Digital Banking',
+        tagline: 'Customer interviews and user profiles to inform process improvements and enhancements to Tuiio’s mobile app.',
+        problem: 'The team needed to understand user needs and product comprehension across microfinance and microcredit, and identify process and digital experience improvements.',
+        solution: 'Conducted interviews, analyzed customer journeys and user profiles, developed usability mockups, and validated prototypes to inform mobile app enhancements.',
+        roleContribution: 'As a Banking Consultant at NUBAJ, delivered actionable analysis and recommendations to improve usability and align the experience with customer needs.',
+        technologies: ['Microfinance', 'Microcredit', 'Mobile App', 'Usability Mockups', 'Prototypes'],
+        methodologies: ['Client Interviews', 'User Profiling', 'Customer Journey Analysis', 'Prototype Validation'],
+        results: 'Analyses and recommendations to improve processes, usability, and the mobile app experience.',
       },
       {
         id: 'proj-mercadopago-pos-credit',
@@ -1256,7 +1320,7 @@ export const cvData = {
       },
       {
         name: 'Financial Inclusion & Strategic Consulting',
-        institutions: ['Women’s World Banking', 'Mercado Pago', 'Santander', 'Banorte'],
+        institutions: ['Women’s World Banking', 'NUBAJ', 'Tuiio', 'Santander Mexico', 'Mercado Pago', 'Banorte'],
         description: 'Business development, customer research, digital banking, and credit adoption opportunities.',
       },
       {

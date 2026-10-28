@@ -79,11 +79,11 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
               </span>
               <span className="inline-flex items-center gap-1">
                 <Building2 className="w-3.5 h-3.5 text-sky-500" />
-                Citi • Visa • Azteca • Compartamos • Bansefi
+                Citi • Visa • Azteca • Compartamos • Bansefi • Women’s World Banking • NUBAJ
               </span>
               <span className="inline-flex items-center gap-1">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
-                Banco Azteca • Santander • Mercado Pago • Banorte (Consulting)
+                Women’s World Banking: Banco Azteca • Mercado Pago • Banorte | NUBAJ: Tuiio • Santander Mexico
               </span>
             </div>
 
@@ -210,8 +210,8 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenRecruiterMode }) => {
                     </h4>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed">
                       {lang === 'es'
-                        ? 'Contribuciones a proyectos para Banco Azteca, Santander, Mercado Pago y Banorte; manejo de Salesforce y HIVE.'
-                        : 'Contributions to engagements for Banco Azteca, Santander, Mercado Pago, and Banorte; proficient in Salesforce and HIVE.'}
+                        ? 'NUBAJ: análisis de recorridos para Tuiio y Santander México. Women’s World Banking: proyectos para Banco Azteca, Mercado Pago y Banorte.'
+                        : 'NUBAJ: customer journey analysis for Tuiio and Santander Mexico. Women’s World Banking: projects for Banco Azteca, Mercado Pago, and Banorte.'}
                     </p>
                   </div>
                 </div>
