@@ -152,7 +152,7 @@
         <div class="flex items-center gap-1.5 sm:gap-2">
           
           <!-- Recruiter Mode Button -->
-          <button onclick="openRecruiterModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20 hover:bg-amber-500/20 transition-all cursor-pointer shadow-xs" title="Screening en 30 segundos">
+          <button id="nav-recruiter" onclick="openRecruiterModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20 hover:bg-amber-500/20 transition-all cursor-pointer shadow-xs" title="Screening en 30 segundos">
             <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-500"></i>
             <span class="hidden sm:inline" data-i18n="nav_recruiter">Modo Recruiter</span>
             <span class="sm:hidden">30s</span>
@@ -160,7 +160,7 @@
 
           <!-- Language Selector -->
           <button id="lang-btn" onclick="toggleLanguage()" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 transition-colors cursor-pointer">
-            <span id="lang-flag" aria-hidden="true">🇲🇽</span>
+            <span id="lang-flag" class="inline-flex h-3.5 w-5 overflow-hidden rounded-[2px] border border-slate-300" aria-hidden="true"></span>
             <span id="lang-label">ES</span>
           </button>
 
@@ -177,7 +177,7 @@
           </a>
 
           <!-- Mobile Menu Button -->
-          <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle mobile menu">
+          <button id="mobile-menu-toggle" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle mobile menu">
             <i data-lucide="menu" class="w-5 h-5"></i>
           </button>
         </div>
@@ -265,7 +265,7 @@
 
               <button onclick="openRecruiterModal()" class="inline-flex items-center justify-center gap-1.5 px-4 py-3.5 rounded-xl font-bold text-xs text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-800 hover:bg-amber-100 dark:hover:bg-amber-900/40 transition-all cursor-pointer w-full sm:w-auto">
                 <i data-lucide="zap" class="w-4 h-4 text-amber-500 animate-pulse"></i>
-                <span>Modo Recruiter (30s)</span>
+                <span data-i18n="hero_recruiter">Modo Recruiter (30s)</span>
               </button>
             </div>
 
@@ -294,7 +294,7 @@
                   </span>
                 </div>
                 <span class="text-[11px] font-bold text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-sky-950/70 px-2.5 py-0.5 rounded-full border border-sky-200 dark:border-sky-800">
-                  Verified Track Record
+                  <span data-i18n="hero_card_badge">Verified Track Record</span>
                 </span>
               </div>
 
@@ -338,7 +338,7 @@
 
               <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
                 <span>Nottingham Trent Univ. (UK)</span>
-                <span class="font-bold text-slate-700 dark:text-slate-300">Español (Nat) • English (B2)</span>
+                <span id="hero-languages" class="font-bold text-slate-700 dark:text-slate-300">Español (Nat) • English (B2)</span>
               </div>
             </div>
           </div>
@@ -353,7 +353,7 @@
         <div class="text-center max-w-3xl mx-auto mb-12">
           <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-3">
             <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse-dot"></span>
-            Career Metrics
+            <span data-i18n="snapshot_badge">Career Metrics</span>
           </span>
           <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white" data-i18n="snapshot_title">
             Instantánea Profesional
@@ -624,7 +624,7 @@
         <div class="text-center max-w-3xl mx-auto mb-12">
           <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-3">
             <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse-dot"></span>
-            Credentials
+            <span data-i18n="edu_badge">Credentials</span>
           </span>
           <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white" data-i18n="edu_title">
             Educación & Idiomas
@@ -754,7 +754,7 @@
                   <i data-lucide="phone" class="w-3.5 h-3.5"></i>
                   <span data-i18n="contact_call_phone">Llamar por Teléfono</span>
                 </a>
-                <a href="https://wa.me/525559518935" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp al +52 55 5951 8935" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline">
+                <a data-whatsapp href="https://wa.me/525559518935" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp al +52 55 5951 8935" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline">
                   <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
                   <span>WhatsApp</span>
                 </a>
@@ -807,11 +807,11 @@
               <div class="mt-6 p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-slate-300 space-y-1.5">
                 <div class="flex items-center justify-between">
                   <span class="text-slate-400" data-i18n="contact_meta_format">Formato:</span>
-                  <span class="font-semibold text-white">PDF Oficial (2026 Updated)</span>
+                  <span class="font-semibold text-white" data-i18n="contact_meta_format_value">PDF Oficial (2026 Updated)</span>
                 </div>
                 <div class="flex items-center justify-between">
                   <span class="text-slate-400" data-i18n="contact_meta_date">Última actualización:</span>
-                  <span class="font-semibold text-emerald-400">Octubre 2026</span>
+                  <span class="font-semibold text-emerald-400" data-i18n="contact_meta_date_value">Octubre 2026</span>
                 </div>
                 <div class="flex items-center justify-between">
                   <span class="text-slate-400" data-i18n="contact_meta_avail">Disponibilidad:</span>
@@ -1740,7 +1740,7 @@
     function copyToClipboard(text, btnEl) {
       navigator.clipboard.writeText(text);
       const originalHTML = btnEl.innerHTML;
-      btnEl.innerHTML = `<i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i><span class="text-emerald-500 text-xs font-bold">¡Copiado!</span>`;
+      btnEl.innerHTML = `<i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i><span class="text-emerald-500 text-xs font-bold">${currentLang === 'en' ? 'Copied!' : '¡Copiado!'}</span>`;
       lucide.createIcons();
       setTimeout(() => {
         btnEl.innerHTML = originalHTML;
@@ -1757,7 +1757,8 @@
             hero_headline: 'Senior Business Development Manager | Financial Services',
             hero_subheadline: '17+ years turning business and customer needs into B2B opportunities, market expansion, consultative proposals, and initiatives delivered with multidisciplinary teams.',
             hero_location: 'Mexico City, Mexico', hero_cta_download: 'Download Official CV (PDF)', hero_cta_contact: 'Get in Touch',
-            hero_card_title: 'Executive Highlights | Verified Track Record', hero_h1_title: 'Measurable Retention Impact',
+            hero_card_title: 'Executive Highlights', hero_card_badge: 'Verified Track Record', hero_recruiter: 'Recruiter Mode (30s)',
+            snapshot_badge: 'Career Metrics', edu_badge: 'Credentials', contact_meta_format_value: 'Official CV (2026)', contact_meta_date_value: 'October 2026', hero_h1_title: 'Measurable Retention Impact',
             hero_h1_bold: '60% reduction in weekly outflows', hero_h1_text: '(~MXN $30M retained per week) at Banco Azteca through an investment account strategy.',
             hero_h2_title: 'Banking Product Ownership', hero_h2_bold: '4 banking products launched',
             hero_h2_text: 'end-to-end (savings, investment, and transactional) at Compartamos Banco with executive committees.',
@@ -1814,7 +1815,8 @@
             hero_headline: 'Gerente Senior de Desarrollo de Negocios | Servicios Financieros',
             hero_subheadline: '17+ años convirtiendo necesidades de negocio y clientes en oportunidades B2B, expansión de mercado, propuestas consultivas e iniciativas coordinadas con equipos multidisciplinarios.',
             hero_location: 'Ciudad de México, México', hero_cta_download: 'Descargar CV Oficial (PDF)', hero_cta_contact: 'Iniciar Contacto',
-            hero_card_title: 'Resultados Ejecutivos | Trayectoria Comprobada', hero_h1_title: 'Impacto Cuantificable en Retención',
+            hero_card_title: 'Resultados Ejecutivos', hero_card_badge: 'Trayectoria Comprobada', hero_recruiter: 'Modo Recruiter (30s)',
+            snapshot_badge: 'Métricas de Carrera', edu_badge: 'Credenciales', contact_meta_format_value: 'CV Oficial (2026)', contact_meta_date_value: 'Octubre 2026', hero_h1_title: 'Impacto Cuantificable en Retención',
             hero_h1_bold: '60% de reducción en salidas semanales', hero_h1_text: '(~MXN $30M retenidos por semana) en Banco Azteca mediante una estrategia para una cuenta de inversión.',
             hero_h2_title: 'Gestión de Productos Bancarios', hero_h2_bold: '4 productos bancarios lanzados',
             hero_h2_text: 'de principio a fin (ahorro, inversión y transaccionales) en Compartamos Banco con comités ejecutivos.',
@@ -1870,8 +1872,14 @@
         const translation = translations[element.dataset.i18n];
         if (translation) element.textContent = translation;
       });
-      document.getElementById('lang-flag').textContent = currentLang === 'en' ? '🇺🇸' : '🇲🇽';
+      document.getElementById('lang-flag').innerHTML = currentLang === 'en'
+        ? '<svg viewBox="0 0 20 14" class="h-full w-full" aria-hidden="true"><rect width="20" height="14" fill="#fff"/><path fill="#b22234" d="M0 0h20v1.08H0zm0 2.15h20v1.08H0zm0 2.15h20v1.08H0zm0 2.15h20v1.08H0zm0 2.15h20v1.08H0zm0 2.15h20v1.08H0zm0 2.15h20V14H0z"/><rect width="8.5" height="7.55" fill="#3c3b6e"/></svg>'
+        : '<svg viewBox="0 0 20 14" class="h-full w-full" aria-hidden="true"><path fill="#006847" d="M0 0h6.67v14H0z"/><path fill="#fff" d="M6.67 0h6.66v14H6.67z"/><path fill="#ce1126" d="M13.33 0H20v14h-6.67z"/><circle cx="10" cy="7" r="1.35" fill="#8b6f3d"/></svg>';
       document.getElementById('lang-label').textContent = currentLang.toUpperCase();
+      document.getElementById('hero-languages').textContent = currentLang === 'en' ? 'Spanish (Native) • English (B2) • German (A2)' : 'Español (Nativo) • Inglés (B2) • Alemán (A2)';
+      document.getElementById('nav-recruiter').title = currentLang === 'en' ? '30-Second Recruiter Screening' : 'Screening en 30 segundos';
+      document.getElementById('mobile-menu-toggle').setAttribute('aria-label', currentLang === 'en' ? 'Toggle mobile menu' : 'Abrir menú de navegación');
+      document.querySelector('[data-whatsapp]')?.setAttribute('aria-label', currentLang === 'en' ? 'Contact by WhatsApp at +52 55 5951 8935' : 'Contactar por WhatsApp al +52 55 5951 8935');
 
       // Update static data-i18n elements if needed
       // 1. Why Me
