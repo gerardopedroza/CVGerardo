@@ -10,8 +10,6 @@ import {
   X,
   Briefcase,
   Zap,
-  Globe,
-  Sparkles,
 } from 'lucide-react';
 import { triggerExecutiveCelebration } from '../UI/ConfettiTrigger';
 
@@ -136,7 +134,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 transition-colors"
               aria-label="Toggle language"
             >
-              <Globe className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
+              <span aria-hidden="true">{lang === 'es' ? '🇲🇽' : '🇺🇸'}</span>
               <span className="font-semibold uppercase">{lang === 'es' ? 'ES' : 'EN'}</span>
             </button>
 
@@ -178,6 +176,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               onClick={() => onLanguageChange(lang === 'es' ? 'en' : 'es')}
               className="px-2 py-1 rounded-md text-xs font-bold border border-slate-200 dark:border-slate-800"
             >
+              <span aria-hidden="true" className="mr-1">{lang === 'es' ? '🇲🇽' : '🇺🇸'}</span>
               {lang.toUpperCase()}
             </button>
             <button

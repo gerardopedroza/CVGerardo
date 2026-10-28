@@ -160,7 +160,7 @@
 
           <!-- Language Selector -->
           <button id="lang-btn" onclick="toggleLanguage()" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 transition-colors cursor-pointer">
-            <i data-lucide="globe" class="w-3.5 h-3.5 text-slate-500"></i>
+            <span id="lang-flag" aria-hidden="true">🇲🇽</span>
             <span id="lang-label">ES</span>
           </button>
 
@@ -1751,8 +1751,53 @@
     function renderAll() {
       const data = CV_DATA[currentLang];
 
-      const navLabels = currentLang === 'en'
+      const translations = currentLang === 'en'
         ? {
+            hero_status_badge: 'Open to Product & FinTech Leadership', hero_exp_badge: 'Years of Experience',
+            hero_headline: 'Senior Business Development Manager | Financial Services',
+            hero_subheadline: '17+ years turning business and customer needs into B2B opportunities, market expansion, consultative proposals, and initiatives delivered with multidisciplinary teams.',
+            hero_location: 'Mexico City, Mexico', hero_cta_download: 'Download Official CV (PDF)', hero_cta_contact: 'Get in Touch',
+            hero_card_title: 'Executive Highlights | Verified Track Record', hero_h1_title: 'Measurable Retention Impact',
+            hero_h1_bold: '60% reduction in weekly outflows', hero_h1_text: '(~MXN $30M retained per week) at Banco Azteca through an investment account strategy.',
+            hero_h2_title: 'Banking Product Ownership', hero_h2_bold: '4 banking products launched',
+            hero_h2_text: 'end-to-end (savings, investment, and transactional) at Compartamos Banco with executive committees.',
+            hero_h3_title: 'AI & Business Specialization',
+            hero_h3_text: 'Active specialization in AI & Digital Business Development, connecting strategy, technology, data, and FinTech solutions.',
+            snapshot_title: 'Professional Snapshot', snapshot_subtitle: 'Key career metrics backed by 17+ years of demonstrated experience',
+            stat_1_label: 'Years of Experience', stat_1_desc: 'Across financial services, banking, payments, and business development.',
+            stat_2_label: 'Reduction in Weekly Outflows', stat_2_desc: 'From MXN $50M to $20M at Banco Azteca through an investment debit strategy.',
+            stat_3_label: 'Banking Products', stat_3_desc: 'Launched end-to-end as Product Owner (savings, investment, and transactional products) at Compartamos.',
+            stat_4_label: 'Testers Coordinated', stat_4_desc: 'During Citibank Spain’s core banking platform migration.',
+            stat_5_label: 'Major Institutions', stat_5_desc: 'Citi, Visa, Compartamos, Azteca, Bansefi, plus consulting for Banco Azteca, Santander, Mercado Pago, and Banorte.',
+            snapshot_banner_tag: 'Strategic & Operational Profile',
+            snapshot_summary_text: 'Senior business development and financial services professional with 17+ years across banking, payments, financial inclusion, and digital transformation. Experienced in B2B prospecting, identifying market opportunities, developing consultative proposals, and coordinating multidisciplinary teams from discovery through implementation.',
+            snapshot_ai_focus_tag: 'AI SPECIALIZATION',
+            snapshot_ai_focus_text: 'Currently specializing in Artificial Intelligence and Digital Business to connect business, technology, data, and AI in FinTech.',
+            whyme_title: 'Why Gerardo Pedroza?', whyme_subtitle: 'Executive value proposition backed by proven experience and measurable results',
+            exp_title: 'Professional Experience', exp_subtitle: 'Leadership across global financial institutions, banking, and innovation consulting',
+            exp_filter_all: 'All Experience', exp_filter_banking: 'Commercial Banking', exp_filter_payments: 'Payments',
+            exp_filter_consulting: 'Consulting & Financial Inclusion', exp_filter_public: 'Public Sector',
+            exp_expand_all: 'Expand all', exp_collapse_all: 'Collapse all',
+            proj_title: 'Featured Projects', proj_subtitle: 'Real initiatives driving business impact, retention, and technology transformation',
+            skills_title: 'Skills & Capabilities', skills_subtitle: 'Organized by professional domain',
+            ind_title: 'Cross-Sector Experience', ind_subtitle: 'Experience across banking, payments, consulting, and the public sector',
+            edu_title: 'Education & Languages', edu_subtitle: 'International education, continued specialization, and language skills',
+            edu_heading: 'University Education & Specialization', edu_subheading: 'International UK degree and ongoing professional development',
+            lang_heading: 'Languages', lang_subheading: 'Demonstrated language proficiency',
+            contact_title: 'Let’s Connect', contact_subtitle: 'Available for leadership opportunities in business development, financial services, FinTech, and digital transformation',
+            contact_email_label: 'Email Address', contact_send_email: 'Send an Email', contact_phone_label: 'Direct Phone',
+            contact_call_phone: 'Call Directly', contact_linkedin_label: 'LinkedIn Profile', contact_loc_label: 'Location',
+            contact_cv_prompt: 'Prefer the traditional format?',
+            contact_cv_desc: 'Download Gerardo Pedroza’s complete official PDF CV, including detailed experience, education, and professional references.',
+            contact_meta_format: 'Format:', contact_meta_date: 'Last updated:', contact_meta_avail: 'Availability:',
+            contact_meta_avail_val: 'Available for leadership roles', contact_download_btn: 'Download Official CV (PDF)',
+            footer_rights: 'All rights reserved. Information based on the official CV.', footer_top: 'Back to top',
+            rm_badge: '30-Second Recruiter Screening', rm_heading: 'Executive Summary for Hiring Managers & Recruiters',
+            rm_years_badge: 'Years Exp.', rm_key_wins_title: 'Key Results & Differentiators',
+            rm_roles_title: 'Career History & Organizations', rm_skills_title: 'Top Skills & Specialization',
+            rm_copy_email: 'Copy Email', rm_subheading: 'Condensed recruiter screening view', rm_close_btn: 'Close',
+            pm_problem_title: 'Challenge / Problem', pm_solution_title: 'Strategic Solution',
+            pm_role_title: 'My Contribution & Leadership', pm_results_title: 'Key Results & Metrics', pm_close: 'Close',
             nav_snapshot: 'Snapshot',
             nav_why_me: 'Value Proposition',
             nav_experience: 'Experience',
@@ -1765,6 +1810,51 @@
             nav_download: 'Download CV',
           }
         : {
+            hero_status_badge: 'Disponible para liderazgo en Producto y FinTech', hero_exp_badge: 'Años de Trayectoria',
+            hero_headline: 'Gerente Senior de Desarrollo de Negocios | Servicios Financieros',
+            hero_subheadline: '17+ años convirtiendo necesidades de negocio y clientes en oportunidades B2B, expansión de mercado, propuestas consultivas e iniciativas coordinadas con equipos multidisciplinarios.',
+            hero_location: 'Ciudad de México, México', hero_cta_download: 'Descargar CV Oficial (PDF)', hero_cta_contact: 'Iniciar Contacto',
+            hero_card_title: 'Resultados Ejecutivos | Trayectoria Comprobada', hero_h1_title: 'Impacto Cuantificable en Retención',
+            hero_h1_bold: '60% de reducción en salidas semanales', hero_h1_text: '(~MXN $30M retenidos por semana) en Banco Azteca mediante una estrategia para una cuenta de inversión.',
+            hero_h2_title: 'Gestión de Productos Bancarios', hero_h2_bold: '4 productos bancarios lanzados',
+            hero_h2_text: 'de principio a fin (ahorro, inversión y transaccionales) en Compartamos Banco con comités ejecutivos.',
+            hero_h3_title: 'Especialización en IA y Negocios',
+            hero_h3_text: 'Especialización activa en AI & Digital Business Development para conectar estrategia, tecnología, datos y soluciones FinTech.',
+            snapshot_title: 'Instantánea Profesional', snapshot_subtitle: 'Métricas clave respaldadas por más de 17 años de experiencia demostrable',
+            stat_1_label: 'Años de Experiencia', stat_1_desc: 'En servicios financieros, banca, pagos y desarrollo de negocios.',
+            stat_2_label: 'Reducción de Salidas Semanales', stat_2_desc: 'De MXN $50M a $20M en Banco Azteca mediante una estrategia de débito para inversión.',
+            stat_3_label: 'Productos Bancarios', stat_3_desc: 'Lanzados de principio a fin como Product Owner en Compartamos (ahorro, inversión y transaccionales).',
+            stat_4_label: 'Testers Coordinados', stat_4_desc: 'Durante la migración de plataforma bancaria de Citibank España.',
+            stat_5_label: 'Grandes Instituciones', stat_5_desc: 'Citi, Visa, Compartamos, Azteca, Bansefi y consultorías para Banco Azteca, Santander, Mercado Pago y Banorte.',
+            snapshot_banner_tag: 'Perfil Estratégico y Operativo',
+            snapshot_summary_text: 'Profesional senior de desarrollo de negocios y servicios financieros con más de 17 años en banca, pagos, inclusión financiera y transformación digital. Experiencia en prospección B2B, identificación de oportunidades de mercado, desarrollo de propuestas consultivas y coordinación de equipos multidisciplinarios desde discovery hasta implementación.',
+            snapshot_ai_focus_tag: 'ESPECIALIZACIÓN EN IA',
+            snapshot_ai_focus_text: 'Actualmente se especializa en Inteligencia Artificial y Negocios Digitales para conectar negocio, tecnología, datos e IA en FinTech.',
+            whyme_title: '¿Por qué Gerardo Pedroza?', whyme_subtitle: 'Propuesta de valor ejecutiva respaldada por experiencia y resultados comprobables',
+            exp_title: 'Trayectoria Profesional', exp_subtitle: 'Liderazgo en instituciones financieras globales, banca y consultoría de innovación',
+            exp_filter_all: 'Todas las Experiencias', exp_filter_banking: 'Banca Múltiple', exp_filter_payments: 'Medios de Pago',
+            exp_filter_consulting: 'Consultoría e Inclusión', exp_filter_public: 'Sector Público',
+            exp_expand_all: 'Expandir todo', exp_collapse_all: 'Colapsar todo',
+            proj_title: 'Proyectos Destacados', proj_subtitle: 'Iniciativas reales con impacto en negocio, retención y transformación tecnológica',
+            skills_title: 'Habilidades y Competencias', skills_subtitle: 'Organizadas por dominio profesional',
+            ind_title: 'Experiencia Multisectorial', ind_subtitle: 'Trayectoria en banca, pagos, consultoría y sector público',
+            edu_title: 'Educación e Idiomas', edu_subtitle: 'Formación internacional, especialización continua y competencias lingüísticas',
+            edu_heading: 'Formación Universitaria y Especialización', edu_subheading: 'Grado internacional en Reino Unido y desarrollo profesional continuo',
+            lang_heading: 'Idiomas', lang_subheading: 'Competencias lingüísticas comprobadas',
+            contact_title: 'Conectemos', contact_subtitle: 'Disponible para oportunidades de liderazgo en desarrollo de negocios, servicios financieros, FinTech y transformación digital',
+            contact_email_label: 'Correo Electrónico', contact_send_email: 'Escribir un Correo', contact_phone_label: 'Teléfono Directo',
+            contact_call_phone: 'Llamar por Teléfono', contact_linkedin_label: 'Perfil de LinkedIn', contact_loc_label: 'Ubicación',
+            contact_cv_prompt: '¿Prefieres el formato tradicional?',
+            contact_cv_desc: 'Descarga el CV oficial completo de Gerardo Pedroza, con experiencia detallada, formación y referencias profesionales.',
+            contact_meta_format: 'Formato:', contact_meta_date: 'Última actualización:', contact_meta_avail: 'Disponibilidad:',
+            contact_meta_avail_val: 'Disponible para posiciones de liderazgo', contact_download_btn: 'Descargar CV Oficial (PDF)',
+            footer_rights: 'Todos los derechos reservados. Información basada en el CV oficial.', footer_top: 'Volver arriba',
+            rm_badge: 'Screening para Recruiters en 30 Segundos', rm_heading: 'Resumen Ejecutivo para Hiring Managers y Recruiters',
+            rm_years_badge: 'Años Exp.', rm_key_wins_title: 'Logros y Diferenciadores Clave',
+            rm_roles_title: 'Trayectoria y Organizaciones', rm_skills_title: 'Habilidades y Especialización',
+            rm_copy_email: 'Copiar Correo', rm_subheading: 'Vista resumida para evaluación rápida', rm_close_btn: 'Cerrar',
+            pm_problem_title: 'Desafío / Problema', pm_solution_title: 'Solución Estratégica',
+            pm_role_title: 'Mi Contribución y Liderazgo', pm_results_title: 'Resultados y Métricas Clave', pm_close: 'Cerrar',
             nav_snapshot: 'Resumen',
             nav_why_me: 'Propuesta de Valor',
             nav_experience: 'Experiencia',
@@ -1777,9 +1867,11 @@
             nav_download: 'Descargar CV',
           };
       document.querySelectorAll('[data-i18n]').forEach((element) => {
-        const translation = navLabels[element.dataset.i18n];
+        const translation = translations[element.dataset.i18n];
         if (translation) element.textContent = translation;
       });
+      document.getElementById('lang-flag').textContent = currentLang === 'en' ? '🇺🇸' : '🇲🇽';
+      document.getElementById('lang-label').textContent = currentLang.toUpperCase();
 
       // Update static data-i18n elements if needed
       // 1. Why Me
